@@ -85,6 +85,30 @@
 .s02-tie{width:0;align-self:stretch;justify-self:center;border-left:1.5px dashed var(--lime-line-2);
   transition:border-left-color .22s ease,border-left-width .22s ease}
 .s02-tie.on{border-left:2.5px solid var(--lime)}
+/* ===== SLIDE 01 — 표지 우측 발표자료 QR ===== */
+.s01-qr{position:absolute;right:90px;bottom:150px;width:168px;text-align:center;z-index:3}
+.s01-qr img{width:168px;height:168px;display:block;background:#fff;
+  padding:9px;border:1px solid var(--line)}
+.s01-qr .cap{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.14em;
+  color:var(--ink-70);margin-top:11px;line-height:1.5}
+.s01-qr .cap span{color:var(--lime-txt)}
+
+/* ===== SLIDE 27 — 링크 ===== */
+.s27-grid{position:absolute;left:90px;right:90px;top:272px;
+  display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.s27-grid .lk{border:1px solid var(--line);background:var(--bg-2);padding:26px 28px 24px;text-align:center}
+.s27-grid .lk:first-child{border-color:var(--lime);background:var(--lime-bg)}
+.s27-grid .qr{width:172px;height:172px;margin:0 auto 18px;background:#fff;padding:9px;border:1px solid var(--line)}
+.s27-grid .qr img{width:100%;height:100%;display:block}
+.s27-grid .k{font-family:var(--sans);font-size:11.5px;font-weight:800;letter-spacing:.2em;
+  color:var(--lime-txt);margin-bottom:10px}
+.s27-grid h3{font-family:var(--serif);font-size:26px;font-weight:900;line-height:1.3;
+  color:var(--ink);margin-bottom:12px}
+.s27-grid p{font-family:var(--sans);font-size:14px;line-height:1.55;color:var(--ink-70);margin-bottom:16px}
+.s27-grid .url{font-family:var(--sans);font-size:14px;font-weight:800;line-height:1.5;
+  background:var(--bg-sunk);color:var(--ink);padding:10px 8px;word-break:break-all}
+.s27-grid .lk:first-child .url{background:var(--lime);color:var(--lime-ink)}
+
 /* ===== SLIDE 26 — 에필로그: 찾는다 → 묻는다 + AskSillok ===== */
 .s26-shift{position:absolute;left:90px;top:276px;width:620px}
 .s26-shift .sh{border:1px solid var(--line);background:var(--bg-2);padding:15px 22px 16px}
@@ -526,6 +550,10 @@
     <div class="pre">세종실록지리지 연구 사례를 중심으로</div>
     <h1>AI가 읽어낸<br><span>조선왕조실록의 패턴들</span></h1>
     <p>사료의 반복 구조를 데이터로 만들고,<br>데이터의 패턴을 다시 사료 해석으로 돌려보내는 방법</p>
+  </div>
+  <div class="s01-qr">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEUaGhj///+4aU5zAAADI0lEQVR42u3dTY7iMBAGUGs4QI7E1XMkDhAp3dAkrrJNCK3ejPSyQcyEt2npk13ln7L+6bMUHo/H4/F4PB6Px+PxeDze0Cvhud6/TevcfPt++f7t+7ltH/W5PL1/5W8fHo/3/3p7vly2yLn9JEoOlsdH+r8aM/Hn8oXH443y5fYzDgmp8RixlG3g8kib9s0tieQLj8c7nS8xQ+7hUYcxy5Yo8oXH4/0iX5bHUOWZKPnNXIaRLzwe77P6Sx2jPGu/j5i51ErwPn5Rf+HxeG/zpaT+0T4xOv4o+kc8Hu9tvnR969JkyF6UqbWZ0e/8PXg8XumrKtM2P4pPqL/kim79wVrnTvKFx+MNxy+xVZRSo/aPnt3qKbyyj23kC4/HO5gfzWGpS+wR9Wvv2t618QuPxzuq705hqNKWWsJH84/hd/KFx+O9zJc8B1qbVlFXcbk1ZRj5wuPxDtbXxTW6oevcZU+7KUm+8Hi8t/OjsJxl3vpHMYJqxaWkJb7mRzwe73B93TXVX2J9ty/zxv5R6HL7e/B4vBf5sm0uWuJoZnA+QynDbQLyhcfjHe0/Wusyu9q0ztscb01tRn2Xx+O9X/9Se9CDExlKHcaU4nwpHo/34frdtJylpM2L7VK60fBHvvB4vIP9jaF4m8sw3dkwJS26ky88Hu9M/aU78SVvcwy9a/0jHo939vy6nCGXOGmKU6i5r9vIFx6Pdzh+6UYl7Y7GPXsGu6nlC4/HO3F+XdrtWGdL+WCpdlOSfOHxeC/HL3PJU6F8WkN+pbt0Tb7weLyD+kt7qm7tH8WmdTqmwf4jHo93cvySyynNwVKXtARv0T/i8XifjF/i5UZ1Ge/a3I1Uuk6TfOHxeCfvD4hHeecdR/Oo4aS+y+PxPr3/qA5VpnQb9dREkPsbeTze+fsb0xm7uYab29R5pa984fF4J+6fHp42FRbWDRbdyRcej3ciX9au2ntNjelBCVi+8Hi8z/JlSpseS7O3eg7VGPnC4/HO1F/y/qPuGqQXZ8PIFx6P975/FGMmV2MGq+3kC4/H+2D9y6+fhcfj8Xg8Ho/H4/F4PB6Pl70vtkUHkMCBN8sAAAAASUVORK5CYII=" alt="발표자료 QR 코드">
+    <div class="cap">발표자료<br><span>바로 열기</span></div>
   </div>
   <div class="meta"><span><b>김근하</b> · 국립부경대학교 해양인문학연구소</span><span>45분 워크숍 · 대학원생 대상</span></div>
   <div class="pfoot">01</div>
@@ -1065,7 +1093,7 @@ df.groupby(<span>'도'</span>)[<span>'구호'</span>].agg([<span>'mean'</span>,<
 </div>
 
 <div class="s26-card">
- <div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdQAAAHUAQMAAAC56UsvAAAABlBMVEUaGhj///+4aU5zAAACEklEQVR42u2cbWrEMAxETS+Q+9/SN3DJlzRSQilLCxK8UEro5u0PMxXjkZyxPr7mgIWFhYWFhYX9LTuHXed9+tqxLfvoemx/4Gt8fsHC/gcbpTvHeb8LeDt0ft7IR/JfwDrDVtXzvIqz3u/XIWYr3f4YeoZtoee1XlzHUajRM2xHPT98hYsZPcO288/nH6/f5p9fdM46wxbVs+YbP/yQb8A20HNM8LwgP61IeJJ1hq2qZ8031h3WqaO2uGNSn2Eb+I1LxqreZKQH/hm2k39OOz7XsPZZ7lAaPcNWzutMzJdoD916KH0HHeR1sI38s4nZ2oJak+NWkXWGLew3TLEzNFbcWs/hvRX0DFu7n2IDSM/ROxP2Va7xz7DF67PaiUdG5xMdc5DXwdb3zxo4+yD0FmI63x7iN2DrzyPZaKgVZM03BvPPsP3mkdR4PHvivhlEz7Ad5jfCDjHO85snYT8I2yKvU1PhApYEzx9Dz7D150W3peY5tQ7pD8J26nfHQQ49EqsDS/gN2C75hvT+3g/G+tlY9AxbPN9Iqg6tbQE25jdgO51PyYcHk7CZ34BtdH4witkM89C3c+CfYbuc747twtwcnJyHhe32fqS10vyGd1KkgKNn2E56Tjle2ieiZ9hWen45PJjNCesM28E/x2F+E7YZD/QM2ynfiHPOYZhfXziDnmHr58+8+x0WFhYWFhb2j9lvKWMWcrfh4wQAAAAASUVORK5CYII=" alt="AskSillok QR 코드"></div>
+ <div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgYAAAIGAQMAAAAV8dXjAAAABlBMVEUaGhj///+4aU5zAAACKUlEQVR42u3dQa6jMAyAYWs4AEfq1TkSB6iUmXYIcXi8VdVk82WDCvRfVPrl2HHSKB+OZyAgICAgICAgICAgICAg/EqINB6v+++xlP31qbRLG8tB+BOfDgQEhJtR3Vyqri8N/91f/6u7lu0U9lQ0f4GbCAjfdnNvkbI+O9xc2ivHswc3ERBmuHlIWae2URXlJgLCZDdLVTSSqYWbCAiT881eyvezLXkr30RAGOdm5Dptnb7+vIQ6LQLCUDd/jL3Wgo5y7a+rMH5JBISvuvmsldm0vvl+cM5pL95yEwFhWNzc4pJhnq/szds2w+UmAsKE9c2zMhtROxFKt/YpbiIgDKvTbtGnloewVdElF2jFTQSEcXHznLC2nHJP2eezC6bcREAYlG+exm1dB22kWlCfdnITAWFInXa96y+46a6N3GTLTQSEr/cerC3tbNnnubDSAmZ6k5sICEPWNx93e8TK2UEbLW7qPUBAGDmnLZcO2uZmiqn9Nk5uIiCMWUPp1jBbZWjtVlT07CEgjK3TXnee9DdbvqnXHQFh9Jy27a0+94jlfDPSkULiJgLC+H0o/TJn30GrTouAMG//ZqsM5QJtt41T3ERAmHHOXoqUWcq+asRNBIQJZ3nFpVmvzzfVghAQ5uwRS+1Bpdx0EImbCAjT3dziMpl9qgUhIEw81z26k71ygVbcRECYV6e9nlCyX77ATQSEWefs+dcnBAQEBAQEBAQEBAQEhA8IfwH5abE8OmYAHwAAAABJRU5ErkJggg==" alt="AskSillok QR 코드"></div>
  <div class="s26-n">ASK SILLOK</div>
  <h3>실록에게 묻다</h3>
  <p>오백 년 왕조의 기록이 답합니다.<br>찾지 않고, 묻습니다.</p>
@@ -1073,6 +1101,31 @@ df.groupby(<span>'도'</span>)[<span>'구호'</span>].agg([<span>'mean'</span>,<
 </div>
 
   <div class="pfoot">26</div>
+</section>
+
+<section class="slide s27" data-title="링크 — 발표자료 · 연구 홈페이지">
+  <div class="masthead"><span class="eyebrow">링크</span><span class="num">27 / 27</span></div>
+
+<div class="hl small"><div class="q">Links</div><h1>발표자료와 연구 자료는 <span class="mark">여기에서</span></h1></div>
+
+<div class="s27-grid">
+ <div class="lk">
+  <div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAJ2AQMAAADoml26AAAABlBMVEUaGhj///+4aU5zAAADI0lEQVR42u3dTY7iMBAGUGs4QI7E1XMkDhAp3dAkrrJNCK3ejPSyQcyEt2npk13ln7L+6bMUHo/H4/F4PB6Px+PxeDze0Cvhud6/TevcfPt++f7t+7ltH/W5PL1/5W8fHo/3/3p7vly2yLn9JEoOlsdH+r8aM/Hn8oXH443y5fYzDgmp8RixlG3g8kib9s0tieQLj8c7nS8xQ+7hUYcxy5Yo8oXH4/0iX5bHUOWZKPnNXIaRLzwe77P6Sx2jPGu/j5i51ErwPn5Rf+HxeG/zpaT+0T4xOv4o+kc8Hu9tvnR969JkyF6UqbWZ0e/8PXg8XumrKtM2P4pPqL/kim79wVrnTvKFx+MNxy+xVZRSo/aPnt3qKbyyj23kC4/HO5gfzWGpS+wR9Wvv2t618QuPxzuq705hqNKWWsJH84/hd/KFx+O9zJc8B1qbVlFXcbk1ZRj5wuPxDtbXxTW6oevcZU+7KUm+8Hi8t/OjsJxl3vpHMYJqxaWkJb7mRzwe73B93TXVX2J9ty/zxv5R6HL7e/B4vBf5sm0uWuJoZnA+QynDbQLyhcfjHe0/Wusyu9q0ztscb01tRn2Xx+O9X/9Se9CDExlKHcaU4nwpHo/34frdtJylpM2L7VK60fBHvvB4vIP9jaF4m8sw3dkwJS26ky88Hu9M/aU78SVvcwy9a/0jHo939vy6nCGXOGmKU6i5r9vIFx6Pdzh+6UYl7Y7GPXsGu6nlC4/HO3F+XdrtWGdL+WCpdlOSfOHxeC/HL3PJU6F8WkN+pbt0Tb7weLyD+kt7qm7tH8WmdTqmwf4jHo93cvySyynNwVKXtARv0T/i8XifjF/i5UZ1Ge/a3I1Uuk6TfOHxeCfvD4hHeecdR/Oo4aS+y+PxPr3/qA5VpnQb9dREkPsbeTze+fsb0xm7uYab29R5pa984fF4J+6fHp42FRbWDRbdyRcej3ciX9au2ntNjelBCVi+8Hi8z/JlSpseS7O3eg7VGPnC4/HO1F/y/qPuGqQXZ8PIFx6P975/FGMmV2MGq+3kC4/H+2D9y6+fhcfj8Xg8Ho/H4/F4PB6Pl70vtkUHkMCBN8sAAAAASUVORK5CYII=" alt="발표자료 QR 코드"></div>
+  <div class="k">발표자료</div>
+  <h3>AI가 읽어낸<br>조선왕조실록의 패턴들</h3>
+  <p>오늘 본 슬라이드를 그대로 다시 볼 수 있습니다</p>
+  <div class="url">littlekg87.github.io/lecture/<br>2026_SeoulUnivWorkshop</div>
+ </div>
+ <div class="lk">
+  <div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAc4AAAHOAQMAAAArKHvzAAAABlBMVEUaGhj///+4aU5zAAABqElEQVR42u3cUY6DIBRG4ZtxAV2SW2dJLqCJU1vUK9K006dp8vFQE+G8mJxc+IHG/Gm7BhQKhUKhUCgUCoX+ZzRSG5f3y+P2c1n6hnlK3UNFf+LjBoV+O7qZM6wyTYsyw/1xE2gzZ5ybkcyBMmevKw9JmjHp5cgcKPSpOffZ2q3vug5hDhT6rjl76VFzoNC31jl7gBBp1WOdA4WezImcra1VJj1ka1Box5znrcRejw6Bti8MZc4hE6hxdImTOVMGfGEoc7atm7grkx9z4xFzoNDTbG1d5zzMqTo1yjAHCs0JQaoydX62j6p9kXM3XxjKnIcrJepapqZpa7FJ4bRsDQrtJwQ5GojmEI79HCi0mxBUgZp1zqHmmK1Boc3pmzEJdGly6KLmQKFPsrWS9nPy/Kw3aWMOlDmnttlxSNq2szjMgTKnfyd0blyZZGtQ6Bt3QqOTQ+/BNXOgzOnfzzkcUYvDhihzoNBXt6lrDt3ec2MOlDl9c4Y9hy5xXOeoOVDoi3XOKXCbnFuDQl9layVyOF3CbA0K/cOdUH/oCIVCoVAoFAqFQr8L/QWsGq68+U83MAAAAABJRU5ErkJggg==" alt="김근하 연구 홈페이지 QR 코드"></div>
+  <div class="k">연구 홈페이지</div>
+  <h3>김근하<br>KUNHA KIM</h3>
+  <p>연구성과 · 학술발표 · 강의 자료</p>
+  <div class="url">kunslab.com</div>
+ </div>
+</div>
+
+  <div class="pfoot">27</div>
 </section>
 
 <div class="nav"><button id="prev">‹</button><button id="next">›</button></div>
