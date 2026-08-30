@@ -23,7 +23,7 @@
 | 차시 | 실습 | 여기로 |
 |---|---|---|
 | **2-4** | 텍스트마이닝 실습 | [① 구(口) 추출](notebooks/01_gu_extract.ipynb) · [② 숫자 변환](notebooks/02_gu_convert.ipynb) |
-| | 단어 분석 실습 | [③ 단어 빈도](notebooks/03_word_frequency.ipynb) · [④ 워드클라우드](notebooks/04_wordcloud.ipynb) |
+| **4-4** | 텍스트분석 실습 | [③ 단어 빈도](notebooks/03_word_frequency.ipynb) · [④ 워드클라우드](notebooks/04_wordcloud.ipynb) |
 | **3-2** | 통계 분석 실습 | [데이터·분석 안내](data/statistics/) (jamovi) |
 | **3-4** | HGIS 실습 | [QGIS 가이드](guides/qgis.md) |
 | **4-2** | 네트워크 분석 실습 | [Gephi 가이드](guides/gephi.md) |
@@ -51,8 +51,8 @@
 |---|---|---|
 | **2-4** | ① 구(口) 데이터 추출하기 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/01_gu_extract.ipynb) |
 | **2-4** | ② 한문 숫자 → 아라비아 숫자 변환 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/02_gu_convert.ipynb) |
-| | ③ 단어 빈도 분석 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/03_word_frequency.ipynb) |
-| | ④ 워드클라우드 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/04_wordcloud.ipynb) |
+| **4-4** | ③ 단어 빈도 분석 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/03_word_frequency.ipynb) |
+| **4-4** | ④ 워드클라우드 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/04_wordcloud.ipynb) |
 
 > 노트북의 **단계 번호는 강의 교안과 똑같이** 맞추어 두었습니다.
 > 영상에서 "2-1단계" 라고 하면 노트북에서도 "2-1단계" 를 찾으면 됩니다.
