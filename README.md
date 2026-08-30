@@ -1,2 +1,37 @@
-# AIFA
-Project:AI Faculty, build an AI Model for Administer, Tutor, Professor
+# lecture
+
+강의 실습 자료 저장소입니다. 강의별로 폴더를 나누어 데이터·코드·가이드를 모아 둡니다.
+
+> 학생 결과물(학술포스터 등)은 별도 저장소에 있습니다 → [Lecture_Archive](https://github.com/littlekg87/Lecture_Archive)
+
+---
+
+## 강의 목록
+
+| 강의 | 내용 | 폴더 |
+|---|---|---|
+| **K-MOOC 디지털 인문학** | 『세종실록』 지리지로 배우는 텍스트 마이닝 · 단어 분석 · 통계 · GIS · 네트워크 분석 | **[`2025_kmooc/`](2025_kmooc/)** |
+
+---
+
+## 자료 내려받기
+
+깃허브 사용법을 몰라도 됩니다.
+
+1. 이 페이지 위쪽의 초록색 **`< > Code`** 버튼을 누릅니다.
+2. 맨 아래 **`Download ZIP`** 을 누릅니다.
+3. 압축을 풀고, 수강 중인 강의 폴더로 들어갑니다.
+
+각 강의 폴더 안의 `README.md` 에 자세한 실습 안내가 들어 있습니다.
+
+---
+
+## 데이터 출처
+
+이 저장소의 역사 자료는 국사편찬위원회가 공개한 데이터베이스에 기반합니다.
+연구·교육 목적으로 이용하실 때에는 원 출처를 함께 밝혀 주시기 바랍니다.
+
+- 조선왕조실록 DB — 국사편찬위원회
+- 역사지리정보DB (2024년판) — 국사편찬위원회
+
+관련 연구 데이터셋 → [Sejong_Sillok_Jiriji](https://github.com/littlekg87/Sejong_Sillok_Jiriji)
