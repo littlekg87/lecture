@@ -81,6 +81,20 @@
     └── network/         비변사 관원 네트워크
 ```
 
+### ⚠️ 강의 영상에 나오는 파일 이름과 다릅니다
+
+파일 이름을 **영문으로 바꾸었습니다.** 한글·띄어쓰기가 들어간 이름이
+맥과 일부 프로그램에서 오류를 일으키기 때문입니다.
+**영상에서 부르는 이름**과 **실제 파일**을 아래 표로 대조하세요. **내용은 똑같습니다.**
+
+| 영상·교안에서 부르는 이름 | 실제 파일 |
+|---|---|
+| `Practice_1.txt` | `data/text-mining/practice_1.txt` |
+| `실습예제_김상헌상소문.txt` | `data/word-analysis/kim-sangheon-sangso.txt` |
+| `실습예제데이터_인구군사.xlsx` | `data/statistics/population-military.xlsx` |
+| `실습예제_GIS데이터.CSV` | `data/gis/provinces-data.csv` |
+| `실습예제_비변사 네트워크.csv` | `data/network/bibyeonsa-network.csv` |
+
 ---
 
 ## 🖥️ 맥 사용자를 위한 안내
