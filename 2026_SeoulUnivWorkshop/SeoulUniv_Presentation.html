@@ -138,8 +138,11 @@
 .s26-n{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.3em;color:var(--lime-txt);margin-bottom:10px}
 .s26-card h3{font-family:var(--serif);font-size:26px;font-weight:900;color:var(--ink);margin-bottom:10px}
 .s26-card p{font-family:var(--sans);font-size:13.5px;line-height:1.55;color:var(--ink-70);margin-bottom:13px}
-.s26-card .url{font-family:var(--sans);font-size:16px;font-weight:800;letter-spacing:.02em;
-  background:var(--lime);color:var(--lime-ink);padding:9px 0}
+.s26-card .url{display:block;text-decoration:none;cursor:pointer;
+  font-family:var(--sans);font-size:16px;font-weight:800;letter-spacing:.02em;
+  background:var(--lime);color:var(--lime-ink);padding:9px 0;
+  transition:background .22s ease,color .22s ease,box-shadow .22s ease}
+.s26-card .url:hover{background:var(--lime-dim);color:#fff;box-shadow:0 6px 16px rgba(var(--shadow),.22)}
 
 /* ===== 섹션 간지 ===== */
 .s-sec{background:var(--paper)}
@@ -1101,7 +1104,7 @@ df.groupby(<span>'도'</span>)[<span>'구호'</span>].agg([<span>'mean'</span>,<
  <div class="s26-n">ASK SILLOK</div>
  <h3>실록에게 묻다</h3>
  <p>오백 년 왕조의 기록이 답합니다.<br>찾지 않고, 묻습니다.</p>
- <div class="url">beta.asksillok.com</div>
+ <a class="url" href="https://beta.asksillok.com/" target="_blank" rel="noopener">beta.asksillok.com</a>
 </div>
 
   <div class="pfoot">26</div>
