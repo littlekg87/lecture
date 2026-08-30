@@ -16,6 +16,7 @@
 > | 코드에 긴 파일 경로를 직접 입력 | **경로 입력 불필요** — 파일을 자동으로 내려받음 |
 > | `실습예제_○○○.csv` 같은 한글 파일명 | **영문 파일명** ([대조표](#강의-영상에-나오는-파일-이름과-다릅니다)) |
 > | Gephi 0.10.1 / QGIS 3.38 화면 | **최신 버전** ([Gephi](guides/gephi.md) · [QGIS](guides/qgis.md) 가이드) |
+> | QGIS에서 인코딩을 `Korean` 으로 지정 | **`UTF-8` 로 지정** — 안 그러면 한글이 깨집니다 |
 
 ## 차시별 바로가기
 
@@ -24,7 +25,7 @@
 | **2-4** | 텍스트마이닝 실습 | [① 구(口) 추출](notebooks/01_gu_extract.ipynb) · [② 숫자 변환](notebooks/02_gu_convert.ipynb) |
 | | 단어 분석 실습 | [③ 단어 빈도](notebooks/03_word_frequency.ipynb) · [④ 워드클라우드](notebooks/04_wordcloud.ipynb) |
 | **3-2** | 통계 분석 실습 | [데이터·분석 안내](data/statistics/) (jamovi) |
-| | GIS 실습 | [QGIS 가이드](guides/qgis.md) |
+| **3-4** | HGIS 실습 | [QGIS 가이드](guides/qgis.md) |
 | **4-2** | 네트워크 분석 실습 | [Gephi 가이드](guides/gephi.md) |
 
 ## 실습 구성
@@ -66,7 +67,7 @@
 | 차시 | 실습 | 프로그램 | 가이드 |
 |---|---|---|---|
 | **3-2** | 통계 분석 | jamovi | [데이터 설명](data/statistics/) · 사용법은 강의 영상 |
-| | GIS | QGIS | **[QGIS 설치·사용 가이드](guides/qgis.md)** |
+| **3-4** | HGIS | QGIS | **[QGIS 설치·사용 가이드](guides/qgis.md)** |
 | **4-2** | 네트워크 분석 | Gephi | **[Gephi 설치·사용 가이드](guides/gephi.md)** |
 
 > ⚠️ **두 가이드를 꼭 먼저 읽어 주세요.**
