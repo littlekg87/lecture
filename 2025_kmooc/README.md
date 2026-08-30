@@ -19,12 +19,15 @@
 아래 버튼을 누르면 구글 코랩(Colab)이 열립니다.
 **구글 계정으로 로그인한 뒤, 왼쪽의 ▶ 버튼을 위에서부터 차례로 누르기만 하면 됩니다.**
 
-| 실습 | 열기 |
-|---|---|
-| ① 구(口) 데이터 추출하기 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/01_gu_extract.ipynb) |
-| ② 한문 숫자 → 아라비아 숫자 변환 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/02_gu_convert.ipynb) |
-| ③ 단어 빈도 분석 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/03_word_frequency.ipynb) |
-| ④ 워드클라우드 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/04_wordcloud.ipynb) |
+| 차시 | 실습 | 열기 |
+|---|---|---|
+| **2-4** | ① 구(口) 데이터 추출하기 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/01_gu_extract.ipynb) |
+| **2-4** | ② 한문 숫자 → 아라비아 숫자 변환 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/02_gu_convert.ipynb) |
+| | ③ 단어 빈도 분석 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/03_word_frequency.ipynb) |
+| | ④ 워드클라우드 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/04_wordcloud.ipynb) |
+
+> 노트북의 **단계 번호는 강의 교안과 똑같이** 맞추어 두었습니다.
+> 영상에서 "2-1단계" 라고 하면 노트북에서도 "2-1단계" 를 찾으면 됩니다.
 
 > 💡 **코랩(Colab)이 뭔가요?**
 > 구글이 무료로 제공하는 **웹브라우저 안의 파이썬**입니다.
@@ -33,11 +36,11 @@
 
 ### 프로그램 실습(③④⑤) — 설치 가이드를 먼저 읽으세요
 
-| 실습 | 프로그램 | 가이드 |
-|---|---|---|
-| GIS | QGIS | **[QGIS 설치·사용 가이드](guides/qgis.md)** |
-| 네트워크 분석 | Gephi | **[Gephi 설치·사용 가이드](guides/gephi.md)** |
-| 통계 분석 | jamovi | 강의 영상 참고 |
+| 차시 | 실습 | 프로그램 | 가이드 |
+|---|---|---|---|
+| | 통계 분석 | jamovi | 강의 영상 참고 |
+| | GIS | QGIS | **[QGIS 설치·사용 가이드](guides/qgis.md)** |
+| **4-2** | 네트워크 분석 | Gephi | **[Gephi 설치·사용 가이드](guides/gephi.md)** |
 
 > ⚠️ **두 가이드를 꼭 먼저 읽어 주세요.**
 > Gephi와 QGIS 모두 강의 촬영 이후 새 버전이 나와 **화면이 달라졌습니다.**
