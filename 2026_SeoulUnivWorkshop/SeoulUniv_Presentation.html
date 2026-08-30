@@ -105,8 +105,12 @@
 .s27-grid h3{font-family:var(--serif);font-size:23px;font-weight:900;line-height:1.3;
   color:var(--ink);margin-bottom:10px}
 .s27-grid p{font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-70);margin-bottom:12px}
-.s27-grid .url{font-family:var(--sans);font-size:13px;font-weight:800;line-height:1.45;
-  background:var(--bg-sunk);color:var(--ink);padding:8px 8px;word-break:break-all}
+.s27-grid .url{display:block;text-decoration:none;cursor:pointer;
+  font-family:var(--sans);font-size:13px;font-weight:800;line-height:1.45;
+  background:var(--bg-sunk);color:var(--ink);padding:8px 8px;word-break:break-all;
+  transition:background .22s ease,color .22s ease,box-shadow .22s ease}
+.s27-grid .url:hover{background:var(--ink);color:var(--paper);box-shadow:0 6px 16px rgba(var(--shadow),.22)}
+.s27-grid .lk:first-child .url:hover{background:var(--lime-dim);color:#fff}
 .s27-grid .lk:first-child .url{background:var(--lime);color:var(--lime-ink)}
 
 /* ===== SLIDE 26 — 에필로그: 찾는다 → 묻는다 + AskSillok ===== */
@@ -1114,14 +1118,14 @@ df.groupby(<span>'도'</span>)[<span>'구호'</span>].agg([<span>'mean'</span>,<
   <div class="k">발표자료 저장소</div>
   <h3>AI가 읽어낸<br>조선왕조실록의 패턴들</h3>
   <p>슬라이드 파일과 안내 문서를 내려받을 수 있습니다</p>
-  <div class="url">github.com/littlekg87/lecture<br>/2026_SeoulUnivWorkshop</div>
+  <a class="url" href="https://github.com/littlekg87/lecture/tree/main/2026_SeoulUnivWorkshop" target="_blank" rel="noopener">github.com/littlekg87/lecture<br>/2026_SeoulUnivWorkshop</a>
  </div>
  <div class="lk">
   <div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAc4AAAHOAQMAAAArKHvzAAAABlBMVEUaGhj///+4aU5zAAABqElEQVR42u3cUY6DIBRG4ZtxAV2SW2dJLqCJU1vUK9K006dp8vFQE+G8mJxc+IHG/Gm7BhQKhUKhUCgUCoX+ZzRSG5f3y+P2c1n6hnlK3UNFf+LjBoV+O7qZM6wyTYsyw/1xE2gzZ5ybkcyBMmevKw9JmjHp5cgcKPSpOffZ2q3vug5hDhT6rjl76VFzoNC31jl7gBBp1WOdA4WezImcra1VJj1ka1Box5znrcRejw6Bti8MZc4hE6hxdImTOVMGfGEoc7atm7grkx9z4xFzoNDTbG1d5zzMqTo1yjAHCs0JQaoydX62j6p9kXM3XxjKnIcrJepapqZpa7FJ4bRsDQrtJwQ5GojmEI79HCi0mxBUgZp1zqHmmK1Boc3pmzEJdGly6KLmQKFPsrWS9nPy/Kw3aWMOlDmnttlxSNq2szjMgTKnfyd0blyZZGtQ6Bt3QqOTQ+/BNXOgzOnfzzkcUYvDhihzoNBXt6lrDt3ec2MOlDl9c4Y9hy5xXOeoOVDoi3XOKXCbnFuDQl9layVyOF3CbA0K/cOdUH/oCIVCoVAoFAqFQr8L/QWsGq68+U83MAAAAABJRU5ErkJggg==" alt="김근하 연구 홈페이지 QR 코드"></div>
   <div class="k">연구 홈페이지</div>
   <h3>김근하<br>KUNHA KIM</h3>
   <p>연구성과 · 학술발표 · 강의 자료</p>
-  <div class="url">kunslab.com</div>
+  <a class="url" href="https://kunslab.com/" target="_blank" rel="noopener">kunslab.com</a>
  </div>
 </div>
 
