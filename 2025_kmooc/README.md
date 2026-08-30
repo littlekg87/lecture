@@ -23,7 +23,7 @@
 |---|---|---|
 | **2-4** | 텍스트마이닝 실습 | [① 구(口) 추출](notebooks/01_gu_extract.ipynb) · [② 숫자 변환](notebooks/02_gu_convert.ipynb) |
 | | 단어 분석 실습 | [③ 단어 빈도](notebooks/03_word_frequency.ipynb) · [④ 워드클라우드](notebooks/04_wordcloud.ipynb) |
-| | 통계 분석 실습 | [데이터](data/statistics/) (jamovi) |
+| **3-2** | 통계 분석 실습 | [데이터·분석 안내](data/statistics/) (jamovi) |
 | | GIS 실습 | [QGIS 가이드](guides/qgis.md) |
 | **4-2** | 네트워크 분석 실습 | [Gephi 가이드](guides/gephi.md) |
 
@@ -65,7 +65,7 @@
 
 | 차시 | 실습 | 프로그램 | 가이드 |
 |---|---|---|---|
-| | 통계 분석 | jamovi | 강의 영상 참고 |
+| **3-2** | 통계 분석 | jamovi | [데이터 설명](data/statistics/) · 사용법은 강의 영상 |
 | | GIS | QGIS | **[QGIS 설치·사용 가이드](guides/qgis.md)** |
 | **4-2** | 네트워크 분석 | Gephi | **[Gephi 설치·사용 가이드](guides/gephi.md)** |
 
@@ -106,7 +106,7 @@
 └── data/          실습 데이터
     ├── text-mining/     『세종실록』 지리지 충청도 조 원문
     ├── word-analysis/   김상헌 상소문
-    ├── statistics/      팔도 334개 군현 호구·군사 통계
+    ├── statistics/      팔도 333개 군현 호구·군사 통계
     ├── gis/             조선 팔도 지도(셰이프파일) + 팔도별 통계
     └── network/         비변사 관원 네트워크
 ```
