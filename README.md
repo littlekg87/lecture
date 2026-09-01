@@ -11,7 +11,7 @@
 | 구분 | 제목 | 내용 | 폴더 |
 |---|---|---|---|
 | 강의 | **K-MOOC 디지털 인문학** | 『세종실록』 지리지로 배우는 텍스트마이닝 · 텍스트분석 · 통계분석 · HGIS · 네트워크 분석 | **[`2025_kmooc/`](2025_kmooc/)** |
-| 워크숍 | **서울대학교 AI 워크숍** (2026) | 「AI가 읽어낸 조선왕조실록의 패턴들」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)** | **[`2026_SeoulUnivWorkshop/`](2026_SeoulUnivWorkshop/)** |
+| 워크숍 | **서울대학교 AI 워크숍** (2026.08.31.) | 「AI가 읽어낸 조선왕조실록의 패턴들」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)** | **[`2026_SeoulUnivWorkshop/`](2026_SeoulUnivWorkshop/)** |
 
 ---
 
