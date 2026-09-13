@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light" data-lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>검색하는 사료에서 질문하는 사료로 — 제24회 한연포럼</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +61,9 @@ body{
   background:var(--sunk);color:var(--ink);font-family:var(--serif);
   -webkit-font-smoothing:antialiased;
 }
-.stage{position:relative;width:var(--W);height:var(--H);transform-origin:center center}
+.frame{position:relative;flex:none;overflow:hidden;width:calc(var(--W) * var(--s,1));height:calc(var(--H) * var(--s,1))}
+.stage{position:absolute;left:0;top:0;width:var(--W);height:var(--H);transform-origin:top left;transform:scale(var(--s,1))}
+@supports (height:100dvh){html,body{height:100dvh}}
 .slide{
   position:absolute;inset:0;width:var(--W);height:var(--H);
   display:none;overflow:hidden;background:var(--paper);
@@ -1133,7 +1135,8 @@ body:has(.slide.chapter.ch-jade.active) #pageButton{color:#0E1A18}
 
 @media print{
   body{display:block;overflow:visible;background:#fff}
-  .stage{transform:none!important;width:1280px;height:auto}
+  .frame{width:auto;height:auto;overflow:visible}
+  .stage{position:relative;transform:none!important;width:1280px;height:auto}
   .slide{display:block!important;position:relative;page-break-after:always}
   .slide .rv{opacity:1!important;animation:none!important}
   .ds-result,.facet .fv,.q-log{opacity:1!important;transform:none!important}
@@ -1142,6 +1145,7 @@ body:has(.slide.chapter.ch-jade.active) #pageButton{color:#0E1A18}
 </style>
 </head>
 <body>
+<div class="frame" id="frame">
 <main class="stage" id="stage">
   <div class="progress" id="progress"></div>
   <div class="nav">
@@ -1789,6 +1793,7 @@ body:has(.slide.chapter.ch-jade.active) #pageButton{color:#0E1A18}
     </div>
   </section>
 </main>
+</div>
 
 <button class="page" id="pageButton" type="button" aria-label="Jump to slide" title="Click to choose a slide"><b id="pageNow">1</b> / <span id="pageTotal">18</span></button>
 <div class="keys">← → navigate · click page or G for overview · T theme</div>
@@ -2201,9 +2206,13 @@ body:has(.slide.chapter.ch-jade.active) #pageButton{color:#0E1A18}
   });
 
   function fit() {
-    const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
-    stage.style.transform = `scale(${scale})`;
+    const vw = window.visualViewport?.width || document.documentElement.clientWidth || window.innerWidth;
+    const vh = window.visualViewport?.height || window.innerHeight;
+    const scale = Math.min(vw / 1280, vh / 720);
+    document.documentElement.style.setProperty('--s', scale);
   }
+  window.visualViewport?.addEventListener('resize', fit);
+  window.addEventListener('orientationchange', () => window.setTimeout(fit, 120));
 
   function setEmbeddingState(state) {
     if (!embeddingDemo) return;
