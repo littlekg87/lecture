@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>검색하는 사료에서 질문하는 사료로 — 제24회 한연포럼</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Serif:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2ECDE;
+  --paper-2:#F8F3E8;
+  --sunk:#E7E0CD;
+  --ink:#20201C;
+  --ink-70:#4A463C;
+  --ink-45:#817968;
+  --ink-25:#AAA18B;
+  --line:#C9C0A8;
+  --line-soft:#DED6C2;
+  --jade:#1F9D94;
+  --jade-dark:#12756E;
+  --jade-pale:#D8EBE5;
+  --cinnabar:#B0492E;
+  --gold:#B08D57;
+  --white:#FFFFFF;
+  --serif:"Noto Serif",Georgia,serif;
+  --sans:"Inter",Arial,sans-serif;
+  --mono:"JetBrains Mono",Consolas,monospace;
+  --W:1280px;
+  --H:720px;
+}
+html[data-theme="dark"]{
+  --paper:#1C1C19;
+  --paper-2:#24241F;
+  --sunk:#141412;
+  --ink:#F0EDE2;
+  --ink-70:#C4BFAE;
+  --ink-45:#918B7B;
+  --ink-25:#696559;
+  --line:#44443D;
+  --line-soft:#30302B;
+  --jade:#3FBFB4;
+  --jade-dark:#6CD5CC;
+  --jade-pale:#253B37;
+  --cinnabar:#D97757;
+  --gold:#C9A76A;
+  --white:#24241F;
+}
+html[data-lang="ko"]{
+  --serif:"Noto Serif KR","Noto Serif",Georgia,serif;
+  --sans:"Noto Sans KR","Inter",Arial,sans-serif;
+  --mono:"Noto Sans KR","JetBrains Mono",Consolas,sans-serif;
+}
+html[data-lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
+html[data-lang="ko"] .xml,html[data-lang="ko"] pre,html[data-lang="ko"] code{word-break:normal}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden}
+body{
+  display:flex;align-items:center;justify-content:center;
+  background:var(--sunk);color:var(--ink);font-family:var(--serif);
+  -webkit-font-smoothing:antialiased;
+}
+.stage{position:relative;width:var(--W);height:var(--H);transform-origin:center center}
+.slide{
+  position:absolute;inset:0;width:var(--W);height:var(--H);
+  display:none;overflow:hidden;background:var(--paper);
+}
+.slide.active{display:block}
+.topline{position:absolute;left:0;right:0;top:0;height:4px;background:var(--jade)}
+.masthead{
+  position:absolute;left:80px;right:80px;top:48px;
+  display:flex;align-items:flex-end;justify-content:space-between;
+  padding-bottom:14px;border-bottom:1px solid var(--ink);
+}
+.eyebrow{
+  font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--ink);
+}
+.section-index{color:var(--jade-dark);margin-right:8px}
+.num{font-family:var(--mono);font-size:12px;color:var(--ink-45);letter-spacing:.08em}
+.headline{position:absolute;left:80px;right:80px;top:116px}
+.kicker{
+  font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-45);margin-bottom:14px;
+}
+.headline h1{
+  max-width:1060px;font-size:43px;line-height:1.16;letter-spacing:-.025em;
+  font-weight:900;color:var(--ink);
+}
+.headline h1.big{font-size:51px;line-height:1.1}
+.headline h1 .jade{color:var(--jade-dark)}
+.headline h1 .red{color:var(--cinnabar)}
+.headline h1 .muted{color:var(--ink-45)}
+.footline{
+  position:absolute;left:80px;right:80px;bottom:58px;
+  padding-top:14px;border-top:1px solid var(--line);
+  font-family:var(--sans);font-size:15px;line-height:1.55;color:var(--ink-70);
+}
+.footline b{color:var(--ink);font-weight:600}
+.claim{
+  position:absolute;left:80px;right:80px;bottom:58px;
+  background:var(--jade);color:#101614;padding:18px 26px;
+  font-size:20px;line-height:1.4;
+}
+.claim b{font-weight:800}
+.mono{font-family:var(--mono)}
+.sans{font-family:var(--sans)}
+.jade{color:var(--jade-dark)}
+.red{color:var(--cinnabar)}
+
+/* title and closing */
+.title-grid,.closing-grid{
+  position:absolute;inset:0;display:grid;grid-template-columns:1fr 330px;
+  gap:70px;align-items:center;padding:62px 84px 58px 90px;
+}
+.title-grid::before,.closing-grid::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:18px;background:var(--jade);
+}
+.title-seal{
+  width:62px;height:62px;border:2px solid var(--cinnabar);border-radius:8px;
+  display:grid;place-items:center;font-family:var(--sans);font-size:11px;
+  font-weight:700;letter-spacing:.1em;color:var(--cinnabar);margin-bottom:24px;
+}
+.title-kicker{
+  font-family:var(--mono);font-size:12px;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--cinnabar);margin-bottom:20px;
+}
+.title-copy h1{font-size:55px;line-height:1.08;letter-spacing:-.03em;font-weight:900}
+html[data-lang="en"] .title-copy h1{font-size:50px}
+.title-sub{font-family:var(--sans);font-size:20px;line-height:1.55;color:var(--ink-70);margin-top:22px}
+.title-rule{width:72px;height:4px;background:var(--jade);margin:28px 0 24px}
+.title-by{font-family:var(--sans);font-size:15px;line-height:1.65;color:var(--ink-70)}
+.title-by b{color:var(--ink);font-weight:600}
+.status{
+  font-family:var(--mono);font-size:11px;line-height:1.55;letter-spacing:.02em;
+  color:var(--ink-45);margin-top:19px;max-width:650px;
+}
+.qr-block{
+  background:#fff;border:1px solid #D8D0BF;border-radius:16px;
+  padding:24px 24px 20px;text-align:center;
+  box-shadow:0 14px 42px rgba(80,67,44,.13);
+}
+.qr-block img,.qr-block svg{width:250px;height:250px;display:block;margin:0 auto}
+.qr-url{
+  display:block;margin-top:14px;font-family:var(--mono);font-size:15px;
+  color:#20201C;text-decoration:none;font-weight:700;
+}
+.qr-label{font-family:var(--sans);font-size:12px;color:#7E7768;margin-top:5px}
+
+/* problem */
+.compare{
+  position:absolute;left:80px;right:80px;top:310px;
+  display:grid;grid-template-columns:1fr 90px 1fr;align-items:center;
+}
+.compare-side{padding:4px 20px 4px 0}
+.compare-side:last-child{padding:4px 0 4px 20px}
+.compare-label{
+  font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-45);margin-bottom:14px;
+}
+.compare-side h2{font-size:35px;line-height:1.15;margin-bottom:12px}
+.compare-side p{font-family:var(--sans);font-size:17px;line-height:1.58;color:var(--ink-70)}
+.compare-arrow{font-family:var(--sans);font-size:38px;text-align:center;color:var(--cinnabar)}
+.under-rule{width:44px;height:4px;background:var(--jade);margin-top:18px}
+
+/* failure chain */
+.chain{
+  position:absolute;left:80px;right:80px;top:320px;
+  display:flex;align-items:stretch;gap:0;
+}
+.chain-step{
+  flex:1;min-width:0;padding:22px 8px 18px;text-align:center;
+  border-top:2px solid var(--line);border-bottom:2px solid var(--line);
+  background:var(--paper-2);
+}
+.chain-step:first-child{border-left:2px solid var(--line)}
+.chain-step:last-child{border-right:2px solid var(--line)}
+.chain-step.hot{background:var(--jade-pale);border-color:var(--jade)}
+.chain-step .cs{font-family:var(--mono);font-size:11px;color:var(--ink-45);text-transform:uppercase}
+.chain-step .ct{font-family:var(--sans);font-size:17px;font-weight:600;color:var(--ink);margin-top:9px}
+.chain-arrow{width:32px;display:grid;place-items:center;font-family:var(--sans);font-size:19px;color:var(--cinnabar)}
+
+/* three layers */
+.layers{
+  position:absolute;left:80px;right:80px;top:300px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:30px;
+}
+.layer{padding-top:22px;border-top:5px solid var(--jade)}
+.layer:nth-child(2){border-color:var(--gold)}
+.layer:nth-child(3){border-color:var(--cinnabar)}
+.layer-n{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--ink-45)}
+.layer h2{font-size:27px;line-height:1.2;margin:12px 0 12px}
+.layer p{font-family:var(--sans);font-size:16px;line-height:1.58;color:var(--ink-70)}
+.layer .when{
+  display:inline-block;margin-top:17px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--jade-dark);
+}
+.layer:nth-child(2) .when{color:var(--gold)}
+.layer:nth-child(3) .when{color:var(--cinnabar)}
+
+/* actual XML structure */
+.xml-structure{
+  position:absolute;left:80px;right:80px;top:272px;
+  display:grid;grid-template-columns:640px 1fr;gap:42px;align-items:start;
+}
+.xml-card{
+  background:#20201C;color:#F2ECDE;border-left:5px solid var(--jade);
+  padding:18px 22px 17px;box-shadow:0 12px 28px rgba(32,32,28,.12);
+}
+.xml-card-label{
+  display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#AAA18B;
+}
+.xml-card-label b{color:#6FD3C9;font-weight:500}
+.xml-code{font-family:var(--mono);font-size:12.5px;line-height:1.43;white-space:nowrap}
+.xml-code .i1{padding-left:18px}
+.xml-code .i2{padding-left:36px}
+.xml-code .i3{padding-left:54px}
+.xml-code .tag{color:#6FD3C9}
+.xml-code .attr{color:#D98E6C}
+.xml-code .val{color:#F1D18A}
+.xml-code .body{color:#F2ECDE}
+.xml-code .muted{color:#817968}
+.xml-notes{padding-top:1px}
+.xml-note{padding:10px 0 11px;border-top:1px solid var(--line)}
+.xml-note:first-child{border-top:4px solid var(--jade);padding-top:11px}
+.xml-note .xn{
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--jade-dark);margin-bottom:4px;
+}
+.xml-note h2{font-size:20px;line-height:1.16;margin-bottom:4px}
+.xml-note p{font-family:var(--sans);font-size:13.5px;line-height:1.38;color:var(--ink-70)}
+.xml-foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.xml-foot .source{flex:0 0 350px;font-family:var(--mono);font-size:9px;line-height:1.45;color:var(--ink-45);text-align:right}
+.xml-foot a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* metadata pair */
+.paired{
+  position:absolute;left:80px;right:80px;top:280px;display:grid;
+  grid-template-columns:1fr 140px 1fr;gap:0;align-items:stretch;
+}
+.face{padding:27px 30px;background:var(--paper-2);border:1px solid var(--line)}
+.face.text{border-left:5px solid var(--jade)}
+.face.meta{border-right:5px solid var(--gold)}
+.face-tag{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45)}
+.face h2{font-size:29px;margin:12px 0}
+.face ul{list-style:none;font-family:var(--sans);font-size:16px;line-height:1.72;color:var(--ink-70)}
+.face li::before{content:"— ";color:var(--jade)}
+.face.meta li::before{color:var(--gold)}
+.pair-key{
+  align-self:center;text-align:center;font-family:var(--mono);font-size:12px;
+  line-height:1.5;color:var(--cinnabar);
+}
+.pair-key::before,.pair-key::after{content:"";display:block;height:1px;background:var(--cinnabar);margin:12px 0}
+
+/* bilingual */
+.bilingual{
+  position:absolute;left:80px;right:80px;top:292px;
+  display:grid;grid-template-columns:1fr 140px 1fr;align-items:center;
+}
+.language{padding:24px 28px;border-top:4px solid var(--cinnabar)}
+.language.classical{border-color:var(--jade)}
+.language .lang{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45)}
+.language h2{font-size:31px;margin:12px 0 9px}
+.language p{font-family:var(--sans);font-size:16px;line-height:1.55;color:var(--ink-70)}
+.bridge{text-align:center}
+.bridge .line{height:2px;background:var(--line);position:relative}
+.bridge .line::after{
+  content:"";position:absolute;right:-1px;top:-5px;border-left:9px solid var(--jade);
+  border-top:6px solid transparent;border-bottom:6px solid transparent;
+}
+.bridge .word{font-family:var(--mono);font-size:11px;line-height:1.5;color:var(--jade-dark);margin-top:12px}
+
+/* bilingual XML evidence */
+.bilingual-xml{
+  position:absolute;left:80px;right:80px;top:268px;
+  display:grid;grid-template-columns:620px 1fr;gap:44px;align-items:start;
+}
+.bix-code{
+  background:#20201C;color:#F2ECDE;border-left:5px solid var(--jade);
+  padding:20px 23px 21px;box-shadow:0 12px 28px rgba(32,32,28,.12);
+}
+.bix-code .cap{
+  display:flex;justify-content:space-between;margin-bottom:13px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#AAA18B;
+}
+.bix-code .cap b{color:#6FD3C9;font-weight:500}
+.bix-lines{font-family:var(--mono);font-size:12.5px;line-height:1.6;white-space:nowrap}
+.bix-lines .i1{padding-left:18px}
+.bix-lines .i2{padding-left:36px}
+.bix-lines .tag{color:#6FD3C9}
+.bix-lines .attr{color:#D98E6C}
+.bix-lines .val{color:#F1D18A}
+.bix-lines .body{color:#F2ECDE}
+.bix-lines .fade{color:#817968}
+.bix-pair{border-top:4px solid var(--jade)}
+.bix-id{
+  padding:12px 0 11px;border-bottom:1px solid var(--line);
+  font-family:var(--mono);font-size:10px;letter-spacing:.09em;color:var(--jade-dark);
+}
+.bix-language{padding:16px 0 15px;border-bottom:1px solid var(--line)}
+.bix-language .lang{
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-45);margin-bottom:6px;
+}
+.bix-language h2{font-size:23px;line-height:1.28}
+.bix-language.classical h2{font-size:25px;line-height:1.35;color:var(--jade-dark)}
+.bix-language p{font-family:var(--sans);font-size:13.5px;line-height:1.45;color:var(--ink-70);margin-top:6px}
+.bix-source{font-family:var(--mono);font-size:9px!important;color:var(--ink-45)!important;text-align:right}
+.bix-source a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* interactive embedding space */
+.embedding-demo{
+  position:absolute;left:80px;right:80px;top:276px;
+  display:grid;grid-template-columns:690px 1fr;gap:44px;align-items:start;
+}
+.vector-stage{
+  position:relative;height:302px;overflow:hidden;border:1px solid var(--line);
+  background-color:var(--paper-2);
+  background-image:
+    linear-gradient(var(--line-soft) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+.vector-stage::before{
+  content:"";position:absolute;left:34px;right:24px;bottom:30px;height:1px;background:var(--line);
+}
+.vector-stage::after{
+  content:"";position:absolute;left:34px;top:22px;bottom:30px;width:1px;background:var(--line);
+}
+.vector-state{
+  position:absolute;left:48px;top:20px;z-index:5;
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cinnabar);
+}
+.vector-axis{
+  position:absolute;z-index:4;font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--ink-25);
+}
+.vector-axis.x{right:24px;bottom:10px}.vector-axis.y{left:9px;top:34px;writing-mode:vertical-rl;transform:rotate(180deg)}
+.vector-point{
+  position:absolute;z-index:6;width:18px;height:18px;border-radius:50%;
+  box-shadow:0 0 0 5px color-mix(in srgb,currentColor 15%,transparent);
+  transition:left .85s cubic-bezier(.2,.75,.2,1),top .85s cubic-bezier(.2,.75,.2,1),background .4s,color .4s;
+}
+.vector-point span{
+  position:absolute;left:24px;top:-3px;white-space:nowrap;
+  font-family:var(--sans);font-size:12px;font-weight:600;color:var(--ink-70);
+}
+.vector-point.query{left:120px;top:72px;background:var(--cinnabar);color:var(--cinnabar)}
+.vector-point.title-vector{left:190px;top:112px;background:var(--gold);color:var(--gold)}
+.vector-point.body-vector{left:500px;top:205px;background:var(--ink-45);color:var(--ink-45)}
+.vector-point.body-vector span{left:auto;right:24px;text-align:right}
+.embedding-demo[data-state="ft"] .vector-point.body-vector{left:245px;top:125px;background:var(--jade);color:var(--jade)}
+.embedding-demo[data-state="ft"] .vector-point.body-vector span{left:24px;right:auto;text-align:left;color:var(--jade-dark)}
+.vector-point.distractor{width:12px;height:12px;background:var(--ink-25);color:var(--ink-25);box-shadow:none;z-index:3}
+.vector-point.d1{left:430px;top:62px}.vector-point.d2{left:555px;top:110px}
+.vector-point.d3{left:405px;top:245px}.vector-point.d4{left:585px;top:245px}
+.vector-link{
+  position:absolute;z-index:2;height:0;border-top:2px dashed var(--line);
+  transform-origin:left center;transition:width .85s cubic-bezier(.2,.75,.2,1),transform .85s cubic-bezier(.2,.75,.2,1),border-color .4s;
+}
+.vector-link.title-link{left:129px;top:81px;width:81px;transform:rotate(30deg);border-color:var(--gold)}
+.vector-link.body-link{left:129px;top:81px;width:403px;transform:rotate(19deg)}
+.embedding-demo[data-state="ft"] .vector-link.body-link{width:136px;transform:rotate(23deg);border-color:var(--jade)}
+.distance-note{
+  position:absolute;right:24px;top:20px;z-index:5;text-align:right;
+  font-family:var(--mono);font-size:10px;line-height:1.45;color:var(--ink-45);
+}
+.distance-note b{display:block;font-family:var(--sans);font-size:17px;color:var(--ink)}
+.embedding-demo[data-state="ft"] .distance-note b{color:var(--jade-dark)}
+.embedding-panel{padding-top:1px}
+.embedding-controls{display:flex;gap:7px;margin-bottom:18px}
+.embedding-controls button{
+  border:1px solid var(--line);background:transparent;color:var(--ink-70);
+  padding:8px 12px;border-radius:3px;cursor:pointer;font-family:var(--mono);
+  font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+}
+.embedding-controls button:hover{border-color:var(--jade);color:var(--jade-dark)}
+.embedding-controls button[aria-pressed="true"]{background:var(--jade);border-color:var(--jade);color:#101614}
+.embedding-reading{padding:14px 0;border-top:1px solid var(--line);opacity:.45;transition:opacity .35s}
+.embedding-reading .mini{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45)}
+.embedding-reading h2{font-size:22px;line-height:1.18;margin:7px 0 5px}
+.embedding-reading p{font-family:var(--sans);font-size:13.5px;line-height:1.45;color:var(--ink-70)}
+.embedding-demo[data-state="base"] .embedding-reading.base,
+.embedding-demo[data-state="ft"] .embedding-reading.ft{opacity:1}
+.embedding-demo[data-state="base"] .embedding-reading.base{border-top:4px solid var(--cinnabar)}
+.embedding-demo[data-state="ft"] .embedding-reading.ft{border-top:4px solid var(--jade)}
+.embedding-caveat{margin-top:10px;font-family:var(--mono);font-size:9px;line-height:1.4;color:var(--ink-45)}
+
+/* pipeline overview */
+.pipeline{
+  position:absolute;left:80px;right:80px;top:320px;display:flex;align-items:center;
+}
+.pipe-node{flex:1;text-align:center;padding:20px 10px;border-top:4px solid var(--jade)}
+.pipe-node:nth-of-type(2){border-color:var(--gold)}
+.pipe-node:nth-of-type(3){border-color:var(--gold)}
+.pipe-node:nth-of-type(4){border-color:var(--cinnabar)}
+.pipe-node:nth-of-type(5){border-color:var(--jade)}
+.pipe-node .pn{font-family:var(--mono);font-size:11px;color:var(--ink-45);letter-spacing:.08em;text-transform:uppercase}
+.pipe-node .pt{font-family:var(--sans);font-size:17px;font-weight:600;margin-top:10px}
+.pipe-arrow{width:28px;text-align:center;color:var(--ink-25);font-family:var(--sans);font-size:20px}
+
+/* query */
+.query-flow{
+  position:absolute;left:80px;right:80px;top:274px;
+  display:grid;grid-template-columns:1fr 64px 1.15fr 64px 1fr;align-items:center;
+}
+.query-box{padding:24px 26px;border-left:5px solid var(--ink-45);background:var(--paper-2);min-height:205px}
+.query-box.facets{border-color:var(--gold)}
+.query-box.logged{border-color:var(--jade)}
+.query-box .qt{font-family:var(--mono);font-size:11px;color:var(--ink-45);letter-spacing:.12em;text-transform:uppercase}
+.query-box h2{font-size:25px;line-height:1.28;margin:13px 0}
+.query-box p{font-family:var(--sans);font-size:15px;line-height:1.55;color:var(--ink-70)}
+.facet-list{display:grid;grid-template-columns:1fr;gap:8px;margin-top:12px}
+.facet{font-family:var(--mono);font-size:12px;color:var(--gold);padding-bottom:5px;border-bottom:1px solid var(--line)}
+.q-arrow{text-align:center;color:var(--jade);font-family:var(--sans);font-size:28px}
+
+/* dual retrieval */
+.dual-flow{
+  position:absolute;left:80px;right:80px;top:276px;height:300px;
+}
+.dual-wires{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:0}
+.dual-wire{
+  fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:1;stroke-dashoffset:0;
+}
+.dual-wire.semantic{stroke:var(--jade)}
+.dual-wire.structured{stroke:var(--gold)}
+.dual-wire.ranked{stroke:var(--cinnabar)}
+.dual-junction{fill:var(--paper);stroke:var(--cinnabar);stroke-width:3}
+.dual-node{
+  position:absolute;z-index:2;background:var(--paper-2);
+  box-shadow:0 0 0 1px var(--line-soft);
+}
+.dual-query{
+  left:0;top:103px;width:190px;min-height:100px;
+  border-left:5px solid var(--cinnabar);padding:20px 20px 18px;
+}
+.dual-query .dq,.dual-node .dn-label{
+  font-family:var(--mono);font-size:9px;color:var(--ink-45);
+  text-transform:uppercase;letter-spacing:.12em;
+}
+.dual-query .dq{color:var(--cinnabar)}
+.dual-query h2{font-size:22px;line-height:1.2;margin-top:9px}
+.route-card{
+  left:285px;width:310px;min-height:112px;padding:17px 21px;
+  border-top:4px solid var(--jade);
+}
+.route-card.semantic{top:10px}
+.route-card.structured{top:178px;border-color:var(--gold)}
+.route-card h3{font-size:21px;margin:7px 0 5px}
+.route-card p{font-family:var(--sans);font-size:13px;line-height:1.4;color:var(--ink-70)}
+.merge-card{
+  left:700px;top:95px;width:150px;height:130px;padding:20px 14px;text-align:center;
+  border:2px solid var(--cinnabar);border-radius:50%;display:grid;place-content:center;
+  background:var(--paper);
+}
+.merge-card h3{font-size:19px;line-height:1.2;margin:7px 0 5px}
+.merge-card p{font-family:var(--mono);font-size:8.5px;color:var(--ink-45);text-transform:uppercase}
+.rank-card{
+  left:925px;top:70px;width:195px;min-height:180px;padding:17px 18px;
+  border-top:4px solid var(--cinnabar);
+}
+.rank-card h3{font-size:22px;margin:7px 0 11px}
+.rank-list{display:grid;gap:7px}
+.rank-row{
+  display:grid;grid-template-columns:20px 1fr 36px;align-items:center;gap:7px;
+  font-family:var(--mono);font-size:9px;padding:6px 0;border-top:1px solid var(--line);
+}
+.rank-row b{font-size:12px;color:var(--cinnabar)}
+.rank-row span:last-child{text-align:right;color:var(--jade-dark)}
+.parallel-label,.merge-label{
+  position:absolute;z-index:3;font-family:var(--mono);font-size:8.5px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45);
+}
+.parallel-label{left:285px;top:-13px}
+.merge-label{left:701px;top:72px;color:var(--cinnabar)}
+.dual-replay{
+  position:absolute;right:0;top:-26px;z-index:4;border:0;border-bottom:1px solid var(--line);
+  background:transparent;color:var(--ink-45);cursor:pointer;padding:2px 0;
+  font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.08em;
+}
+.dual-replay:hover{color:var(--jade-dark);border-color:var(--jade)}
+.dual-flow.playing .dual-wire{stroke-dashoffset:1}
+.dual-flow.playing .dual-wire.split{animation:draw-dual .72s ease-out .14s forwards}
+.dual-flow.playing .dual-wire.join{animation:draw-dual .72s ease-out .88s forwards}
+.dual-flow.playing .dual-wire.ranked{animation:draw-dual .5s ease-out 1.62s forwards}
+.dual-flow.playing .dual-query{animation:query-pulse .55s ease-out .08s both}
+.dual-flow.playing .route-card{animation:node-arrive .4s ease-out .72s both}
+.dual-flow.playing .merge-card{animation:merge-pulse .5s ease-out 1.5s both}
+.dual-flow.playing .rank-card{animation:node-arrive .45s ease-out 2.02s both}
+.dual-flow.playing .rank-row:nth-child(1){animation:rank-arrive .28s ease-out 2.22s both}
+.dual-flow.playing .rank-row:nth-child(2){animation:rank-arrive .28s ease-out 2.34s both}
+.dual-flow.playing .rank-row:nth-child(3){animation:rank-arrive .28s ease-out 2.46s both}
+@keyframes draw-dual{to{stroke-dashoffset:0}}
+@keyframes query-pulse{0%{transform:scale(.94);opacity:.35}65%{transform:scale(1.025)}100%{transform:scale(1);opacity:1}}
+@keyframes node-arrive{0%{opacity:.18;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes merge-pulse{0%{opacity:.2;transform:scale(.82)}70%{transform:scale(1.05)}100%{opacity:1;transform:scale(1)}}
+@keyframes rank-arrive{0%{opacity:0;transform:translateX(-8px)}100%{opacity:1;transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){
+  .dual-flow.playing .dual-wire,.dual-flow.playing .dual-node,.dual-flow.playing .rank-row{
+    animation:none!important;stroke-dashoffset:0!important;opacity:1!important;transform:none!important;
+  }
+}
+
+/* interactive historical weighting */
+.score-sim{
+  position:absolute;left:80px;right:80px;top:270px;bottom:62px;
+  display:grid;grid-template-columns:1.52fr .72fr;gap:28px;
+}
+.score-controls{
+  min-width:0;background:var(--paper-2);border-top:4px solid var(--jade);
+  padding:18px 24px 16px;
+}
+.score-example{
+  display:flex;justify-content:space-between;gap:20px;align-items:flex-start;
+  padding-bottom:13px;border-bottom:1px solid var(--line);
+}
+.score-example .se-label{
+  font-family:var(--mono);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--cinnabar);
+}
+.score-example p{font-family:var(--sans);font-size:14px;line-height:1.4;color:var(--ink-70);margin-top:4px}
+.score-formula{
+  flex:0 0 auto;font-family:var(--mono);font-size:12px;font-weight:700;
+  color:var(--jade-dark);padding-top:2px;
+}
+.distance-control{
+  display:grid;grid-template-columns:124px 1fr 48px;gap:14px;
+  align-items:center;margin:14px 0 12px;
+}
+.distance-control label{
+  font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink);
+}
+.distance-control input{width:100%;accent-color:var(--jade);cursor:pointer}
+.distance-control output{
+  font-family:var(--mono);font-size:13px;color:var(--jade-dark);text-align:right;
+}
+.score-chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.score-chip{
+  min-width:0;min-height:54px;padding:9px 11px;border:1px solid var(--line);
+  background:transparent;color:var(--ink);cursor:pointer;text-align:left;
+  display:grid;grid-template-columns:1fr auto;column-gap:9px;align-content:center;
+  font-family:var(--sans);
+}
+.score-chip:hover{border-color:var(--jade)}
+.score-chip[aria-pressed="true"]{background:var(--jade-pale);border-color:var(--jade)}
+.score-chip .sc-name{font-size:13px;font-weight:700}
+.score-chip .sc-value{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--jade-dark)}
+.score-chip .sc-why{
+  grid-column:1 / -1;font-family:var(--mono);font-size:8.5px;
+  line-height:1.35;color:var(--ink-45);margin-top:3px;
+}
+.score-actions{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.score-actions span{font-family:var(--mono);font-size:8.5px;color:var(--ink-45)}
+.score-reset{
+  border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink-45);
+  cursor:pointer;font-family:var(--mono);font-size:9px;text-transform:uppercase;padding:2px 0;
+}
+.score-ledger{
+  background:var(--paper-2);border-left:1px solid var(--line);
+  padding:20px 24px;display:flex;flex-direction:column;
+}
+.score-ledger .sl-title{
+  font-family:var(--mono);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-45);margin-bottom:10px;
+}
+.score-metric{
+  display:flex;align-items:baseline;justify-content:space-between;
+  padding:10px 0;border-bottom:1px solid var(--line);
+}
+.score-metric .sm-label{font-family:var(--sans);font-size:13px;color:var(--ink-70)}
+.score-metric .sm-value{font-family:var(--mono);font-size:22px;font-weight:700}
+.score-metric.final{border-bottom:0;padding-top:16px}
+.score-metric.final .sm-label{font-weight:700;color:var(--ink)}
+.score-metric.final .sm-value{font-size:39px;color:var(--jade-dark)}
+.score-bar{height:7px;background:var(--line-soft);overflow:hidden;margin:4px 0 12px}
+.score-bar i{display:block;width:36%;height:100%;background:var(--jade);transition:width .3s ease}
+.score-reading{
+  margin-top:auto;padding-top:11px;border-top:1px solid var(--line);
+  font-family:var(--sans);font-size:11px;line-height:1.45;color:var(--ink-45);
+}
+.score-reading b{color:var(--ink)}
+
+/* provenance */
+.return-path{
+  position:absolute;left:80px;right:80px;top:310px;display:flex;align-items:stretch;
+}
+.return-node{flex:1;padding:22px 16px;text-align:center;border-top:4px solid var(--jade)}
+.return-node:last-of-type{border-color:var(--cinnabar)}
+.return-node .rk{font-family:var(--mono);font-size:11px;color:var(--ink-45);text-transform:uppercase}
+.return-node .rv{font-family:var(--sans);font-size:18px;font-weight:600;line-height:1.35;margin-top:11px}
+.return-arrow{width:38px;display:grid;place-items:center;color:var(--jade);font-size:22px}
+
+/* evaluation */
+.two-judgments{
+  position:absolute;left:80px;right:80px;top:286px;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;
+}
+.judgment{padding-top:24px;border-top:5px solid var(--jade)}
+.judgment.human{border-color:var(--cinnabar)}
+.judgment .jt{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45)}
+.judgment h2{font-size:30px;margin:12px 0 14px}
+.judgment p{font-family:var(--sans);font-size:17px;line-height:1.62;color:var(--ink-70)}
+.judgment .question{margin-top:18px;font-family:var(--serif);font-size:20px;color:var(--ink)}
+
+/* human in the loop */
+.human-loop{
+  position:absolute;left:80px;right:80px;top:294px;
+  display:grid;grid-template-columns:1fr 58px 1.15fr 58px 1fr;align-items:start;
+}
+.validation-step{padding:22px 4px 0;border-top:5px solid var(--jade)}
+.validation-step.expert{border-color:var(--cinnabar)}
+.validation-step.refine{border-color:var(--gold)}
+.validation-step .vs-label{
+  font-family:var(--mono);font-size:10px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-45);
+}
+.validation-step h2{font-size:25px;line-height:1.25;margin:12px 0 11px}
+.validation-step p{font-family:var(--sans);font-size:15px;line-height:1.55;color:var(--ink-70)}
+.validation-arrow{
+  display:grid;place-items:center;padding-top:44px;
+  font-family:var(--sans);font-size:28px;color:var(--jade);
+}
+
+/* whole architecture */
+.timescales{
+  position:absolute;left:80px;right:80px;top:274px;display:grid;gap:0;
+}
+.timescale{
+  display:grid;grid-template-columns:170px 1fr 170px;align-items:center;
+  min-height:92px;border-top:1px solid var(--line);padding:12px 0;
+}
+.timescale:last-child{border-bottom:1px solid var(--line)}
+.ts-when{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-45)}
+.ts-flow{font-family:var(--sans);font-size:17px;font-weight:600;color:var(--ink)}
+.ts-flow span{color:var(--jade-dark)}
+.ts-owner{text-align:right;font-family:var(--sans);font-size:14px;color:var(--ink-70)}
+
+/* live technology stack */
+.tech-proof{
+  position:absolute;left:80px;right:80px;top:232px;
+  display:flex;align-items:center;gap:14px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-45);
+}
+.tech-proof::before{content:"";width:42px;height:4px;background:var(--cinnabar)}
+.tech-proof b{color:var(--cinnabar)}
+.tech-stack-rail{
+  position:absolute;left:80px;right:80px;top:278px;height:210px;
+  display:grid;grid-template-columns:150px 40px 210px 40px 190px 40px 230px 40px 180px;
+  align-items:center;
+}
+.tech-node{
+  min-height:170px;padding:19px 17px 17px;background:var(--paper-2);
+  border-top:6px solid var(--ink-45);box-shadow:0 0 0 1px var(--line-soft);
+  display:flex;flex-direction:column;justify-content:flex-start;
+}
+.tech-node.aws{border-color:var(--gold)}
+.tech-node.npu{border-color:var(--jade);min-height:194px;padding-top:25px}
+.tech-node.vectors{
+  border-color:var(--gold);min-height:194px;padding-top:25px;
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--gold) 42%,transparent);
+}
+.tech-node .tn-label{
+  font-family:var(--mono);font-size:9px;line-height:1.35;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--ink-45);
+}
+.tech-node.aws .tn-label{color:var(--gold)}
+.tech-node.npu .tn-label{color:var(--jade-dark)}
+.tech-node h3{font-size:23px;line-height:1.16;margin:12px 0 10px}
+.tech-node.npu h3,.tech-node.vectors h3{font-size:27px}
+.tech-node p{
+  margin-top:auto;font-family:var(--sans);font-size:13.5px;line-height:1.42;color:var(--ink-70);
+}
+.tech-node.vectors p b{display:block;color:var(--gold);font-family:var(--mono);font-size:11px;text-transform:uppercase;margin-bottom:4px}
+.tech-arrow{
+  position:relative;height:2px;background:var(--line);color:var(--ink-45);
+}
+.tech-arrow::after{
+  content:"";position:absolute;right:-1px;top:-5px;
+  border-left:8px solid currentColor;border-top:6px solid transparent;border-bottom:6px solid transparent;
+}
+.research-team{
+  position:absolute;left:80px;right:80px;bottom:54px;height:116px;
+  display:grid;grid-template-columns:270px 1fr;align-items:center;
+  background:var(--jade-dark);color:#fff;border-left:8px solid var(--gold);padding:20px 26px;
+}
+.research-team .team-kicker{
+  font-family:var(--mono);font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:rgba(255,255,255,.68);
+}
+.research-team h2{font-size:26px;line-height:1.15;margin-top:7px;color:#fff}
+.research-team .team-copy{
+  border-left:1px solid rgba(255,255,255,.28);padding-left:26px;
+}
+.research-team .team-copy p{font-family:var(--sans);font-size:12px;line-height:1.35;color:rgba(255,255,255,.66)}
+.research-team .team-members{
+  margin-top:7px;font-family:var(--sans);font-size:18px;font-weight:700;line-height:1.3;
+  letter-spacing:-.01em;color:#fff;
+}
+.tech-slide.active .tech-node{animation:tech-rise .42s ease-out both}
+.tech-slide.active .tech-arrow{animation:tech-draw .35s ease-out both;transform-origin:left center}
+.tech-slide.active .tech-stack-rail > :nth-child(1){animation-delay:.08s}
+.tech-slide.active .tech-stack-rail > :nth-child(2){animation-delay:.28s}
+.tech-slide.active .tech-stack-rail > :nth-child(3){animation-delay:.42s}
+.tech-slide.active .tech-stack-rail > :nth-child(4){animation-delay:.62s}
+.tech-slide.active .tech-stack-rail > :nth-child(5){animation-delay:.76s}
+.tech-slide.active .tech-stack-rail > :nth-child(6){animation-delay:.96s}
+.tech-slide.active .tech-stack-rail > :nth-child(7){animation-delay:1.1s}
+.tech-slide.active .tech-stack-rail > :nth-child(8){animation-delay:1.3s}
+.tech-slide.active .tech-stack-rail > :nth-child(9){animation-delay:1.44s}
+.tech-slide.active .research-team{animation:team-reveal .5s ease-out 1.72s both}
+@keyframes tech-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes tech-draw{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+@keyframes team-reveal{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .tech-slide.active .tech-node,.tech-slide.active .tech-arrow,.tech-slide.active .research-team{
+    animation:none!important;opacity:1!important;transform:none!important;
+  }
+}
+
+/* closing */
+.closing-copy h1{font-size:45px;line-height:1.14;letter-spacing:-.025em}
+.closing-points{list-style:none;margin-top:28px}
+.closing-points li{
+  font-family:var(--sans);font-size:18px;line-height:1.45;color:var(--ink-70);
+  margin:13px 0;padding-left:24px;position:relative;
+}
+.closing-points li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:3px;background:var(--jade)}
+.closing-points b{color:var(--ink)}
+.closing-status{
+  font-family:var(--mono);font-size:11px;line-height:1.55;color:var(--ink-45);
+  margin-top:25px;padding-top:16px;border-top:1px solid var(--line);
+}
+
+/* chrome */
+.nav{position:absolute;right:80px;top:17px;z-index:40;display:flex;gap:6px}
+.nav button{
+  height:28px;min-width:28px;border:1px solid var(--line);background:transparent;
+  color:var(--ink-45);border-radius:3px;cursor:pointer;font-family:var(--sans);font-size:11px;
+}
+.nav button:hover{border-color:var(--jade);color:var(--jade-dark)}
+.nav .theme{width:70px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.nav .lang-toggle{width:62px;font-weight:700;letter-spacing:.03em}
+.progress{position:absolute;left:0;top:0;height:4px;background:var(--jade);z-index:60;transition:width .25s}
+.page{
+  position:absolute;left:80px;bottom:18px;z-index:40;
+  border:0;background:transparent;padding:4px 0;cursor:pointer;
+  font-family:var(--mono);font-size:11px;color:var(--ink-25);
+}
+.page b{color:var(--ink-70)}
+.page:hover,.page:focus-visible{color:var(--jade-dark)}
+.page:focus-visible{outline:1px solid var(--jade);outline-offset:4px}
+.masthead .num{cursor:pointer}
+.masthead .num:hover{color:var(--jade-dark)}
+.keys{position:absolute;right:80px;bottom:22px;z-index:40;font-family:var(--mono);font-size:10px;color:var(--ink-25)}
+.jump{
+  position:absolute;inset:0;z-index:100;background:rgba(0,0,0,.62);
+  display:none;align-items:center;justify-content:center;
+}
+.jump.open{display:flex}
+.jump-box{
+  width:640px;max-height:560px;overflow:auto;background:var(--paper);
+  border:1px solid var(--line);padding:22px 26px;box-shadow:0 20px 70px rgba(0,0,0,.35);
+}
+.jump-head{font-family:var(--mono);font-size:11px;color:var(--ink-45);margin-bottom:12px}
+.jump-item{
+  display:grid;grid-template-columns:48px 1fr;gap:16px;padding:10px 0;
+  border-top:1px solid var(--line-soft);cursor:pointer;
+}
+.jump-item:hover,.jump-item.current{color:var(--jade-dark)}
+.jump-item span:first-child{font-family:var(--mono);font-size:11px}
+.jump-item span:last-child{font-family:var(--sans);font-size:14px}
+
+/* ===== motion & interaction layer ===== */
+.slide .rv{opacity:0}
+.slide.run .rv{animation:rv-in .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*70ms)}
+@keyframes rv-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.slide.run .title-grid .qr-block.rv{animation-name:rv-card}
+@keyframes rv-card{from{opacity:0;transform:translateY(22px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.slide.run .topline{transform-origin:left;animation:line-grow .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes line-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* 02 · search vs ask demo */
+.demo-search{margin-top:22px;font-family:var(--sans)}
+.ds-field{
+  display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 14px;
+  border:1px solid var(--line);background:var(--paper-2);border-radius:6px;
+  font-size:15px;color:var(--ink);
+}
+.ds-icon{font-size:17px;color:var(--ink-45);width:18px;text-align:center}
+.demo-search.hit .ds-icon{color:var(--jade-dark);font-weight:700}
+.ds-typed{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:1em}
+.ds-caret{width:2px;height:18px;background:var(--cinnabar);flex:none;animation:caret 1s steps(2) infinite}
+.demo-search.hit .ds-caret{background:var(--jade)}
+.ds-caret.done{opacity:0;animation:none}
+@keyframes caret{50%{opacity:0}}
+.ds-result{
+  margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-70);
+  padding:8px 12px;border-left:3px solid var(--cinnabar);background:color-mix(in srgb,var(--cinnabar) 8%,transparent);
+  opacity:0;transform:translateY(6px);transition:opacity .45s,transform .45s;
+}
+.demo-search.hit .ds-result{border-color:var(--jade);background:var(--jade-pale)}
+.ds-result b{color:var(--ink);font-family:var(--mono);font-weight:600}
+.demo-search.show .ds-result{opacity:1;transform:none}
+
+/* 03 · pipeline chain */
+.chain-step{position:relative;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
+.chain-step:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(40,30,10,.10)}
+.chain-step::after{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--cinnabar);
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.chain-step.focus::after{transform:scaleX(1)}
+.chain-step.focus .ct{color:var(--cinnabar)}
+.slide.run .chain-step{animation:rv-in .5s both,chain-glow 1.1s ease-out both}
+.slide.run .chain-step:nth-child(1){animation-delay:.1s,.5s}
+.slide.run .chain-step:nth-child(3){animation-delay:.17s,.75s}
+.slide.run .chain-step:nth-child(5){animation-delay:.24s,1s}
+.slide.run .chain-step:nth-child(7){animation-delay:.31s,1.25s}
+.slide.run .chain-step:nth-child(9){animation-delay:.38s,1.5s}
+.slide.run .chain-step:nth-child(11){animation-delay:.45s,1.75s}
+@keyframes chain-glow{0%,100%{box-shadow:0 0 0 0 transparent}40%{box-shadow:0 0 0 6px color-mix(in srgb,var(--cinnabar) 22%,transparent)}}
+.chain-notes{position:absolute;left:80px;right:80px;top:436px;min-height:70px}
+.chain-notes .cn{
+  position:absolute;inset:0;font-family:var(--sans);font-size:17px;line-height:1.55;color:var(--ink-70);
+  padding:14px 0 0 18px;border-left:3px solid var(--cinnabar);
+  opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s;pointer-events:none;
+}
+.chain-notes .cn.on{opacity:1;transform:none}
+
+/* 04 · layers */
+.layer{transition:transform .3s}
+.layer:hover{transform:translateY(-4px)}
+.layer h2{transition:color .3s}
+.layer:hover h2{color:var(--jade-dark)}
+.layer:nth-child(2):hover h2{color:var(--gold)}
+.layer:nth-child(3):hover h2{color:var(--cinnabar)}
+
+/* 05 · 08 · XML line focus */
+.xml-code > div,.bix-lines > div{transition:opacity .3s,background .3s;border-radius:3px;padding-right:8px}
+.xml-code.focus > div,.bix-lines.focus > div{opacity:.28}
+.xml-code.focus > div.lit,.bix-lines.focus > div.lit{opacity:1;background:rgba(111,211,201,.16);box-shadow:inset 3px 0 0 #6FD3C9}
+.xml-note,.bix-language{cursor:pointer;transition:background .3s,padding-left .3s}
+.xml-note.on,.bix-language.on{padding-left:12px;background:linear-gradient(90deg,var(--jade-pale),transparent)}
+.xml-note.on .xn,.bix-language.on .lang{color:var(--jade-dark)}
+.slide.run .xml-code > div,.slide.run .bix-lines > div{animation:code-in .35s ease-out both;animation-delay:calc(var(--l,0)*80ms + .5s)}
+@keyframes code-in{from{opacity:0;transform:translateX(-8px)}to{transform:none}}
+
+/* 06 · metadata & text */
+.slide.run .face.text.rv{animation-name:rv-left}
+.slide.run .face.meta.rv{animation-name:rv-right}
+@keyframes rv-left{from{opacity:0;transform:translateX(-36px)}to{opacity:1;transform:none}}
+@keyframes rv-right{from{opacity:0;transform:translateX(36px)}to{opacity:1;transform:none}}
+.slide.run .pair-key{animation:rv-in .6s .6s both,key-pulse 2.2s ease-in-out 1.2s infinite}
+@keyframes key-pulse{0%,100%{color:var(--cinnabar)}50%{color:var(--ink);text-shadow:0 0 14px color-mix(in srgb,var(--cinnabar) 55%,transparent)}}
+.face{transition:transform .3s,box-shadow .3s}
+.face:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(40,30,10,.10)}
+
+/* 07 · bilingual bridge */
+.slide.run .bridge .line{transform-origin:left;animation:line-grow 1s cubic-bezier(.2,.7,.2,1) .7s both}
+.slide.run .bridge .line::after{animation:fade-in .3s 1.55s both}
+.slide.run .bridge .word{animation:fade-in .5s 1.6s both}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+.slide.run .language.classical h2{animation:ink-in .8s 1.6s both}
+@keyframes ink-in{from{color:var(--ink-25)}to{color:var(--ink)}}
+
+/* 10 · four decisions */
+.pipe-node{position:relative;transition:transform .3s}
+.pipe-node::before{
+  content:"";position:absolute;left:0;right:0;top:-4px;height:4px;background:var(--ink);
+  transform:scaleX(0);transform-origin:left;
+}
+.slide.run .pipe-node::before{animation:line-grow .5s ease-out both;animation-delay:calc(var(--i,0)*70ms + .15s)}
+.pipe-node:hover{transform:translateY(-4px)}
+.pipe-node .pt{transition:color .3s}
+.pipe-node:hover .pt{color:var(--jade-dark)}
+.slide.run .pipe-arrow{animation:arrow-on .4s both;animation-delay:calc(var(--i,0)*70ms + .3s)}
+@keyframes arrow-on{from{opacity:0;transform:translateX(-6px);color:var(--ink-25)}to{opacity:1;transform:none;color:var(--jade)}}
+
+/* 11 · query reformulation */
+.q-sample{
+  margin-top:14px;display:flex;align-items:center;gap:6px;font-family:var(--serif);font-size:17px;
+  color:var(--ink);padding:10px 12px;background:var(--paper);border:1px solid var(--line);border-radius:6px;min-height:44px;
+}
+.q-sample span[data-type]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.facet{display:flex;justify-content:space-between;align-items:baseline;gap:8px;transition:border-color .4s}
+.facet .fv{font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--ink);text-align:right;opacity:0;transform:translateX(8px);transition:opacity .4s,transform .4s}
+.query-flow.filled .facet .fv{opacity:1;transform:none}
+.query-flow.filled .facet:nth-child(2) .fv{transition-delay:.18s}
+.query-flow.filled .facet:nth-child(3) .fv{transition-delay:.36s}
+.query-flow.filled .facet:nth-child(4) .fv{transition-delay:.54s}
+.query-flow.filled .facet{border-color:var(--gold)}
+.q-log{
+  margin-top:14px;font-family:var(--mono);font-size:11.5px;line-height:1.5;color:var(--jade-dark);
+  padding:9px 12px;background:var(--paper);border:1px dashed var(--jade);border-radius:6px;
+  opacity:0;transform:translateY(6px);transition:opacity .45s 1s,transform .45s 1s;
+}
+.q-log span{color:var(--ink-45)}
+.query-flow.filled .q-log{opacity:1;transform:none}
+.q-arrow{transition:color .4s}
+.query-flow.filled .q-arrow{color:var(--gold)}
+
+/* 14 · provenance path */
+.return-node{position:relative}
+.return-node::before{content:"";position:absolute;left:0;right:0;top:-4px;height:4px;background:var(--ink);transform:scaleX(0);transform-origin:left}
+.slide.run .return-node::before{animation:line-grow .55s ease-out both;animation-delay:calc(var(--i,0)*70ms + .2s)}
+.slide.run .return-arrow{animation:arrow-on .4s both;animation-delay:calc(var(--i,0)*70ms + .35s)}
+.return-node .rv{transition:color .3s}
+.return-node:hover .rv{color:var(--jade-dark)}
+.return-node:last-of-type:hover .rv{color:var(--cinnabar)}
+
+/* 15 · two judgments */
+.slide.run .judgment.rv{animation-name:rv-left}
+.slide.run .judgment.human.rv{animation-name:rv-right}
+.judgment .question{transition:color .3s}
+.judgment:hover .question{color:var(--jade-dark)}
+.judgment.human:hover .question{color:var(--cinnabar)}
+
+/* 16 · human in the loop cycle */
+.validation-step{position:relative;cursor:pointer;transition:transform .35s}
+.validation-step::before{content:"";position:absolute;left:0;right:0;top:-5px;height:5px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.validation-step.on::before{transform:scaleX(1)}
+.validation-step.on{transform:translateY(-4px)}
+.validation-step h2{transition:color .35s}
+.validation-step.on h2{color:var(--jade-dark)}
+.validation-step.expert.on h2{color:var(--cinnabar)}
+.validation-step.refine.on h2{color:var(--gold)}
+.validation-arrow{transition:color .35s,transform .35s}
+.validation-arrow.on{color:var(--cinnabar);transform:translateX(4px)}
+.loop-back{position:absolute;left:80px;right:80px;top:516px;height:34px;pointer-events:none}
+.loop-back svg{width:100%;height:100%;overflow:visible}
+.loop-back path{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:6 6;opacity:0;transition:opacity .4s}
+.loop-back.on path{opacity:1;animation:dash-move 1.2s linear infinite}
+@keyframes dash-move{to{stroke-dashoffset:-24}}
+
+/* 17 · whole architecture */
+.timescale{position:relative;overflow:hidden}
+.timescale::after{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:100%;pointer-events:none;
+  background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--jade) 16%,transparent),transparent);
+  transform:translateX(-100%);
+}
+.slide.run .timescale::after{animation:sweep 1.1s ease-out both;animation-delay:calc(var(--i,0)*70ms + .5s)}
+@keyframes sweep{to{transform:translateX(100%)}}
+.ts-flow span{position:relative}
+.ts-flow span::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--jade);transform:scaleX(0);transform-origin:left}
+.slide.run .ts-flow span::after{animation:line-grow .5s ease-out both;animation-delay:calc(var(--i,0)*70ms + 1.3s)}
+
+/* 19 · closing */
+.slide.run .closing-points li.rv{animation-name:rv-left}
+
+@media (prefers-reduced-motion: reduce){
+  .slide .rv{opacity:1}
+  .slide.run *{animation:none!important;transition:none!important}
+  .ds-result,.facet .fv,.q-log,.chain-notes .cn:first-child{opacity:1!important;transform:none!important}
+}
+
+/* ===== chapter dividers ===== */
+.chapter{--ch:var(--jade);--ch-dark:var(--jade-dark);--ch-ink:#101614}
+.chapter.ch-gold{--ch:var(--gold);--ch-dark:#8E6E3C;--ch-ink:#1A140A}
+.chapter.ch-red{--ch:var(--cinnabar);--ch-dark:#8C3A24;--ch-ink:#FFF4EE}
+.chapter .topline{background:var(--ch)}
+.chapter-band{
+  position:absolute;left:0;top:0;bottom:0;width:440px;background:var(--ch);color:var(--ch-ink);
+  display:flex;flex-direction:column;justify-content:center;padding:0 0 0 80px;overflow:hidden;
+}
+.chapter-band::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--ch-ink) 18%,transparent);
+}
+.chapter-band::before{
+  content:"";position:absolute;right:-60px;bottom:-160px;width:360px;height:360px;border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--ch-ink) 14%,transparent);
+}
+.chapter-num{font-family:var(--serif);font-size:250px;line-height:.9;font-weight:900;letter-spacing:-.06em;overflow:hidden}
+.chapter-num span{display:inline-block}
+.chapter-of{margin-top:22px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+.chapter-copy{position:absolute;left:520px;right:80px;top:50%;transform:translateY(-52%)}
+.chapter-kicker{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ch-dark)}
+.chapter-copy h1{font-size:60px;line-height:1.05;letter-spacing:-.03em;font-weight:900;margin-top:18px;color:var(--ink)}
+.chapter-sub{font-family:var(--sans);font-size:18px;line-height:1.6;color:var(--ink-70);margin-top:22px;max-width:620px}
+.chapter-list{list-style:none;margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 12px}
+.chapter-list li{
+  font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink);
+  padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:var(--paper-2);
+}
+.chapter-list li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ch);margin-right:8px;vertical-align:1px}
+.chapter-track{
+  position:absolute;left:520px;right:80px;bottom:58px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink-45);
+}
+.chapter-track span{padding-top:12px;border-top:2px solid var(--line);position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chapter-track span i{font-style:normal;font-weight:700;margin-right:8px}
+.chapter-track span.done{color:var(--ink-45)}
+.chapter-track span.done::before,.chapter-track span.on::before{
+  content:"";position:absolute;left:0;top:-2px;height:2px;width:100%;background:var(--ink-45);
+}
+.chapter-track span.on{color:var(--ch-dark)}
+.chapter-track span.on::before{background:var(--ch);transform-origin:left}
+.slide.run .chapter-track span.on::before{animation:line-grow 1.2s cubic-bezier(.2,.7,.2,1) .9s both}
+.slide.run .chapter-band{animation:band-in .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes band-in{from{transform:translateX(-100%)}to{transform:none}}
+.slide.run .chapter-num span{animation:num-rise .8s cubic-bezier(.2,.7,.2,1) .35s both}
+@keyframes num-rise{from{transform:translateY(110%);opacity:0}to{transform:none;opacity:1}}
+.slide.run .chapter-of{animation:fade-in .5s 1s both}
+.slide.run .chapter-list li.rv{animation-name:rv-left}
+html[data-theme="dark"] .chapter.ch-jade{--ch-ink:#0E1A18}
+html[data-theme="dark"] .chapter-list li{background:var(--paper-2)}
+body:has(.slide.chapter.active) #pageButton{color:rgba(255,255,255,.9)}
+body:has(.slide.chapter.ch-jade.active) #pageButton{color:#0E1A18}
+
+/* ===== 12 · four decisions, staged ===== */
+.flow-slide .pipeline{top:284px;height:300px;align-items:stretch;counter-reset:step}
+.flow-slide .pipe-node{
+  position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:22px 22px 26px;text-align:left;background:var(--paper-2);
+  border:1px solid var(--line);border-top:6px solid var(--jade);overflow:hidden;
+  transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s,background .45s;
+}
+.flow-slide .pipe-node:nth-child(3),.flow-slide .pipe-node:nth-child(5){border-top-color:var(--gold)}
+.flow-slide .pipe-node:nth-child(7){border-top-color:var(--cinnabar)}
+.flow-slide .pipe-node:nth-child(9){border-top-color:var(--jade)}
+.flow-slide .pipe-node.in{border-style:dashed;border-top-style:solid;background:transparent}
+.flow-slide .pipe-node.out{background:var(--jade-pale)}
+.flow-slide .pipe-node::before{
+  counter-increment:step;content:counter(step);
+  position:absolute;left:14px;top:2px;font-family:var(--serif);font-size:150px;line-height:1;font-weight:900;
+  letter-spacing:-.06em;color:var(--ink);opacity:.06;transition:opacity .45s,color .45s;pointer-events:none;
+  right:auto;height:auto;background:none;transform:none;
+}
+.flow-slide .pipe-node.in::before{content:"?";counter-increment:none}
+.flow-slide .pipe-node .pn{position:relative;font-size:11px;letter-spacing:.16em;color:var(--ink-45)}
+.flow-slide .pipe-node .pt{position:relative;font-size:21px;line-height:1.25;margin-top:8px;color:var(--ink)}
+.flow-slide .pipe-node::after{
+  content:"";position:absolute;left:22px;right:22px;bottom:16px;height:2px;background:var(--ink);
+  transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1);
+}
+.flow-slide .pipe-node.lit{transform:translateY(-8px);box-shadow:0 18px 40px rgba(40,30,10,.14);background:var(--paper)}
+.flow-slide .pipe-node.out.lit{background:var(--jade-pale)}
+.flow-slide .pipe-node.lit::before{opacity:.14;color:var(--jade-dark)}
+.flow-slide .pipe-node:nth-child(3).lit::before,.flow-slide .pipe-node:nth-child(5).lit::before{color:var(--gold)}
+.flow-slide .pipe-node:nth-child(7).lit::before{color:var(--cinnabar)}
+.flow-slide .pipe-node.lit::after{transform:scaleX(1)}
+.flow-slide .pipe-node.done{background:var(--paper)}
+.flow-slide .pipe-node.done .pt{color:var(--ink-70)}
+.flow-slide .pipe-arrow{
+  position:relative;width:46px;flex:none;font-size:0;color:transparent;align-self:center;height:2px;
+  background:var(--line);overflow:visible;
+}
+.flow-slide .pipe-arrow::after{
+  content:"";position:absolute;right:-1px;top:-4px;border-left:8px solid var(--line);
+  border-top:5px solid transparent;border-bottom:5px solid transparent;transition:border-left-color .3s;
+}
+.flow-slide .pipe-arrow.lit::after,.flow-slide .pipe-arrow.done::after{border-left-color:var(--jade)}
+.flow-slide .pipe-arrow.done{background:var(--jade)}
+.flow-slide .pipe-arrow i{
+  position:absolute;left:-6px;top:-5px;width:12px;height:12px;border-radius:50%;background:var(--cinnabar);
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--cinnabar) 22%,transparent);opacity:0;
+}
+.flow-slide .pipe-arrow.lit i{animation:dot-travel .75s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes dot-travel{0%{opacity:0;transform:translateX(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(46px)}}
+.flow-slide.run .pipe-node::before{animation:none}
+.flow-slide.run .pipe-arrow{animation-name:rv-in}
+
+/* ===== 16b · evidence in the answer ===== */
+.evidence-demo{
+  position:absolute;left:80px;right:80px;top:270px;height:330px;
+  display:grid;grid-template-columns:1fr 70px 1.1fr;align-items:stretch;
+}
+.ev-left{display:flex;flex-direction:column;gap:16px}
+.ev-block{padding:18px 22px;background:var(--paper-2);border:1px solid var(--line);border-left:5px solid var(--ink-45)}
+.ev-block.ev-a{border-left-color:var(--jade);flex:1}
+.ev-label{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45)}
+.ev-question{display:flex;align-items:center;gap:6px;font-family:var(--serif);font-size:22px;line-height:1.35;color:var(--ink);margin-top:8px;min-height:30px}
+.ev-question span[data-type]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev-answer{font-family:var(--sans);font-size:17px;line-height:1.62;color:var(--ink);margin-top:10px;opacity:0;transform:translateY(6px);transition:opacity .5s,transform .5s}
+.evidence-demo.answered .ev-answer{opacity:1;transform:none}
+.cite{
+  display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;border:1px solid var(--jade);
+  font-family:var(--mono);font-size:12px;font-weight:700;color:var(--jade-dark);background:var(--jade-pale);cursor:pointer;
+  vertical-align:2px;transition:background .3s,color .3s,transform .3s;
+}
+.cite:hover,.evidence-demo.cited .cite{background:var(--jade);color:#fff;transform:translateY(-1px)}
+.evidence-demo.answered:not(.cited) .cite{animation:cite-pulse 1.2s ease-in-out 3}
+@keyframes cite-pulse{50%{box-shadow:0 0 0 7px color-mix(in srgb,var(--jade) 25%,transparent)}}
+.ev-note{margin-top:12px;font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--ink-70);opacity:0;transition:opacity .5s .3s}
+.evidence-demo.answered .ev-note{opacity:1}
+.ev-wire svg{width:100%;height:100%;overflow:visible}
+.ev-wire path{fill:none;stroke:var(--jade);stroke-width:2;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .8s ease-out}
+.evidence-demo.cited .ev-wire path{stroke-dashoffset:0}
+.ev-card{
+  position:relative;padding:20px 24px 22px;background:var(--paper-2);border:1px solid var(--line);border-top:5px solid var(--jade);
+  display:flex;flex-direction:column;gap:6px;opacity:.55;transform:translateX(10px);
+  transition:opacity .5s,transform .5s,box-shadow .5s,background .5s;
+}
+.evidence-demo.cited .ev-card{opacity:1;transform:none;background:var(--paper);box-shadow:0 18px 44px rgba(40,30,10,.14)}
+.ev-card-head{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;color:var(--ink-45);padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.ev-cite-n{font-weight:700;color:var(--jade-dark)}
+.ev-id{font-weight:700;color:var(--ink)}
+.ev-date{margin-left:auto}
+.ev-title{font-size:23px;line-height:1.3;margin:2px 0 8px}
+.ev-body{font-family:var(--serif);font-size:24px;line-height:1.5;color:var(--ink);margin:2px 0 8px}
+.ev-body mark{background:transparent;color:inherit;transition:background .4s,color .4s;padding:0 2px;border-radius:3px}
+.evidence-demo.cited .ev-body mark{background:color-mix(in srgb,var(--jade) 26%,transparent);color:var(--ink);box-shadow:inset 0 -2px 0 var(--jade)}
+.ev-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--sans);font-size:12.5px;color:var(--ink-70);margin-top:auto;padding-top:10px;border-top:1px solid var(--line)}
+.ev-meta b{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-45);margin-right:6px;font-weight:600}
+.ev-open{margin-top:8px;align-self:flex-start;font-family:var(--sans);font-size:13px;font-weight:600;color:var(--jade-dark);text-decoration:none;border-bottom:1px solid var(--jade)}
+/* ===== 01b · Ask Sillok, large ===== */
+.ask-grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 520px;align-items:center;padding:0 80px;gap:40px}
+.ask-copy .title-kicker{color:var(--jade-dark)}
+.ask-copy h1{font-size:56px;line-height:1.08;letter-spacing:-.03em;font-weight:900;margin-top:16px}
+.ask-sub{font-family:var(--sans);font-size:19px;line-height:1.6;color:var(--ink-70);margin-top:24px;max-width:520px}
+.ask-url{display:inline-block;margin-top:28px;font-family:var(--mono);font-size:26px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:3px solid var(--jade);padding-bottom:2px}
+.ask-note{margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45)}
+.ask-qr{
+  justify-self:end;background:#fff;border:1px solid #D8D0BF;border-radius:24px;padding:28px 28px 22px;text-align:center;
+  box-shadow:0 24px 60px rgba(80,67,44,.16);
+}
+.ask-qr svg{width:440px;height:440px;display:block;margin:0 auto}
+.ask-qr-label{margin-top:14px;font-family:var(--mono);font-size:18px;font-weight:700;color:#20201C}
+.slide.run .ask-qr.rv{animation-name:rv-card;animation-duration:.8s}
+.slide.run .ask-qr::after{
+  content:"";position:absolute;inset:-1px;border-radius:24px;border:2px solid var(--jade);opacity:0;
+  animation:qr-ring 2.4s ease-out 1.2s 3;pointer-events:none;
+}
+.ask-qr{position:relative}
+@keyframes qr-ring{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(1.06)}}
+.qr-block.deck-qr .qr-url{font-size:13px}
+
+@media print{.ev-answer,.ev-note,.ev-card{opacity:1!important;transform:none!important}}
+
+@media print{
+  body{display:block;overflow:visible;background:#fff}
+  .stage{transform:none!important;width:1280px;height:auto}
+  .slide{display:block!important;position:relative;page-break-after:always}
+  .slide .rv{opacity:1!important;animation:none!important}
+  .ds-result,.facet .fv,.q-log{opacity:1!important;transform:none!important}
+  .nav,.progress,.page,.keys,.jump{display:none!important}
+}
+</style>
+</head>
+<body>
+<main class="stage" id="stage">
+  <div class="progress" id="progress"></div>
+  <div class="nav">
+    <button class="lang-toggle" id="languageBtn" type="button" aria-label="Switch to Korean">한국어</button>
+    <button class="theme" id="themeBtn">Dark</button>
+    <button id="prevBtn" aria-label="Previous slide">&#8249;</button>
+    <button id="nextBtn" aria-label="Next slide">&#8250;</button>
+  </div>
+
+  <!-- 01 TITLE -->
+  <section class="slide active" data-title="Title">
+    <div class="title-grid">
+      <div class="title-copy">
+        <div class="title-seal">SILLOK</div>
+        <div class="title-kicker">The 24th Hanyeon Forum · Dankook University</div>
+        <h1>From Searchable Archives<br>to Askable Archives</h1>
+        <div class="title-sub">Designing a RAG-Based Research Interface for<br>The Annals of the Joseon Dynasty</div>
+        <div class="title-rule"></div>
+        <div class="title-by"><b>Kunha Kim</b><br>Research Professor, Institute for Maritime Humanities<br>Pukyong National University · littlekg87@gmail.com</div>
+        <div class="status">Patent application pending · Related manuscript under review<br>Selected implementation details and unpublished evaluation results are not disclosed.</div>
+      </div>
+      <div class="qr-block deck-qr">
+        <svg viewBox="0 0 296 296" role="img" aria-label="QR code for these slides" width="296" height="296" class="segno"><path transform="scale(8)" class="qrline" stroke="#1b1b1b" d="M2 2.5h7m3 0h1m1 0h2m2 0h1m2 0h2m2 0h1m2 0h7m-33 1h1m5 0h1m4 0h6m3 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h4m2 0h1m4 0h1m4 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h2m1 0h2m1 0h3m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h1m2 0h6m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h4m2 0h3m4 0h2m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h1m3 0h1m2 0h1m2 0h2m1 0h2m1 0h1m-25 1h1m1 0h5m6 0h3m1 0h1m4 0h1m1 0h1m1 0h5m-29 1h4m1 0h5m5 0h4m2 0h1m2 0h2m1 0h4m-33 1h2m1 0h1m1 0h2m8 0h2m3 0h2m2 0h1m3 0h1m1 0h2m-32 1h3m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m2 0h4m5 0h3m-31 1h1m1 0h5m1 0h1m8 0h2m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m-31 1h1m1 0h2m2 0h1m1 0h1m2 0h9m2 0h1m1 0h3m1 0h4m-32 1h2m1 0h1m1 0h2m2 0h4m4 0h1m1 0h1m3 0h8m-32 1h1m4 0h1m3 0h1m1 0h1m4 0h1m1 0h5m1 0h4m1 0h2m-28 1h1m1 0h2m3 0h2m1 0h1m3 0h1m1 0h1m2 0h2m1 0h1m1 0h3m2 0h1m-33 1h1m7 0h1m3 0h3m1 0h2m1 0h3m1 0h1m2 0h2m1 0h4m-31 1h3m1 0h1m1 0h1m5 0h4m3 0h2m1 0h1m2 0h2m1 0h2m-32 1h1m3 0h1m3 0h2m1 0h3m1 0h1m3 0h4m3 0h7m-30 1h1m2 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m3 0h2m-30 1h2m1 0h3m1 0h2m1 0h6m2 0h4m3 0h3m2 0h1m1 0h1m-33 1h1m2 0h5m1 0h2m3 0h3m5 0h1m2 0h2m1 0h1m2 0h1m-32 1h1m1 0h3m3 0h1m3 0h1m1 0h2m3 0h5m4 0h5m-33 1h1m2 0h1m2 0h1m4 0h5m1 0h1m5 0h6m2 0h1m-24 1h1m2 0h2m1 0h1m1 0h1m1 0h2m2 0h3m3 0h1m1 0h1m1 0h1m-33 1h7m3 0h1m3 0h2m2 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h7m3 0h4m-32 1h1m1 0h3m1 0h1m1 0h1m2 0h1m6 0h1m3 0h1m1 0h6m1 0h1m-32 1h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h2m1 0h1m1 0h1m2 0h3m2 0h5m-33 1h1m1 0h3m1 0h1m1 0h1m3 0h2m3 0h2m2 0h1m4 0h2m1 0h2m-31 1h1m5 0h1m3 0h2m4 0h1m1 0h4m1 0h3m2 0h1m1 0h1m-31 1h7m1 0h4m2 0h1m2 0h4m2 0h2m1 0h2m3 0h1"/></svg>
+        <a class="qr-url" href="https://littlekg87.github.io/lecture/2026_HanyeonForum/" target="_blank" rel="noopener">littlekg87.github.io/lecture</a>
+        <div class="qr-label">These slides · open on your phone</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01b · Ask Sillok QR -->
+  <section class="slide asksillok-slide" data-title="Open Ask Sillok">
+    <div class="topline"></div>
+    <div class="ask-grid">
+      <div class="ask-copy">
+        <div class="title-kicker">Before we begin</div>
+        <h1>Open <span class="jade">Ask Sillok</span><br>on your phone.</h1>
+        <p class="ask-sub">The system in this talk is live. Scan now and try a question of your own while we go through the design.</p>
+        <a class="ask-url" href="https://beta.asksillok.com" target="_blank" rel="noopener">beta.asksillok.com</a>
+        <div class="ask-note">Public beta · keep it open during the talk</div>
+      </div>
+      <div class="ask-qr">
+        <svg viewBox="0 0 232 232" role="img" aria-label="QR code for beta.asksillok.com" width="232" height="232" class="segno"><path transform="scale(8)" class="qrline" stroke="#1b1b1b" d="M2 2.5h7m1 0h1m5 0h1m3 0h7m-25 1h1m5 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m4 0h1m1 0h1m4 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m1 0h4m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m2 0h1m1 0h1m2 0h1m3 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-15 1h1m1 0h4m-16 1h1m2 0h6m1 0h3m1 0h1m1 0h2m2 0h1m1 0h3m-24 1h3m4 0h2m2 0h4m3 0h5m-24 1h1m1 0h2m2 0h1m2 0h1m1 0h1m3 0h2m1 0h1m2 0h1m2 0h1m-22 1h1m1 0h1m4 0h3m2 0h2m1 0h1m2 0h4m-23 1h1m1 0h1m1 0h2m1 0h2m1 0h1m2 0h1m2 0h2m4 0h1m-25 1h1m1 0h3m4 0h2m1 0h1m1 0h4m2 0h1m2 0h1m-24 1h2m2 0h1m1 0h4m4 0h2m1 0h2m1 0h5m-25 1h1m3 0h1m2 0h1m2 0h1m5 0h1m1 0h2m1 0h2m1 0h1m-25 1h1m1 0h1m2 0h2m1 0h1m3 0h2m1 0h6m1 0h2m-16 1h3m2 0h1m2 0h1m3 0h1m1 0h2m-24 1h7m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m1 0h4m1 0h1m1 0h2m3 0h1m-21 1h1m1 0h3m1 0h1m1 0h2m1 0h2m2 0h6m-21 1h1m1 0h3m1 0h1m1 0h4m1 0h2m2 0h2m4 0h2m-25 1h1m1 0h3m1 0h1m2 0h3m1 0h1m2 0h2m2 0h5m-25 1h1m5 0h1m5 0h1m4 0h4m1 0h3m-25 1h7m1 0h1m2 0h2m2 0h2m1 0h1m2 0h1m2 0h1"/></svg>
+        <div class="ask-qr-label">beta.asksillok.com</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="slide" data-title="Searchable is not askable">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow">The Problem</div><div class="num">01 / Motivation</div></div>
+    <div class="headline"><div class="kicker">Digitized does not mean understood</div><h1 class="big">The Annals are searchable.<br>They are not yet <span class="jade">askable</span>.</h1></div>
+    <div class="compare">
+      <div class="compare-side">
+        <div class="compare-label">Searchable archive</div>
+        <h2>Find a known word</h2>
+        <p>You must already know the person, office, event, or historical expression to enter.</p>
+        <div class="under-rule"></div>
+        <div class="demo-search miss">
+          <div class="ds-field"><span class="ds-icon">&#8981;</span><span class="ds-typed" data-type>Pyongyang fortress construction</span><span class="ds-caret"></span></div>
+          <div class="ds-result">0 results · the record reads <b>城平壤</b>, not the modern phrase</div>
+        </div>
+      </div>
+      <div class="compare-arrow">&rarr;</div>
+      <div class="compare-side">
+        <div class="compare-label">Askable archive</div>
+        <h2>Begin with a research question</h2>
+        <p>The system helps discover records whose historical vocabulary you did not yet know.</p>
+        <div class="under-rule"></div>
+        <div class="demo-search hit">
+          <div class="ds-field"><span class="ds-icon">?</span><span class="ds-typed" data-type>Why did Taejo order walls built at Pyongyang?</span><span class="ds-caret"></span></div>
+          <div class="ds-result"><b>waa_10201006_001</b> · 命都評議使司, 城平壤 · Taejo 2 (1393) · 0.91</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="slide" data-title="Quality is a pipeline decision">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow">The Reframing</div><div class="num">02 / Pipeline</div></div>
+    <div class="headline"><div class="kicker">The wrong first question: which LLM?</div><h1>RAG quality is decided across the pipeline,<br><span class="jade">before generation begins</span>.</h1></div>
+    <div class="chain">
+      <div class="chain-step hot"><div class="cs">source</div><div class="ct">Structure</div></div><div class="chain-arrow">&rarr;</div>
+      <div class="chain-step"><div class="cs">prepare</div><div class="ct">Evidence units</div></div><div class="chain-arrow">&rarr;</div>
+      <div class="chain-step hot"><div class="cs">encode</div><div class="ct">Bilingual space</div></div><div class="chain-arrow">&rarr;</div>
+      <div class="chain-step"><div class="cs">retrieve</div><div class="ct">Candidate set</div></div><div class="chain-arrow">&rarr;</div>
+      <div class="chain-step hot"><div class="cs">rank</div><div class="ct">Historical signals</div></div><div class="chain-arrow">&rarr;</div>
+      <div class="chain-step"><div class="cs">answer</div><div class="ct">Provenance</div></div>
+    </div>
+    <div class="chain-notes" aria-live="polite">
+      <div class="cn">Keep the article, its ID, and its metadata as the archive itself defines them.</div>
+      <div class="cn">Cut evidence along the archive's own boundaries, not by arbitrary token windows.</div>
+      <div class="cn">Teach the encoder that a modern question and a Classical Chinese body can mean the same thing.</div>
+      <div class="cn">Gather candidates through more than one route so that different failures do not overlap.</div>
+      <div class="cn">Let reign, date, office, and subject recalculate what similarity alone proposed.</div>
+      <div class="cn">Return the original record with every answer, so the claim can be checked at its source.</div>
+    </div>
+    <div class="claim">What determines quality is not one model, but <b>the design between models and sources</b>.</div>
+  </section>
+
+  <!-- 04 -->
+  <section class="slide" data-title="Three layers of Ask Sillok">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow">Ask Sillok</div><div class="num">03 / Three Layers</div></div>
+    <div class="headline"><div class="kicker">An end-to-end design for historical RAG</div><h1>Ask Sillok is built in <span class="jade">three connected layers</span>.</h1></div>
+    <div class="layers">
+      <div class="layer">
+        <div class="layer-n">01</div><h2>Archive Construction</h2>
+        <p>Preserve source structure, manage metadata, and bridge the archive's two languages.</p>
+        <div class="when">done once · offline</div>
+      </div>
+      <div class="layer">
+        <div class="layer-n">02</div><h2>Retrieval Orchestration</h2>
+        <p>Reformulate the question, search through two paths, and reorder evidence with historical signals.</p>
+        <div class="when">repeated · every query</div>
+      </div>
+      <div class="layer">
+        <div class="layer-n">03</div><h2>Expert-Grounded Validation</h2>
+        <p>Let historians judge the evidence and feed that judgment back into the system.</p>
+        <div class="when">continuous · feedback</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 01 -->
+  <section class="slide chapter ch-jade" data-title="Chapter 01 · Archive Construction">
+    <div class="topline"></div>
+    <div class="chapter-band"><div class="chapter-num"><span>01</span></div><div class="chapter-of">Chapter 01 of 03</div></div>
+    <div class="chapter-copy">
+      <div class="chapter-kicker">Ask Sillok · Chapter 01</div>
+      <h1>Archive Construction</h1>
+      <p class="chapter-sub">Preserve the source structure, separate metadata from text, bridge the archive's two languages, and teach the encoder what they mean.</p>
+      <ul class="chapter-list"><li>Source structure</li><li>Metadata and text</li><li>Two languages in one record</li><li>Domain-adapted embeddings</li></ul>
+    </div>
+    <div class="chapter-track">
+      <span class="on"><i>01</i>Archive Construction</span>
+      <span class=""><i>02</i>Retrieval Orchestration</span>
+      <span class=""><i>03</i>Expert-Grounded Validation</span>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section class="slide" data-title="Structure before vectors">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">01</span>Archive Construction</div><div class="num">04 / Source Structure</div></div>
+    <div class="headline"><div class="kicker">The archive already contains its own boundaries</div><h1>The source structure comes <span class="jade">before</span> the vector database.</h1></div>
+    <div class="xml-structure">
+      <div class="xml-card">
+        <div class="xml-card-label"><span>Actual Sillok XML · abridged</span><b>Taejo 2 · 1393-01-06</b></div>
+        <div class="xml-code">
+          <div><span class="tag">&lt;level5</span> <span class="attr">id</span>=<span class="val">"waa_10201006_001"</span><span class="tag">&gt;</span></div>
+          <div class="i1"><span class="tag">&lt;front&gt;&lt;biblioData</span> <span class="attr">type</span>=<span class="val">"T"</span><span class="tag">&gt;</span></div>
+          <div class="i2"><span class="tag">&lt;mainTitle&gt;</span><span class="body">도당에 명하여 평양에 성을 쌓도록 하다</span><span class="tag">&lt;/mainTitle&gt;</span></div>
+          <div class="i2"><span class="tag">&lt;dateOccured</span> <span class="attr">date</span>=<span class="val">"1393-01-06L0"</span> <span class="attr">type</span>=<span class="val">"서기"</span><span class="tag">/&gt;</span></div>
+          <div class="i2"><span class="tag">&lt;subjectClass&gt;</span><span class="body">군사-관방(關防)</span><span class="tag">&lt;/subjectClass&gt;</span></div>
+          <div class="i1"><span class="tag">&lt;/biblioData&gt;&lt;/front&gt;</span></div>
+          <div class="i1"><span class="tag">&lt;text&gt;&lt;content&gt;&lt;paragraph&gt;</span></div>
+          <div class="i2"><span class="body">○壬子/命都評議使司, 城</span></div>
+          <div class="i3"><span class="tag">&lt;index</span> <span class="attr">type</span>=<span class="val">"지명"</span><span class="tag">&gt;</span><span class="body">平壤</span><span class="tag">&lt;/index&gt;</span><span class="body">。</span></div>
+          <div class="i1"><span class="tag">&lt;/paragraph&gt;&lt;/content&gt;&lt;/text&gt;</span></div>
+          <div><span class="tag">&lt;/level5&gt;</span></div>
+        </div>
+      </div>
+      <div class="xml-notes">
+        <div class="xml-note" data-lines="0,10">
+          <div class="xn">Identity</div>
+          <h2>The article is already a unit.</h2>
+          <p>The persistent <span class="mono">level5 id</span> anchors retrieval, citation, and return to the source.</p>
+        </div>
+        <div class="xml-note" data-lines="3,4">
+          <div class="xn">Context</div>
+          <h2>Metadata is part of the record.</h2>
+          <p>Date and subject classification can be searched without flattening them into body text.</p>
+        </div>
+        <div class="xml-note" data-lines="7,8">
+          <div class="xn">Meaning</div>
+          <h2>The body contains typed entities.</h2>
+          <p>In-text markup identifies <span class="mono">平壤</span> as a place, preserving a second retrieval signal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footline xml-foot">
+      <span>The XML is not merely a text container. <b>It is the archive's data model.</b></span>
+      <span class="source">Public Sillok XML, article waa_10201006_001 · abridged for display<br><a href="https://sillok.history.go.kr/id/kaa_10201006_001" target="_blank" rel="noopener">National Institute of Korean History record</a> · <a href="https://wikidocs.net/239521" target="_blank" rel="noopener">XML structure reference</a></span>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section class="slide" data-title="Metadata and text">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">01</span>Archive Construction</div><div class="num">05 / Metadata</div></div>
+    <div class="headline"><div class="kicker">Two stores, one evidence object</div><h1>Separate metadata from text.<br>Never separate <span class="jade">provenance from evidence</span>.</h1></div>
+    <div class="paired">
+      <div class="face text">
+        <div class="face-tag">Text layer</div><h2>What is read</h2>
+        <ul><li>Classical Chinese body</li><li>Modern Korean title</li><li>Retrievable evidence unit</li></ul>
+      </div>
+      <div class="pair-key">persistent<br>record ID</div>
+      <div class="face meta">
+        <div class="face-tag">Metadata layer</div><h2>Where it belongs</h2>
+        <ul><li>Reign and date</li><li>Source hierarchy</li><li>Subjects and return link</li></ul>
+      </div>
+    </div>
+    <div class="footline">The metadata is managed separately, then rejoined for <b>filtering, ranking, citation, and return to the original</b>.</div>
+  </section>
+
+  <!-- 07 -->
+  <section class="slide" data-title="A bilingual archive">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">01</span>Archive Construction</div><div class="num">06 / Two Languages</div></div>
+    <div class="headline"><div class="kicker">The query and the source do not speak the same language</div><h1>The Annals are <span class="jade">bilingual by design</span>.</h1></div>
+    <div class="bilingual">
+      <div class="language">
+        <div class="lang">Modern Korean</div><h2>Question and title</h2>
+        <p>The language in which a present-day historian asks and names an event.</p>
+      </div>
+      <div class="bridge">
+        <div class="line"></div><div class="word">semantic<br>alignment</div>
+      </div>
+      <div class="language classical">
+        <div class="lang">Classical Chinese</div><h2>Historical body</h2>
+        <p>The language in which the original record preserves the event.</p>
+      </div>
+    </div>
+    <div class="claim">A modern-language question must reach a source written in the language of its time.</div>
+  </section>
+
+  <!-- 08 -->
+  <section class="slide" data-title="Two languages in one XML record">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">01</span>Archive Construction</div><div class="num">07 / XML Evidence</div></div>
+    <div class="headline"><div class="kicker">The bilingual problem exists inside each article</div><h1>One XML record contains <span class="red">a Korean title</span><br>and <span class="jade">a Classical Chinese body</span>.</h1></div>
+    <div class="bilingual-xml">
+      <div class="bix-code">
+        <div class="cap"><span>Actual Sillok XML · abridged</span><b>waa_10201006_001</b></div>
+        <div class="bix-lines">
+          <div><span class="tag">&lt;level5</span> <span class="attr">id</span>=<span class="val">"waa_10201006_001"</span><span class="tag">&gt;</span></div>
+          <div class="i1"><span class="tag">&lt;front&gt;</span></div>
+          <div class="i2"><span class="tag">&lt;mainTitle&gt;</span><span class="body">도당에 명하여 평양에 성을 쌓도록 하다</span><span class="tag">&lt;/mainTitle&gt;</span></div>
+          <div class="i1"><span class="tag">&lt;/front&gt;</span></div>
+          <div class="i1"><span class="tag">&lt;text&gt;&lt;content&gt;&lt;paragraph&gt;</span></div>
+          <div class="i2"><span class="body">○壬子/命都評議使司, 城 </span><span class="tag">&lt;index</span> <span class="attr">type</span>=<span class="val">"지명"</span><span class="tag">&gt;</span><span class="body">平壤</span><span class="tag">&lt;/index&gt;</span><span class="body">。</span></div>
+          <div class="i1"><span class="tag">&lt;/paragraph&gt;&lt;/content&gt;&lt;/text&gt;</span></div>
+          <div><span class="tag">&lt;/level5&gt;</span></div>
+        </div>
+      </div>
+      <div class="bix-pair">
+        <div class="bix-id">same article ID · two linguistic surfaces</div>
+        <div class="bix-language" data-lines="2">
+          <div class="lang">Korean · retrieval-facing title</div>
+          <h2>도당에 명하여 평양에 성을 쌓도록 하다</h2>
+          <p>Names the event in the language of the modern reader.</p>
+        </div>
+        <div class="bix-language classical" data-lines="5">
+          <div class="lang">Classical Chinese · evidence-bearing body</div>
+          <h2>○壬子/命都評議使司, 城平壤。</h2>
+          <p>Preserves the historical statement that must be retrieved as evidence.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footline xml-foot">
+      <span>The encoder must learn that <b>these two strings belong to the same historical article</b>.</span>
+      <span class="bix-source">Public Sillok XML · abridged for display<br><a href="https://sillok.history.go.kr/id/kaa_10201006_001" target="_blank" rel="noopener">National Institute of Korean History record</a> · <a href="https://wikidocs.net/239521" target="_blank" rel="noopener">XML structure reference</a></span>
+    </div>
+  </section>
+
+  <!-- 09 -->
+  <section class="slide" data-title="Domain-adapted embeddings">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">01</span>Archive Construction</div><div class="num">08 / Embedding Design</div></div>
+    <div class="headline"><div class="kicker">Teaching the encoder what this archive means</div><h1>Fine-tuning aligns <span class="jade">modern questions</span><br>with <span class="jade">historical records</span>.</h1></div>
+    <div class="embedding-demo" id="embeddingDemo" data-state="base">
+      <div class="vector-stage" aria-label="Conceptual vector-space comparison before and after fine-tuning">
+        <div class="vector-state" id="vectorState">Base model</div>
+        <div class="distance-note"><span class="distance-copy">Cross-lingual distance</span><b id="distanceLabel">far apart</b></div>
+        <div class="vector-axis x">semantic dimension 1</div>
+        <div class="vector-axis y">semantic dimension 2</div>
+        <div class="vector-link title-link"></div>
+        <div class="vector-link body-link"></div>
+        <div class="vector-point query"><span>modern Korean query</span></div>
+        <div class="vector-point title-vector"><span>Korean title</span></div>
+        <div class="vector-point body-vector"><span>paired Classical Chinese body</span></div>
+        <div class="vector-point distractor d1"></div>
+        <div class="vector-point distractor d2"></div>
+        <div class="vector-point distractor d3"></div>
+        <div class="vector-point distractor d4"></div>
+      </div>
+      <div class="embedding-panel">
+        <div class="embedding-controls" aria-label="Embedding comparison controls">
+          <button type="button" data-embedding-state="base" aria-pressed="true">Base model</button>
+          <button type="button" data-embedding-state="ft" aria-pressed="false">Fine-tuned</button>
+          <button type="button" id="replayEmbedding">Replay</button>
+        </div>
+        <div class="embedding-reading base">
+          <div class="mini">Without fine-tuning</div>
+          <h2>The paired body remains distant.</h2>
+          <p>Generic similarity does not guarantee that a modern Korean query reaches its Classical Chinese evidence.</p>
+        </div>
+        <div class="embedding-reading ft">
+          <div class="mini">With archive-specific fine-tuning</div>
+          <h2>The paired languages share a neighborhood.</h2>
+          <p>The encoder learns the archive's title–body correspondence as a different sense of similarity.</p>
+        </div>
+        <div class="embedding-caveat">Conceptual 2D illustration · no unpublished measurements, coefficients, or evaluation results are shown.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 02 -->
+  <section class="slide chapter ch-gold" data-title="Chapter 02 · Retrieval Orchestration">
+    <div class="topline"></div>
+    <div class="chapter-band"><div class="chapter-num"><span>02</span></div><div class="chapter-of">Chapter 02 of 03</div></div>
+    <div class="chapter-copy">
+      <div class="chapter-kicker">Ask Sillok · Chapter 02</div>
+      <h1>Retrieval Orchestration</h1>
+      <p class="chapter-sub">Interpret the question, search through two routes, reorder the candidates with historical signals, and return every answer with its source.</p>
+      <ul class="chapter-list"><li>From question to evidence</li><li>Query reformulation</li><li>Dual retrieval</li><li>Historical weighting</li><li>Provenance first</li></ul>
+    </div>
+    <div class="chapter-track">
+      <span class="done"><i>01</i>Archive Construction</span>
+      <span class="on"><i>02</i>Retrieval Orchestration</span>
+      <span class=""><i>03</i>Expert-Grounded Validation</span>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="slide flow-slide" data-title="From question to evidence">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">02</span>Retrieval Orchestration</div><div class="num">09 / Overview</div></div>
+    <div class="headline"><div class="kicker">The online path · repeated for every question</div><h1>A question becomes evidence through <span class="jade">four decisions</span>.</h1></div>
+    <div class="pipeline">
+      <div class="pipe-node in"><div class="pn">input</div><div class="pt">Research question</div></div><div class="pipe-arrow"><i></i></div>
+      <div class="pipe-node"><div class="pn">1</div><div class="pt">Reformulate</div></div><div class="pipe-arrow"><i></i></div>
+      <div class="pipe-node"><div class="pn">2</div><div class="pt">Dual retrieval</div></div><div class="pipe-arrow"><i></i></div>
+      <div class="pipe-node"><div class="pn">3</div><div class="pt">Historical weighting</div></div><div class="pipe-arrow"><i></i></div>
+      <div class="pipe-node out"><div class="pn">4</div><div class="pt">Evidence + provenance</div></div>
+    </div>
+    <div class="footline">The generator receives <b>ranked evidence</b>, not the entire archive and not an unexplained similarity list.</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="slide" data-title="Query reformulation">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">02</span>Retrieval Orchestration</div><div class="num">10 / Query Reformulation</div></div>
+    <div class="headline"><div class="kicker">A natural question hides several search conditions</div><h1>Interpret the question <span class="jade">before</span><br>searching the archive.</h1></div>
+    <div class="query-flow">
+      <div class="query-box">
+        <div class="qt">What the historian asks</div>
+        <h2>A question in ordinary language</h2>
+        <p>Useful for research, but often missing the archive's exact terms and boundaries.</p>
+        <div class="q-sample"><span data-type>Why did Taejo have walls built at Pyongyang in 1393?</span><span class="ds-caret"></span></div>
+      </div>
+      <div class="q-arrow">&rarr;</div>
+      <div class="query-box facets">
+        <div class="qt">What the system identifies</div>
+        <h2>Historical search conditions</h2>
+        <div class="facet-list"><div class="facet"><span class="fk">person</span><b class="fv">Taejo 太祖</b></div><div class="facet"><span class="fk">period</span><b class="fv">1393 · Taejo 2</b></div><div class="facet"><span class="fk">event</span><b class="fv">wall construction</b></div><div class="facet"><span class="fk">terminology</span><b class="fv">城 · 都評議使司</b></div></div>
+      </div>
+      <div class="q-arrow">&rarr;</div>
+      <div class="query-box logged">
+        <div class="qt">What is sent to retrieval</div>
+        <h2>A logged reformulation</h2>
+        <p>The transformation is visible and reviewable rather than silently hidden inside the model.</p>
+        <div class="q-log"><span>{</span> person: 太祖 · date: 1393-01 · subject: 군사-관방 · term: 城 <span>}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="slide" data-title="Dual retrieval">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">02</span>Retrieval Orchestration</div><div class="num">11 / Dual Retrieval</div></div>
+    <div class="headline"><div class="kicker">Parallel retrieval · one question, two independent signals</div><h1>Search twice. Merge once. Then <span class="red">rank</span>.</h1></div>
+    <div class="dual-flow" id="dualFlow">
+      <button class="dual-replay" id="replayDual" type="button" aria-label="Replay parallel retrieval animation">Replay flow</button>
+      <div class="parallel-label">Two searches run at the same time</div>
+      <div class="merge-label">Reunite</div>
+      <svg class="dual-wires" viewBox="0 0 1120 300" aria-hidden="true">
+        <defs>
+          <marker id="arrowJade" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--jade)"/></marker>
+          <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--gold)"/></marker>
+          <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--cinnabar)"/></marker>
+        </defs>
+        <path class="dual-wire semantic split" pathLength="1" d="M190 153 C236 153 235 66 285 66" marker-end="url(#arrowJade)"/>
+        <path class="dual-wire structured split" pathLength="1" d="M190 153 C236 153 235 234 285 234" marker-end="url(#arrowGold)"/>
+        <path class="dual-wire semantic join" pathLength="1" d="M595 66 C655 66 646 160 700 160" marker-end="url(#arrowJade)"/>
+        <path class="dual-wire structured join" pathLength="1" d="M595 234 C655 234 646 160 700 160" marker-end="url(#arrowGold)"/>
+        <circle class="dual-junction" cx="190" cy="153" r="5"/>
+        <path class="dual-wire ranked" pathLength="1" d="M850 160 H925" marker-end="url(#arrowRed)"/>
+      </svg>
+      <div class="dual-node dual-query"><div class="dq">Reformulated question</div><h2>One research question</h2></div>
+      <div class="dual-node route-card semantic"><div class="dn-label">Route A · meaning</div><h3>Semantic retrieval</h3><p>Finds conceptually related records across the bilingual archive.</p></div>
+      <div class="dual-node route-card structured"><div class="dn-label">Route B · conditions</div><h3>Structured retrieval</h3><p>Uses person, period, and metadata conditions to recover another candidate set.</p></div>
+      <div class="dual-node merge-card"><div class="dn-label">Candidate pool</div><h3>Merge results</h3><p>not yet final</p></div>
+      <div class="dual-node rank-card">
+        <div class="dn-label">Unified output</div><h3>Historical ranking</h3>
+        <div class="rank-list">
+          <div class="rank-row"><b>1</b><span>Record A</span><span>0.94</span></div>
+          <div class="rank-row"><b>2</b><span>Record B</span><span>0.87</span></div>
+          <div class="rank-row"><b>3</b><span>Record C</span><span>0.81</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footline">The two paths run in parallel, fail differently, and reunite before <b>historically informed ranking</b>.</div>
+  </section>
+
+  <!-- 13 -->
+  <section class="slide" data-title="Historically informed weighting">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">02</span>Retrieval Orchestration</div><div class="num">12 / Historical Weighting</div></div>
+    <div class="headline"><div class="kicker">Vector distance proposes; historical conditions recalculate</div><h1>See the score change with <span class="jade">historical signals</span>.</h1></div>
+    <div class="score-sim" id="scoreSimulator">
+      <div class="score-controls">
+        <div class="score-example">
+          <div>
+            <div class="se-label">Example candidate · click the matching signals</div>
+            <p>推刷都監 · Hyojong reign · 1649–1659 · slave policy · named official</p>
+          </div>
+          <div class="score-formula">final = (1 − distance) + Σ bonus</div>
+        </div>
+        <div class="distance-control">
+          <label for="scoreDistance">Vector distance</label>
+          <input id="scoreDistance" type="range" min="0" max="1" step="0.01" value="0.28" aria-label="Vector distance">
+          <output id="scoreDistanceValue" for="scoreDistance">0.28</output>
+        </div>
+        <div class="score-chips" aria-label="Historical bonus controls">
+          <button class="score-chip" type="button" data-score-value="0.35" aria-pressed="false" aria-label="Office name bonus plus 0.35">
+            <span class="sc-name">Office name</span><span class="sc-value">+0.35</span><span class="sc-why">query names 推刷都監</span>
+          </button>
+          <button class="score-chip" type="button" data-score-value="0.30" aria-pressed="false" aria-label="Reign match bonus plus 0.30">
+            <span class="sc-name">Reign match</span><span class="sc-value">+0.30</span><span class="sc-why">record is in Hyojong reign</span>
+          </button>
+          <button class="score-chip" type="button" data-score-value="0.22" aria-pressed="false" aria-label="Year range bonus plus 0.22">
+            <span class="sc-name">Year range</span><span class="sc-value">+0.22</span><span class="sc-why">date falls in 1649–1659</span>
+          </button>
+          <button class="score-chip" type="button" data-score-value="0.14" aria-pressed="false" aria-label="Subject bonus plus 0.14">
+            <span class="sc-name">Subject</span><span class="sc-value">+0.14</span><span class="sc-why">subject tag = slave policy</span>
+          </button>
+          <button class="score-chip" type="button" data-score-value="0.12" aria-pressed="false" aria-label="Person reference bonus plus 0.12">
+            <span class="sc-name">Person reference</span><span class="sc-value">+0.12</span><span class="sc-why">a named official appears</span>
+          </button>
+        </div>
+        <div class="score-actions"><span>Values restored from the earlier Ask Sillok presentation.</span><button class="score-reset" id="scoreReset" type="button">Reset</button></div>
+      </div>
+      <div class="score-ledger" aria-live="polite">
+        <div class="sl-title">Live calculation</div>
+        <div class="score-metric"><span class="sm-label">Semantic score</span><span class="sm-value" id="scoreSemantic">0.72</span></div>
+        <div class="score-metric"><span class="sm-label">Historical bonus</span><span class="sm-value" id="scoreBonus">+0.00</span></div>
+        <div class="score-metric final"><span class="sm-label">Final score</span><span class="sm-value" id="scoreFinal">0.72</span></div>
+        <div class="score-bar" aria-hidden="true"><i id="scoreBar"></i></div>
+        <div class="score-reading">This is a <b>ranking function</b>, not an evaluation result. Each selected historical match reorders the candidate pool.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 -->
+  <section class="slide" data-title="Provenance first">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">02</span>Retrieval Orchestration</div><div class="num">13 / Provenance</div></div>
+    <div class="headline"><div class="kicker">Do not find a source after speaking</div><h1>Find the evidence first.<br>Then speak <span class="jade">from it</span>.</h1></div>
+    <div class="return-path">
+      <div class="return-node"><div class="rk">Archive</div><div class="rv">Original Sillok entry</div></div><div class="return-arrow">&rarr;</div>
+      <div class="return-node"><div class="rk">Evidence</div><div class="rv">Full record + metadata</div></div><div class="return-arrow">&rarr;</div>
+      <div class="return-node"><div class="rk">Citation</div><div class="rv">Used passage</div></div><div class="return-arrow">&rarr;</div>
+      <div class="return-node"><div class="rk">Answer</div><div class="rv">A claim</div></div>
+    </div>
+    <div class="claim">Provenance is not decoration added at the end.<br>It is what remains when <b>source structure survives the pipeline</b>.</div>
+  </section>
+
+  <!-- 16b · worked example -->
+  <section class="slide evidence-slide" data-title="Evidence in the answer">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">02</span>Retrieval Orchestration</div><div class="num">00 / Worked Example</div></div>
+    <div class="headline"><div class="kicker">Provenance first · one real article, end to end</div><h1>This is what <span class="jade">answering from evidence</span> looks like.</h1></div>
+    <div class="evidence-demo" id="evidenceDemo">
+      <div class="ev-left">
+        <div class="ev-block ev-q">
+          <div class="ev-label">Historian's question</div>
+          <p class="ev-question"><span data-type>Did Taejo order walls to be built at Pyongyang?</span><span class="ds-caret"></span></p>
+        </div>
+        <div class="ev-block ev-a">
+          <div class="ev-label">Answer · grounded in the record</div>
+          <p class="ev-answer">Yes. In the entry for the 6th day of the 1st month of Taejo 2 (1393), the king ordered the Dopyeonguisasa to build walls at Pyongyang.<button class="cite" type="button" aria-label="Show cited record">[1]</button></p>
+          <div class="ev-note">Every claim carries a citation. Nothing is asserted without a record behind it.</div>
+        </div>
+      </div>
+      <div class="ev-wire" aria-hidden="true"><svg viewBox="0 0 70 320" preserveAspectRatio="none"><path pathLength="1" d="M0 232 C36 232 34 60 70 60"/></svg></div>
+      <div class="ev-card">
+        <div class="ev-card-head"><span class="ev-cite-n">[1]</span><span class="ev-id">waa_10201006_001</span><span class="ev-date">Taejo 2 · 1393-01-06 · 壬子</span></div>
+        <div class="ev-label">Article title · modern Korean</div>
+        <h2 class="ev-title">도당에 명하여 평양에 성을 쌓도록 하다</h2>
+        <div class="ev-label">Original passage · Classical Chinese · used span highlighted</div>
+        <p class="ev-body">○壬子/<mark>命都評議使司, 城平壤</mark>。</p>
+        <div class="ev-meta"><span><b>Subject</b>군사-관방(關防)</span><span><b>Place index</b>平壤</span><span><b>Source</b>Taejo Sillok</span></div>
+        <a class="ev-open" href="https://sillok.history.go.kr/id/kaa_10201006_001" target="_blank" rel="noopener">Open the original record &nearr;</a>
+      </div>
+    </div>
+    <div class="footline">The answer is <b>a claim with a return path</b>: article ID, date, the passage actually used, and one click back to the source.</div>
+  </section>
+
+  <!-- CHAPTER 03 -->
+  <section class="slide chapter ch-red" data-title="Chapter 03 · Expert-Grounded Validation">
+    <div class="topline"></div>
+    <div class="chapter-band"><div class="chapter-num"><span>03</span></div><div class="chapter-of">Chapter 03 of 03</div></div>
+    <div class="chapter-copy">
+      <div class="chapter-kicker">Ask Sillok · Chapter 03</div>
+      <h1>Expert-Grounded Validation</h1>
+      <p class="chapter-sub">Distinguish similarity from relevance, and let the judgment of the researchers who use the system reshape its design.</p>
+      <ul class="chapter-list"><li>Similarity is not relevance</li><li>Human-in-the-loop</li></ul>
+    </div>
+    <div class="chapter-track">
+      <span class="done"><i>01</i>Archive Construction</span>
+      <span class="done"><i>02</i>Retrieval Orchestration</span>
+      <span class="on"><i>03</i>Expert-Grounded Validation</span>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section class="slide" data-title="Similarity is not relevance">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">03</span>Expert-Grounded Validation</div><div class="num">14 / Two Judgments</div></div>
+    <div class="headline"><div class="kicker">Retrieval quality has two different meanings</div><h1>A high similarity score is not yet<br><span class="jade">historical relevance</span>.</h1></div>
+    <div class="two-judgments">
+      <div class="judgment">
+        <div class="jt">Machine judgment</div><h2>How close are the vectors?</h2>
+        <p>Automatic metrics can test whether the retriever learned a defined correspondence.</p>
+        <div class="question">“Did the system retrieve what it was trained to retrieve?”</div>
+      </div>
+      <div class="judgment human">
+        <div class="jt">Historical judgment</div><h2>Can this record serve as evidence?</h2>
+        <p>A historian decides whether the returned source actually bears on the research question.</p>
+        <div class="question">“Would I use this record to construct an answer?”</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 -->
+  <section class="slide" data-title="Human-in-the-loop">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow"><span class="section-index">03</span>Expert-Grounded Validation</div><div class="num">15 / Human-in-the-loop</div></div>
+    <div class="headline"><div class="kicker">Beyond automated scores</div><h1>Quality must include the judgment of<br><span class="jade">the researchers who will use the RAG</span>.</h1></div>
+    <div class="human-loop">
+      <div class="validation-step">
+        <div class="vs-label">Quantitative evaluation</div>
+        <h2>Measure what the system retrieves.</h2>
+        <p>Automatic scores show whether retrieval changes.</p>
+      </div>
+      <div class="validation-arrow">&rarr;</div>
+      <div class="validation-step expert">
+        <div class="vs-label">Expert blind evaluation</div>
+        <h2>Ask whether the evidence is useful.</h2>
+        <p>Domain researchers judge the results without knowing which model produced them.</p>
+      </div>
+      <div class="validation-arrow">&rarr;</div>
+      <div class="validation-step refine">
+        <div class="vs-label">Return to design</div>
+        <h2>Let that judgment reshape the RAG.</h2>
+        <p>The users' expertise becomes part of quality control.</p>
+      </div>
+    </div>
+    <div class="loop-back" aria-hidden="true"><svg viewBox="0 0 1120 26" preserveAspectRatio="none"><path d="M1040 0 V22 H80 V0"/></svg></div>
+    <div class="claim">This is <b>human in the loop</b>: researchers do not merely use the system; their judgment helps define its quality.</div>
+  </section>
+
+  <!-- 17 -->
+  <section class="slide" data-title="Ask Sillok as a whole">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow">Putting It Together</div><div class="num">16 / Ask Sillok</div></div>
+    <div class="headline"><div class="kicker">Three layers · three time scales · one return path</div><h1>Ask Sillok is an <span class="jade">end-to-end research architecture</span>.</h1></div>
+    <div class="timescales">
+      <div class="timescale"><div class="ts-when">Once · offline</div><div class="ts-flow">Source structure &rarr; metadata &rarr; bilingual embedding &rarr; <span>archive index</span></div><div class="ts-owner">Archive construction</div></div>
+      <div class="timescale"><div class="ts-when">Every question</div><div class="ts-flow">Reformulation &rarr; dual retrieval &rarr; historical weighting &rarr; <span>cited evidence</span></div><div class="ts-owner">Retrieval orchestration</div></div>
+      <div class="timescale"><div class="ts-when">Continuously</div><div class="ts-flow">Expert judgment &rarr; cross-checking &rarr; error analysis &rarr; <span>revision</span></div><div class="ts-owner">Quality validation</div></div>
+    </div>
+  </section>
+
+  <!-- 18 -->
+  <section class="slide tech-slide" data-title="Live technology stack">
+    <div class="topline"></div>
+    <div class="masthead"><div class="eyebrow">Research Engineering</div><div class="num">17 / Live Infrastructure</div></div>
+    <div class="headline"><div class="kicker">The technical architecture is part of the research</div><h1>This humanities project runs on <span class="jade">NPU</span> and <span class="gold">AWS</span>.</h1></div>
+    <div class="tech-proof"><b>Live system</b><span>NPU-accelerated embeddings · AWS-hosted orchestration and vector retrieval</span></div>
+    <div class="tech-stack-rail" aria-label="Ask Sillok production request path">
+      <div class="tech-node">
+        <div class="tn-label">Research interface</div>
+        <h3>React</h3>
+        <p>The historian's question enters a working research interface.</p>
+      </div>
+      <div class="tech-arrow" aria-hidden="true"></div>
+      <div class="tech-node aws">
+        <div class="tn-label">Cloud orchestration</div>
+        <h3>FastAPI on<br>AWS Lambda</h3>
+        <p>Serverless API logic coordinates the live retrieval pipeline.</p>
+      </div>
+      <div class="tech-arrow" aria-hidden="true"></div>
+      <div class="tech-node npu">
+        <div class="tn-label">Embedding compute</div>
+        <h3>Qwen3<br>on NPU</h3>
+        <p>Archive-specific embeddings are produced on dedicated neural hardware.</p>
+      </div>
+      <div class="tech-arrow" aria-hidden="true"></div>
+      <div class="tech-node vectors">
+        <div class="tn-label">Vector retrieval</div>
+        <h3>AWS<br>S3 Vectors</h3>
+        <p><b>Vector database</b>Bilingual archive vectors are stored and searched here.</p>
+      </div>
+      <div class="tech-arrow" aria-hidden="true"></div>
+      <div class="tech-node">
+        <div class="tn-label">Evidence + answer</div>
+        <h3>S3 Store<br>+ DeepSeek</h3>
+        <p>Original records are hydrated before answer generation.</p>
+      </div>
+    </div>
+    <div class="research-team">
+      <div>
+        <div class="team-kicker">Jointly built</div>
+        <h2>Ask Sillok<br>Research Team</h2>
+      </div>
+      <div class="team-copy">
+        <p>Ask Sillok's historical method and working system were developed together by the research team.</p>
+        <div class="team-members">Kunha Kim · Byungjun Kim · Jeong-hui Park · Donghyun Woo · Si-heon Lee</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19 CLOSING -->
+  <section class="slide" data-title="Closing">
+    <div class="closing-grid">
+      <div class="closing-copy">
+        <div class="title-kicker">Ask Sillok · Takeaway · Hanyeon Forum 2026</div>
+        <h1>An askable archive is not built<br>by attaching an LLM.</h1>
+        <ul class="closing-points">
+          <li>Build an <b>archive-native database</b>.</li>
+          <li>Orchestrate retrieval around <b>historical questions</b>.</li>
+          <li>Keep the historian inside the <b>validation loop</b>.</li>
+        </ul>
+        <div class="closing-status">Patent application pending · Related manuscript under review<br>Selected implementation details and unpublished evaluation results are reserved.</div>
+      </div>
+      <div class="qr-block">
+        <svg viewBox="0 0 232 232" role="img" aria-label="QR code for beta.asksillok.com" width="232" height="232" class="segno"><path transform="scale(8)" class="qrline" stroke="#1b1b1b" d="M2 2.5h7m1 0h1m5 0h1m3 0h7m-25 1h1m5 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m4 0h1m1 0h1m4 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m1 0h4m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m2 0h1m1 0h1m2 0h1m3 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-15 1h1m1 0h4m-16 1h1m2 0h6m1 0h3m1 0h1m1 0h2m2 0h1m1 0h3m-24 1h3m4 0h2m2 0h4m3 0h5m-24 1h1m1 0h2m2 0h1m2 0h1m1 0h1m3 0h2m1 0h1m2 0h1m2 0h1m-22 1h1m1 0h1m4 0h3m2 0h2m1 0h1m2 0h4m-23 1h1m1 0h1m1 0h2m1 0h2m1 0h1m2 0h1m2 0h2m4 0h1m-25 1h1m1 0h3m4 0h2m1 0h1m1 0h4m2 0h1m2 0h1m-24 1h2m2 0h1m1 0h4m4 0h2m1 0h2m1 0h5m-25 1h1m3 0h1m2 0h1m2 0h1m5 0h1m1 0h2m1 0h2m1 0h1m-25 1h1m1 0h1m2 0h2m1 0h1m3 0h2m1 0h6m1 0h2m-16 1h3m2 0h1m2 0h1m3 0h1m1 0h2m-24 1h7m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m1 0h4m1 0h1m1 0h2m3 0h1m-21 1h1m1 0h3m1 0h1m1 0h2m1 0h2m2 0h6m-21 1h1m1 0h3m1 0h1m1 0h4m1 0h2m2 0h2m4 0h2m-25 1h1m1 0h3m1 0h1m2 0h3m1 0h1m2 0h2m2 0h5m-25 1h1m5 0h1m5 0h1m4 0h4m1 0h3m-25 1h7m1 0h1m2 0h2m2 0h2m1 0h1m2 0h1m2 0h1"/></svg>
+        <a class="qr-url" href="https://beta.asksillok.com" target="_blank" rel="noopener">beta.asksillok.com</a>
+        <div class="qr-label">Explore Ask Sillok · beta</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="page" id="pageButton" type="button" aria-label="Jump to slide" title="Click to choose a slide"><b id="pageNow">1</b> / <span id="pageTotal">18</span></button>
+<div class="keys">← → navigate · click page or G for overview · T theme</div>
+<div class="jump" id="jump">
+  <div class="jump-box">
+    <div class="jump-head">Jump to slide · click outside or press Esc to close</div>
+    <div id="jumpList"></div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const stage = document.getElementById('stage');
+  const slides = [...document.querySelectorAll('.slide')];
+  const koSlides = [
+    {
+      title:'표지',
+      items:[
+        ['.title-kicker',`제24회 한연포럼 · 단국대학교 한문교육연구소`],
+        ['.title-copy h1',`검색하는 사료에서<br>질문하는 사료로`],
+        ['.title-sub',`조선왕조실록 RAG 기반<br>연구 인터페이스 설계`],
+        ['.title-by',`<b>김근하</b><br>국립부경대학교 해양인문학연구소 연구교수<br>littlekg87@gmail.com`],
+        ['.status',`특허 출원 중 · 관련 논문 심사 중<br>일부 구현 세부사항과 미발표 실험 결과는 공개하지 않습니다.`],
+        ['.qr-url',`littlekg87.github.io/lecture`],
+        ['.qr-label',`이 발표자료 · 휴대폰으로 열기`]
+      ]
+    },
+    {
+      title:'Ask Sillok 열기',
+      items:[
+        ['.title-kicker',`시작하기 전에`],
+        ['.ask-copy h1',`휴대폰으로<br><span class="jade">Ask Sillok</span>을<br>열어 주세요.`],
+        ['.ask-sub',`이 발표에서 다루는 시스템은 실제로 운영 중입니다. 지금 스캔해 두고, 설계를 설명하는 동안 직접 질문을 던져 보세요.`],
+        ['.ask-note',`공개 베타 · 발표 중에도 계속 열어 두세요`]
+      ]
+    },
+    {
+      title:'검색 가능 ≠ 질문 가능',
+      items:[
+        ['.eyebrow',`문제`],
+        ['.num',`01 / 문제 제기`],
+        ['.kicker',`디지털화되었다고 이해할 수 있는 것은 아니다`],
+        ['.headline h1',`실록은 검색할 수 있습니다.<br>하지만 아직 <span class="jade">질문할 수는 없습니다</span>.`],
+        ['.compare-label',[`검색 가능한 아카이브`,`질문 가능한 아카이브`]],
+        ['.compare-side h2',[`이미 아는 단어를 찾는다`,`연구 질문에서 시작한다`]],
+        ['.ds-typed',[`평양 성곽 축조`,`태조는 왜 평양에 성을 쌓게 했을까?`]],
+        ['.ds-result',[`0건 · 사료에는 현대어가 아니라 <b>城平壤</b>으로 적혀 있습니다`,`<b>waa_10201006_001</b> · 命都評議使司, 城平壤 · 태조 2년(1393) · 0.91`]],
+        ['.compare-side p',[`인물, 관직, 사건, 시대어를 이미 알고 있어야 검색을 시작할 수 있습니다.`,`아직 모르는 역사적 어휘에 담긴 기록까지 발견하도록 시스템이 돕습니다.`]]
+      ]
+    },
+    {
+      title:'RAG 품질은 파이프라인에서 결정된다',
+      items:[
+        ['.eyebrow',`관점 전환`],
+        ['.num',`02 / 파이프라인`],
+        ['.kicker',`잘못된 첫 질문: 어떤 LLM을 쓸 것인가?`],
+        ['.headline h1',`RAG의 품질은 생성 이전,<br><span class="jade">파이프라인 전체에서 결정됩니다</span>.`],
+        ['.chain-step .cs',[`원천`,`준비`,`인코딩`,`검색`,`재순위`,`답변`]],
+        ['.chain-step .ct',[`구조`,`증거 단위`,`이중 언어 공간`,`후보 집합`,`역사적 신호`,`출처 추적`]],
+        ['.chain-notes .cn',[`기사, 기사 ID, 메타데이터를 아카이브가 정의한 그대로 보존합니다.`,`임의의 토큰 창이 아니라 아카이브 고유의 경계를 따라 증거를 자릅니다.`,`현대어 질문과 한문 본문이 같은 뜻일 수 있음을 인코더에 가르칩니다.`,`서로 다른 실패가 겹치지 않도록 둘 이상의 경로로 후보를 모읍니다.`,`왕대, 날짜, 관직, 주제가 유사도만으로 제안된 순서를 다시 계산하게 합니다.`,`모든 답변에 원문 기록을 함께 돌려주어 주장을 출처에서 검증할 수 있게 합니다.`]],
+        ['.claim',`품질을 결정하는 것은 하나의 모델이 아니라 <b>모델과 사료 사이의 설계</b>입니다.`]
+      ]
+    },
+    {
+      title:'Ask Sillok의 세 계층',
+      items:[
+        ['.num',`03 / 세 계층`],
+        ['.kicker',`역사학 RAG를 위한 종단간 설계`],
+        ['.headline h1',`Ask Sillok은 <span class="jade">서로 연결된 세 계층</span>으로 구축됩니다.`],
+        ['.layer h2',[`아카이브 구축`,`검색 파이프라인`,`전문가 기반 검증`]],
+        ['.layer p',[`사료 구조를 보존하고, 메타데이터를 관리하며, 아카이브의 두 언어를 연결합니다.`,`질문을 재정의하고, 두 경로로 검색한 뒤, 역사적 신호로 증거의 순서를 다시 정합니다.`,`역사학자가 증거를 판단하고 그 판단이 다시 시스템 설계로 돌아가게 합니다.`]],
+        ['.layer .when',[`최초 1회 · 오프라인`,`모든 질의마다 반복`,`지속적 · 피드백`]]
+      ]
+    },
+    {
+      title:'챕터 01 · 아카이브 구축',
+      items:[
+        ['.chapter-of',`3장 중 1장`],
+        ['.chapter-kicker',`Ask Sillok · 1장`],
+        ['.chapter-copy h1',`아카이브 구축`],
+        ['.chapter-sub',`사료 구조를 보존하고, 메타데이터와 텍스트를 분리하며, 아카이브의 두 언어를 잇고, 그 의미를 인코더에 가르칩니다.`],
+        ['.chapter-list li',[`사료 구조`,`메타데이터와 텍스트`,`한 기사 속 두 언어`,`도메인 적응 임베딩`]],
+        ['.chapter-track span',[`<i>01</i>아카이브 구축`,`<i>02</i>검색 파이프라인`,`<i>03</i>전문가 기반 검증`]]
+      ]
+    },
+    {
+      title:'벡터보다 먼저 구조',
+      items:[
+        ['.eyebrow',`<span class="section-index">01</span>아카이브 구축`],
+        ['.num',`04 / 사료 구조`],
+        ['.kicker',`아카이브에는 이미 고유한 경계가 있다`],
+        ['.headline h1',`벡터 데이터베이스보다 <span class="jade">사료 구조가 먼저</span>입니다.`],
+        ['.xml-card-label span',`실제 실록 XML · 일부 생략`],
+        ['.xml-card-label b',`태조 2년 · 1393-01-06`],
+        ['.xml-note .xn',[`식별자`,`맥락`,`의미`]],
+        ['.xml-note h2',[`기사는 이미 하나의 단위입니다.`,`메타데이터도 기록의 일부입니다.`,`본문에는 유형화된 개체가 있습니다.`]],
+        ['.xml-note p',[`영속적인 <span class="mono">level5 id</span>가 검색, 인용, 원문 복귀의 기준점이 됩니다.`,`날짜와 주제 분류를 본문에 섞지 않고도 별도로 검색할 수 있습니다.`,`본문의 마크업은 <span class="mono">平壤</span>을 지명으로 식별하여 또 하나의 검색 신호를 보존합니다.`]],
+        ['.xml-foot > span:first-child',`XML은 단순한 텍스트 용기가 아닙니다. <b>실록의 데이터 모델입니다.</b>`],
+        ['.xml-foot .source',`공개 실록 XML · 화면용 일부 생략<br><a href="https://sillok.history.go.kr/id/kaa_10201006_001" target="_blank" rel="noopener">국사편찬위원회 실록 기록</a> · <a href="https://wikidocs.net/239521" target="_blank" rel="noopener">XML 구조 참고자료</a>`]
+      ]
+    },
+    {
+      title:'메타데이터와 텍스트',
+      items:[
+        ['.eyebrow',`<span class="section-index">01</span>아카이브 구축`],
+        ['.num',`05 / 메타데이터`],
+        ['.kicker',`두 저장소, 하나의 증거 객체`],
+        ['.headline h1',`메타데이터와 텍스트는 분리합니다.<br>그러나 <span class="jade">출처와 증거는 분리하지 않습니다</span>.`],
+        ['.face-tag',[`텍스트 계층`,`메타데이터 계층`]],
+        ['.face h2',[`읽히는 내용`,`속한 맥락`]],
+        ['.face li',[`한문 본문`,`현대 한국어 제목`,`검색 가능한 증거 단위`,`왕대와 날짜`,`사료 계층`,`주제와 원문 링크`]],
+        ['.pair-key',`영속<br>레코드 ID`],
+        ['.footline',`메타데이터는 별도로 관리한 뒤 <b>필터링, 재순위, 인용, 원문 복귀</b>를 위해 다시 결합합니다.`]
+      ]
+    },
+    {
+      title:'이중 언어 아카이브',
+      items:[
+        ['.eyebrow',`<span class="section-index">01</span>아카이브 구축`],
+        ['.num',`06 / 두 언어`],
+        ['.kicker',`질문과 사료는 같은 언어를 사용하지 않는다`],
+        ['.headline h1',`실록은 설계 단계부터 <span class="jade">이중 언어 아카이브</span>입니다.`],
+        ['.language .lang',[`현대 한국어`,`한문`]],
+        ['.language h2',[`질문과 제목`,`역사적 본문`]],
+        ['.language p',[`오늘날의 역사학자가 사건을 질문하고 명명하는 언어입니다.`,`당대의 사건을 원문 기록이 보존하는 언어입니다.`]],
+        ['.bridge .word',`의미<br>정렬`],
+        ['.claim',`현대어 질문이 당대의 언어로 쓰인 사료에 도달해야 합니다.`]
+      ]
+    },
+    {
+      title:'하나의 XML 속 두 언어',
+      items:[
+        ['.eyebrow',`<span class="section-index">01</span>아카이브 구축`],
+        ['.num',`07 / XML 증거`],
+        ['.kicker',`이중 언어 문제는 각 기사 안에 존재한다`],
+        ['.headline h1',`하나의 XML 기사에는 <span class="red">한국어 제목</span>과<br><span class="jade">한문 본문</span>이 함께 있습니다.`],
+        ['.bix-code .cap span',`실제 실록 XML · 일부 생략`],
+        ['.bix-id',`같은 기사 ID · 서로 다른 두 언어 표면`],
+        ['.bix-language .lang',[`한국어 · 검색을 향한 제목`,`한문 · 증거를 담은 본문`]],
+        ['.bix-language p',[`현대 독자의 언어로 사건을 명명합니다.`,`증거로 검색되어야 할 역사적 진술을 보존합니다.`]],
+        ['.xml-foot > span:first-child',`인코더는 <b>이 두 문자열이 같은 역사 기사에 속한다는 것</b>을 학습해야 합니다.`],
+        ['.xml-foot .bix-source',`공개 실록 XML · 화면용 일부 생략<br><a href="https://sillok.history.go.kr/id/kaa_10201006_001" target="_blank" rel="noopener">국사편찬위원회 실록 기록</a> · <a href="https://wikidocs.net/239521" target="_blank" rel="noopener">XML 구조 참고자료</a>`]
+      ]
+    },
+    {
+      title:'도메인 적응 임베딩',
+      items:[
+        ['.eyebrow',`<span class="section-index">01</span>아카이브 구축`],
+        ['.num',`08 / 임베딩 설계`],
+        ['.kicker',`인코더에게 이 아카이브의 의미를 가르친다`],
+        ['.headline h1',`파인튜닝은 <span class="jade">현대의 질문</span>과<br><span class="jade">역사 기록</span>을 정렬합니다.`],
+        ['.distance-copy',`언어 간 거리`],
+        ['.vector-axis',[`의미 차원 1`,`의미 차원 2`]],
+        ['.vector-point span',[`현대 한국어 질문`,`한국어 제목`,`연결된 한문 본문`]],
+        ['button[data-embedding-state]',[`기본 모델`,`파인튜닝 모델`]],
+        ['#replayEmbedding',`다시 보기`],
+        ['.embedding-reading .mini',[`파인튜닝 이전`,`실록 특화 파인튜닝 이후`]],
+        ['.embedding-reading h2',[`연결된 본문이 멀리 남습니다.`,`두 언어가 같은 이웃을 공유합니다.`]],
+        ['.embedding-reading p',[`일반적인 유사도만으로는 현대 한국어 질문이 한문 증거에 도달한다고 보장할 수 없습니다.`,`인코더는 제목과 본문의 대응을 이 아카이브에 필요한 새로운 유사성으로 학습합니다.`]],
+        ['.embedding-caveat',`개념적 2D 도식 · 미발표 측정값, 계수, 평가 결과는 표시하지 않습니다.`]
+      ]
+    },
+    {
+      title:'챕터 02 · 검색 파이프라인',
+      items:[
+        ['.chapter-of',`3장 중 2장`],
+        ['.chapter-kicker',`Ask Sillok · 2장`],
+        ['.chapter-copy h1',`검색 파이프라인`],
+        ['.chapter-sub',`질문을 해석하고, 두 경로로 검색하며, 역사적 신호로 후보의 순서를 다시 정하고, 모든 답변을 출처와 함께 돌려줍니다.`],
+        ['.chapter-list li',[`질문에서 증거까지`,`질의 재정의`,`이중 검색`,`역사적 가중치`,`출처를 먼저`]],
+        ['.chapter-track span',[`<i>01</i>아카이브 구축`,`<i>02</i>검색 파이프라인`,`<i>03</i>전문가 기반 검증`]]
+      ]
+    },
+    {
+      title:'질문에서 증거까지',
+      items:[
+        ['.eyebrow',`<span class="section-index">02</span>검색 파이프라인`],
+        ['.num',`09 / 전체 흐름`],
+        ['.kicker',`모든 질문마다 반복되는 온라인 경로`],
+        ['.headline h1',`질문은 <span class="jade">네 번의 판단</span>을 거쳐 증거가 됩니다.`],
+        ['.pipe-node .pn',[`입력`,`1`,`2`,`3`,`4`]],
+        ['.pipe-node .pt',[`연구 질문`,`질의 재정의`,`이중 검색`,`역사적 가중치`,`증거 + 출처`]],
+        ['.footline',`생성기는 전체 아카이브나 설명 없는 유사도 목록이 아니라 <b>순위가 정해진 증거</b>를 받습니다.`]
+      ]
+    },
+    {
+      title:'질의 재정의',
+      items:[
+        ['.eyebrow',`<span class="section-index">02</span>검색 파이프라인`],
+        ['.num',`10 / 질의 재정의`],
+        ['.kicker',`자연어 질문에는 여러 검색 조건이 숨어 있다`],
+        ['.headline h1',`아카이브를 검색하기 <span class="jade">전에</span> 질문을 해석합니다.`],
+        ['.query-box .qt',[`역사학자가 묻는 것`,`시스템이 식별하는 것`,`검색으로 보내는 것`]],
+        ['.query-box h2',[`일상 언어로 된 질문`,`역사적 검색 조건`,`기록 가능한 재정의`]],
+        ['.query-box p',[`연구에는 유용하지만 아카이브의 정확한 용어와 경계가 빠져 있을 수 있습니다.`,`변환 과정은 모델 안에 숨지 않고 확인하고 검토할 수 있게 남습니다.`]],
+        ['.facet .fk',[`인물`,`시기`,`사건`,`용어`]],
+        ['.facet .fv',[`태조 太祖`,`1393년 · 태조 2년`,`축성`,`城 · 都評議使司`]],
+        ['.q-sample span[data-type]',`태조는 1393년에 왜 평양에 성을 쌓게 했을까?`]
+      ]
+    },
+    {
+      title:'이중 검색',
+      items:[
+        ['.eyebrow',`<span class="section-index">02</span>검색 파이프라인`],
+        ['.num',`11 / 이중 검색`],
+        ['.kicker',`하나의 질문 · 서로 독립적인 두 신호`],
+        ['.headline h1',`두 번 검색하고, 한 번 합친 뒤, <span class="red">순위를 정합니다</span>.`],
+        ['#replayDual',`흐름 다시 보기`],
+        ['.parallel-label',`두 검색이 동시에 실행됩니다`],
+        ['.merge-label',`다시 결합`],
+        ['.dual-query .dq',`재정의된 질문`],
+        ['.dual-query h2',`하나의<br>연구 질문`],
+        ['.dual-node .dn-label',[`경로 A · 의미`,`경로 B · 조건`,`후보 집합`,`통합 결과`]],
+        ['.dual-node h3',[`의미 검색`,`구조 검색`,`결과 병합`,`역사적 순위`]],
+        ['.dual-node p',[`이중 언어 아카이브에서 개념적으로 관련된 기록을 찾습니다.`,`인물, 시기, 메타데이터 조건으로 또 다른 후보 집합을 찾습니다.`,`아직 최종 결과가 아님`]],
+        ['.rank-row span:nth-child(2)',[`기록 A`,`기록 B`,`기록 C`]],
+        ['.footline',`두 경로는 동시에 실행되고 서로 다르게 실패하며, <b>역사적 가중 순위</b>를 만들기 전에 다시 합쳐집니다.`]
+      ]
+    },
+    {
+      title:'역사적 가중치',
+      items:[
+        ['.eyebrow',`<span class="section-index">02</span>검색 파이프라인`],
+        ['.num',`12 / 역사적 가중치`],
+        ['.kicker',`벡터 거리는 후보를 제안하고 역사 조건은 점수를 다시 계산한다`],
+        ['.headline h1',`<span class="jade">역사적 신호</span>에 따라 점수가 달라지는 과정을 확인합니다.`],
+        ['.se-label',`예시 후보 · 일치하는 신호를 클릭하세요`],
+        ['.score-example p',`추쇄도감 · 효종 재위 · 1649–1659 · 노비 정책 · 특정 인물`],
+        ['.distance-control label',`벡터 거리`],
+        ['.score-chip .sc-name',[`관직명`,`왕대 일치`,`연도 범위`,`주제`,`인물 언급`]],
+        ['.score-chip .sc-why',[`질문에 추쇄도감이 등장`,`효종 재위기의 기록`,`1649–1659년 범위에 포함`,`주제 태그 = 노비 정책`,`특정 인물이 기록에 등장`]],
+        ['.score-actions > span',`이전 Ask Sillok 발표의 가중치를 복원했습니다.`],
+        ['#scoreReset',`초기화`],
+        ['.score-ledger .sl-title',`실시간 계산`],
+        ['.score-ledger .sm-label',[`의미 점수`,`역사적 보너스`,`최종 점수`]],
+        ['.score-reading',`이것은 평가 결과가 아니라 <b>순위 함수</b>입니다. 선택한 역사 조건이 후보 집합의 순서를 바꿉니다.`]
+      ]
+    },
+    {
+      title:'출처를 먼저',
+      items:[
+        ['.eyebrow',`<span class="section-index">02</span>검색 파이프라인`],
+        ['.num',`13 / 출처 추적`],
+        ['.kicker',`말한 뒤에 출처를 찾지 않는다`],
+        ['.headline h1',`증거를 먼저 찾고,<br><span class="jade">그 증거로부터</span> 말합니다.`],
+        ['.return-node .rk',[`아카이브`,`증거`,`인용`,`답변`]],
+        ['.return-node .rv',[`실록 원문 기사`,`전체 기록 + 메타데이터`,`사용한 구절`,`하나의 주장`]],
+        ['.claim',`출처는 마지막에 덧붙이는 장식이 아닙니다.<br><b>사료 구조가 파이프라인 끝까지 살아남은 결과</b>입니다.`]
+      ]
+    },
+    {
+      title:'답변 속의 증거 · 실제 예시',
+      items:[
+        ['.eyebrow',`<span class="section-index">02</span>검색 파이프라인`],
+        ['.num',`00 / 실제 예시`],
+        ['.kicker',`출처를 먼저 · 실제 기사 하나로 처음부터 끝까지`],
+        ['.headline h1',`<span class="jade">증거로부터 답한다</span>는 것은 이런 모습입니다.`],
+        ['.ev-q .ev-label',`역사학자의 질문`],
+        ['.ev-question span[data-type]',`태조는 평양에 성을 쌓게 했는가?`],
+        ['.ev-a .ev-label',`답변 · 기록에 근거`],
+        ['.ev-answer',`그렇다. 태조 2년(1393) 1월 6일 기사에 따르면, 태조는 도평의사사에 명하여 평양에 성을 쌓게 했다.<button class="cite" type="button" aria-label="인용 기사 보기">[1]</button>`],
+        ['.ev-note',`모든 주장에 인용이 붙습니다. 뒤에 기록이 없는 진술은 하지 않습니다.`],
+        ['.ev-date',`태조 2년 · 1393-01-06 · 壬子`],
+        ['.ev-card > .ev-label',[`기사 제목 · 현대 한국어`,`원문 · 한문 · 실제 사용된 구절 강조`]],
+        ['.ev-meta span',[`<b>주제</b>군사-관방(關防)`,`<b>지명 색인</b>平壤`,`<b>출전</b>태조실록`]],
+        ['.ev-open',`원문 기사 열기 &nearr;`],
+        ['.footline',`답변은 <b>돌아갈 길이 있는 주장</b>입니다. 기사 ID, 날짜, 실제로 쓴 구절, 그리고 원문으로 가는 클릭 한 번.`]
+      ]
+    },
+    {
+      title:'챕터 03 · 전문가 기반 검증',
+      items:[
+        ['.chapter-of',`3장 중 3장`],
+        ['.chapter-kicker',`Ask Sillok · 3장`],
+        ['.chapter-copy h1',`전문가 기반 검증`],
+        ['.chapter-sub',`유사도와 관련성을 구분하고, 시스템을 쓰는 연구자의 판단이 설계를 다시 빚게 합니다.`],
+        ['.chapter-list li',[`유사도 ≠ 역사적 관련성`,`Human in the Loop`]],
+        ['.chapter-track span',[`<i>01</i>아카이브 구축`,`<i>02</i>검색 파이프라인`,`<i>03</i>전문가 기반 검증`]]
+      ]
+    },
+    {
+      title:'유사도 ≠ 역사적 관련성',
+      items:[
+        ['.eyebrow',`<span class="section-index">03</span>전문가 기반 검증`],
+        ['.num',`14 / 두 가지 판단`],
+        ['.kicker',`검색 품질에는 서로 다른 두 의미가 있다`],
+        ['.headline h1',`높은 유사도 점수가 곧<br><span class="jade">역사적 관련성</span>은 아닙니다.`],
+        ['.judgment .jt',[`기계의 판단`,`역사학의 판단`]],
+        ['.judgment h2',[`벡터가 얼마나 가까운가?`,`이 기록을 증거로 쓸 수 있는가?`]],
+        ['.judgment p',[`자동 지표는 검색기가 정의된 대응 관계를 학습했는지 확인할 수 있습니다.`,`역사학자는 검색된 사료가 실제 연구 질문에 답하는 증거인지 판단합니다.`]],
+        ['.judgment .question',[`“시스템은 학습하도록 설계된 대상을 검색했는가?”`,`“나는 이 기록으로 답변을 구성할 것인가?”`]]
+      ]
+    },
+    {
+      title:'Human in the Loop',
+      items:[
+        ['.eyebrow',`<span class="section-index">03</span>전문가 기반 검증`],
+        ['.num',`15 / Human in the Loop`],
+        ['.kicker',`자동화된 점수를 넘어서`],
+        ['.headline h1',`품질에는 실제 RAG를 사용할<br><span class="jade">연구자의 판단</span>이 포함되어야 합니다.`],
+        ['.validation-step .vs-label',[`정량 평가`,`전문가 블라인드 평가`,`설계로 환류`]],
+        ['.validation-step h2',[`시스템이 무엇을 검색하는지 측정합니다.`,`그 증거가 실제로 유용한지 묻습니다.`,`그 판단으로 RAG를 다시 설계합니다.`]],
+        ['.validation-step p',[`자동 점수는 검색 성능의 변화를 보여줍니다.`,`전문 연구자는 어떤 모델의 결과인지 모른 채 증거를 판단합니다.`,`사용자의 전문성이 품질 관리의 일부가 됩니다.`]],
+        ['.claim',`이것이 <b>Human in the Loop</b>입니다. 연구자는 시스템을 쓰는 데 그치지 않고 품질의 기준을 함께 만듭니다.`]
+      ]
+    },
+    {
+      title:'Ask Sillok 전체 구조',
+      items:[
+        ['.eyebrow',`전체 구조`],
+        ['.num',`16 / Ask Sillok`],
+        ['.kicker',`세 계층 · 세 시간 규모 · 하나의 환류 경로`],
+        ['.headline h1',`Ask Sillok은 <span class="jade">종단간 연구 아키텍처</span>입니다.`],
+        ['.timescale .ts-when',[`최초 1회 · 오프라인`,`모든 질문마다`,`지속적으로`]],
+        ['.timescale .ts-flow',[`사료 구조 &rarr; 메타데이터 &rarr; 이중 언어 임베딩 &rarr; <span>아카이브 인덱스</span>`,`질의 재정의 &rarr; 이중 검색 &rarr; 역사적 가중치 &rarr; <span>출처가 있는 증거</span>`,`전문가 판단 &rarr; 교차검증 &rarr; 오류 분석 &rarr; <span>수정</span>`]],
+        ['.timescale .ts-owner',[`아카이브 구축`,`검색 파이프라인`,`품질 검증`]]
+      ]
+    },
+    {
+      title:'실제 운영 기술 스택',
+      items:[
+        ['.eyebrow',`연구 엔지니어링`],
+        ['.num',`17 / 실제 운영 인프라`],
+        ['.kicker',`기술 아키텍처도 연구의 일부다`],
+        ['.headline h1',`이 인문학 프로젝트는 <span class="jade">NPU</span>와 <span class="gold">AWS</span>에서 작동합니다.`],
+        ['.tech-proof b',`실제 운영 시스템`],
+        ['.tech-proof span',`NPU 가속 임베딩 · AWS 기반 오케스트레이션과 벡터 검색`],
+        ['.tech-node .tn-label',[`연구 인터페이스`,`클라우드 오케스트레이션`,`임베딩 연산`,`벡터 검색`,`증거 + 답변`]],
+        ['.tech-node p',[`역사학자의 질문이 실제 연구 인터페이스로 들어옵니다.`,`서버리스 API가 실시간 검색 파이프라인을 조정합니다.`,`실록 특화 임베딩을 전용 신경망 연산 장치에서 생성합니다.`,`<b>벡터 데이터베이스</b>이중 언어 실록 벡터를 이곳에 저장하고 검색합니다.`,`원문 기록을 다시 결합한 뒤 답변을 생성합니다.`]],
+        ['.team-kicker',`공동 개발`],
+        ['.research-team h2',`Ask Sillok<br>연구팀`],
+        ['.team-copy p',`Ask Sillok의 역사학적 방법과 실제 작동 시스템은 연구팀이 함께 개발했습니다.`]
+      ]
+    },
+    {
+      title:'마무리',
+      items:[
+        ['.title-kicker',`Ask Sillok · 핵심 메시지 · 제24회 한연포럼`],
+        ['.closing-copy h1',`질문 가능한 아카이브는<br>LLM을 붙인다고<br>만들어지지 않습니다.`],
+        ['.closing-points li',[`<b>아카이브 고유의 데이터베이스</b>를 구축합니다.`,`<b>역사적 질문</b>을 중심으로 검색을 설계합니다.`,`역사학자를 <b>검증의 고리</b> 안에 둡니다.`]],
+        ['.closing-status',`특허 출원 중 · 관련 논문 심사 중<br>일부 구현 세부사항과 미발표 실험 결과는 공개하지 않습니다.`],
+        ['.qr-label',`Ask Sillok 살펴보기 · 베타`]
+      ]
+    }
+  ];
+  const progress = document.getElementById('progress');
+  const pageNow = document.getElementById('pageNow');
+  const pageTotal = document.getElementById('pageTotal');
+  const pageButton = document.getElementById('pageButton');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const languageBtn = document.getElementById('languageBtn');
+  const themeBtn = document.getElementById('themeBtn');
+  const keysGuide = document.querySelector('.keys');
+  const jump = document.getElementById('jump');
+  const jumpList = document.getElementById('jumpList');
+  const jumpHead = document.querySelector('.jump-head');
+  const mastheadNumbers = [...document.querySelectorAll('.masthead .num')];
+  const embeddingDemo = document.getElementById('embeddingDemo');
+  const embeddingStateButtons = [...document.querySelectorAll('[data-embedding-state]')];
+  const replayEmbeddingBtn = document.getElementById('replayEmbedding');
+  const dualFlow = document.getElementById('dualFlow');
+  const replayDualBtn = document.getElementById('replayDual');
+  const vectorState = document.getElementById('vectorState');
+  const distanceLabel = document.getElementById('distanceLabel');
+  const scoreDistance = document.getElementById('scoreDistance');
+  const scoreDistanceValue = document.getElementById('scoreDistanceValue');
+  const scoreBonusButtons = [...document.querySelectorAll('[data-score-value]')];
+  const scoreSemantic = document.getElementById('scoreSemantic');
+  const scoreBonus = document.getElementById('scoreBonus');
+  const scoreFinal = document.getElementById('scoreFinal');
+  const scoreBar = document.getElementById('scoreBar');
+  const scoreReset = document.getElementById('scoreReset');
+  const translationTargets = [];
+  let embeddingTimer = null;
+  let language = 'ko';
+  let index = 0;
+
+  pageTotal.textContent = slides.length;
+
+  function registerTranslations() {
+    koSlides.forEach((slideConfig, slideIndex) => {
+      const slide = slides[slideIndex];
+      if (!slide) throw new Error(`Missing slide ${slideIndex + 1} for Korean translation`);
+      slide.dataset.titleKo = slideConfig.title;
+      slideConfig.items.forEach(([selector, koreanValues]) => {
+        const elements = [...slide.querySelectorAll(selector)];
+        const values = Array.isArray(koreanValues) ? koreanValues : [koreanValues];
+        if (elements.length !== values.length) {
+          throw new Error(`Translation mismatch on slide ${slideIndex + 1}: ${selector} (${elements.length} elements / ${values.length} values)`);
+        }
+        elements.forEach((element, valueIndex) => {
+          translationTargets.push({element, en:element.innerHTML, ko:values[valueIndex]});
+        });
+      });
+    });
+  }
+
+  registerTranslations();
+
+  // Masthead numbers follow the real page number (chapter dividers and title have no masthead).
+  slides.forEach((slide, slideIndex) => {
+    const num = slide.querySelector('.masthead .num');
+    if (!num) return;
+    const page = String(slideIndex + 1).padStart(2, '0');
+    const renumber = text => text.replace(/^\s*\d+\s*\/\s*/, `${page} / `);
+    num.innerHTML = renumber(num.innerHTML);
+    const target = translationTargets.find(t => t.element === num);
+    if (target) { target.en = renumber(target.en); target.ko = renumber(target.ko); }
+  });
+
+  function fit() {
+    const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
+    stage.style.transform = `scale(${scale})`;
+  }
+
+  function setEmbeddingState(state) {
+    if (!embeddingDemo) return;
+    const nextState = state === 'ft' ? 'ft' : 'base';
+    embeddingDemo.dataset.state = nextState;
+    embeddingStateButtons.forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.embeddingState === nextState));
+    });
+    if (vectorState) {
+      vectorState.textContent = language === 'ko'
+        ? (nextState === 'ft' ? '파인튜닝 모델' : '기본 모델')
+        : (nextState === 'ft' ? 'Fine-tuned model' : 'Base model');
+    }
+    if (distanceLabel) {
+      distanceLabel.textContent = language === 'ko'
+        ? (nextState === 'ft' ? '같은 의미권' : '멀리 떨어짐')
+        : (nextState === 'ft' ? 'shared neighborhood' : 'far apart');
+    }
+  }
+
+  function replayEmbedding() {
+    if (!embeddingDemo) return;
+    if (embeddingTimer) window.clearTimeout(embeddingTimer);
+    setEmbeddingState('base');
+    embeddingTimer = window.setTimeout(() => setEmbeddingState('ft'), 520);
+  }
+
+  function replayDualFlow() {
+    if (!dualFlow) return;
+    dualFlow.classList.remove('playing');
+    void dualFlow.offsetWidth;
+    dualFlow.classList.add('playing');
+  }
+
+  function recalculateScore() {
+    if (!scoreDistance) return;
+    const distance = Number.parseFloat(scoreDistance.value);
+    const semantic = 1 - distance;
+    const bonus = scoreBonusButtons.reduce((sum, button) => {
+      return sum + (button.getAttribute('aria-pressed') === 'true' ? Number.parseFloat(button.dataset.scoreValue) : 0);
+    }, 0);
+    const final = semantic + bonus;
+    scoreDistanceValue.textContent = distance.toFixed(2);
+    scoreSemantic.textContent = semantic.toFixed(2);
+    scoreBonus.textContent = `+${bonus.toFixed(2)}`;
+    scoreFinal.textContent = final.toFixed(2);
+    scoreBar.style.width = `${Math.min((final / 2) * 100, 100)}%`;
+  }
+
+  function resetScore() {
+    if (!scoreDistance) return;
+    scoreDistance.value = '0.28';
+    scoreBonusButtons.forEach(button => button.setAttribute('aria-pressed', 'false'));
+    recalculateScore();
+  }
+
+
+  /* ===== motion & interaction layer ===== */
+  const REVEAL_SELECTOR = [
+    '.masthead','.headline > *','.title-copy > *','.qr-block','.compare-side','.compare-arrow',
+    '.chain-arrow','.claim','.footline','.layer','.xml-card','.xml-note','.face','.language','.bridge',
+    '.bix-code','.bix-id','.bix-language','.embedding-demo','.pipe-node','.pipe-arrow','.query-box','.q-arrow',
+    '.dual-flow','.score-sim','.return-node','.return-arrow','.judgment','.validation-step','.validation-arrow',
+    '.timescale','.tech-proof','.closing-copy > :not(ul)','.closing-points li',
+    '.chapter-copy > :not(ul)','.chapter-list li','.chapter-track span','.ev-block','.ev-card','.ask-copy > *','.ask-qr'
+  ].join(',');
+  slides.forEach(slide => {
+    let k = 0;
+    slide.querySelectorAll(REVEAL_SELECTOR).forEach(el => {
+      el.classList.add('rv');
+      el.style.setProperty('--i', Math.min(k++, 14));
+    });
+    slide.querySelectorAll('.xml-code > div, .bix-lines > div').forEach((line, i) => line.style.setProperty('--l', i));
+  });
+
+  const fxTimers = [];
+  function fxLater(fn, ms) { fxTimers.push(window.setTimeout(fn, ms)); }
+  function fxClear() { while (fxTimers.length) window.clearTimeout(fxTimers.pop()); }
+
+  function typeInto(el, delay, speed, done) {
+    const full = el.textContent;
+    const caret = el.nextElementSibling;
+    el.textContent = '';
+    caret?.classList.remove('done');
+    fxLater(() => {
+      let i = 0;
+      const step = () => {
+        i += 1;
+        el.textContent = full.slice(0, i);
+        if (i < full.length) fxLater(step, speed);
+        else { caret?.classList.add('done'); done?.(); }
+      };
+      step();
+    }, delay);
+  }
+
+  function focusLines(code, lines, on) {
+    if (!code) return;
+    code.classList.toggle('focus', on);
+    [...code.children].forEach((line, i) => line.classList.toggle('lit', on && lines.includes(i)));
+  }
+  function wireLineFocus(slide, noteSel, codeSel, wrapSel) {
+    const code = slide.querySelector(codeSel);
+    const notes = [...slide.querySelectorAll(noteSel)];
+    const set = note => {
+      notes.forEach(n => n.classList.toggle('on', n === note));
+      focusLines(code, note ? note.dataset.lines.split(',').map(Number) : [], Boolean(note));
+    };
+    notes.forEach(note => {
+      note.addEventListener('mouseenter', () => { fxClear(); set(note); });
+      note.addEventListener('click', () => { fxClear(); set(note); });
+    });
+    slide.querySelector(wrapSel)?.addEventListener('mouseleave', () => set(null));
+    return () => {
+      set(null);
+      notes.forEach((note, i) => fxLater(() => set(note), 1600 + i * 1300));
+      fxLater(() => set(null), 1600 + notes.length * 1300);
+    };
+  }
+
+  const slideFx = new Map();
+
+  // 02 · search vs ask
+  {
+    const slide = slides.find(s => s.querySelector('.demo-search'));
+    const demos = [...slide.querySelectorAll('.demo-search')];
+    slideFx.set(slide, () => {
+      demos.forEach((demo, i) => {
+        demo.classList.remove('show');
+        typeInto(demo.querySelector('[data-type]'), 900 + i * 2400, 42, () => fxLater(() => demo.classList.add('show'), 350));
+      });
+    });
+  }
+
+  // 03 · chain notes
+  {
+    const slide = slides.find(s => s.querySelector('.chain-notes'));
+    const steps = [...slide.querySelectorAll('.chain-step')];
+    const notes = [...slide.querySelectorAll('.chain-notes .cn')];
+    const focusStep = i => {
+      steps.forEach((s, j) => s.classList.toggle('focus', i === j));
+      notes.forEach((n, j) => n.classList.toggle('on', i === j));
+    };
+    steps.forEach((step, i) => step.addEventListener('click', () => { fxClear(); focusStep(i); }));
+    slideFx.set(slide, () => { focusStep(-1); fxLater(() => focusStep(0), 2100); });
+  }
+
+  // 05 · 08 · XML focus
+  {
+    const s5 = slides.find(s => s.querySelector('.xml-structure'));
+    const s8 = slides.find(s => s.querySelector('.bilingual-xml'));
+    slideFx.set(s5, wireLineFocus(s5, '.xml-note', '.xml-code', '.xml-structure'));
+    slideFx.set(s8, wireLineFocus(s8, '.bix-language', '.bix-lines', '.bilingual-xml'));
+  }
+
+  // 11 · query reformulation
+  {
+    const slide = slides.find(s => s.querySelector('.query-flow'));
+    const flow = slide.querySelector('.query-flow');
+    slideFx.set(slide, () => {
+      flow.classList.remove('filled');
+      typeInto(slide.querySelector('.q-sample [data-type]'), 900, 38, () => fxLater(() => flow.classList.add('filled'), 300));
+    });
+  }
+
+  // 16 · human-in-the-loop cycle
+  {
+    const slide = slides.find(s => s.querySelector('.human-loop'));
+    const steps = [...slide.querySelectorAll('.validation-step')];
+    const arrows = [...slide.querySelectorAll('.validation-arrow')];
+    const loop = slide.querySelector('.loop-back');
+    const setOn = i => {
+      steps.forEach((s, j) => s.classList.toggle('on', i === j));
+      arrows.forEach((a, j) => a.classList.toggle('on', i === j + 1));
+      loop?.classList.toggle('on', i === 2);
+    };
+    steps.forEach((s, i) => s.addEventListener('click', () => { fxClear(); setOn(i); }));
+    slideFx.set(slide, () => {
+      setOn(-1);
+      let i = 0;
+      const tick = () => { setOn(i % 3); i += 1; fxLater(tick, 1700); };
+      fxLater(tick, 1100);
+    });
+  }
+
+
+  // 12 · four decisions: the question travels through the stages
+  {
+    const slide = slides.find(s => s.classList.contains('flow-slide'));
+    const nodes = [...slide.querySelectorAll('.pipe-node')];
+    const arrows = [...slide.querySelectorAll('.pipe-arrow')];
+    const setStage = i => {
+      nodes.forEach((n, j) => { n.classList.toggle('lit', j === i); n.classList.toggle('done', j < i); });
+      arrows.forEach((a, j) => { a.classList.toggle('lit', j === i - 1); a.classList.toggle('done', j < i - 1); });
+    };
+    nodes.forEach((n, i) => n.addEventListener('click', () => { fxClear(); setStage(i); }));
+    slideFx.set(slide, () => {
+      setStage(-1);
+      let i = 0;
+      const tick = () => {
+        setStage(i % (nodes.length + 1) === nodes.length ? nodes.length : i % (nodes.length + 1));
+        i += 1;
+        fxLater(tick, (i % (nodes.length + 1)) === 0 ? 2600 : 1150);
+      };
+      fxLater(tick, 1300);
+    });
+  }
+
+
+  // 16b · evidence in the answer
+  {
+    const slide = slides.find(s => s.classList.contains('evidence-slide'));
+    const demo = slide.querySelector('.evidence-demo');
+    slide.addEventListener('click', event => {
+      if (!event.target.closest('.cite')) return;
+      fxClear();
+      demo.classList.add('answered');
+      demo.classList.toggle('cited');
+    });
+    slideFx.set(slide, () => {
+      demo.classList.remove('answered', 'cited');
+      typeInto(slide.querySelector('.ev-question [data-type]'), 800, 40, () => {
+        fxLater(() => demo.classList.add('answered'), 350);
+        fxLater(() => demo.classList.add('cited'), 2600);
+      });
+    });
+  }
+
+  function restoreTyped(slide) {
+    // put full text back for any typed element (translation targets hold the canonical text)
+    slide.querySelectorAll('[data-type]').forEach(el => {
+      const target = translationTargets.find(t => t.element === el);
+      if (target) el.innerHTML = language === 'ko' ? target.ko : target.en;
+    });
+  }
+
+  function runSlideEffects(slide) {
+    fxClear();
+    restoreTyped(slide);
+    slide.classList.remove('run');
+    void slide.offsetWidth;
+    slide.classList.add('run');
+    slideFx.get(slide)?.();
+  }
+
+  function show(nextIndex) {
+    index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+    runSlideEffects(slides[index]);
+    pageNow.textContent = index + 1;
+    progress.style.width = `${((index + 1) / slides.length) * 100}%`;
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === slides.length - 1;
+    [...jumpList.children].forEach((item, i) => item.classList.toggle('current', i === index));
+    if (embeddingTimer) window.clearTimeout(embeddingTimer);
+    if (embeddingDemo && slides[index].contains(embeddingDemo)) replayEmbedding();
+    if (dualFlow && slides[index].contains(dualFlow)) replayDualFlow();
+  }
+
+  function updateThemeButton() {
+    const dark = document.documentElement.dataset.theme === 'dark';
+    themeBtn.textContent = language === 'ko'
+      ? (dark ? '밝게' : '어둡게')
+      : (dark ? 'Light' : 'Dark');
+  }
+
+  function updateJumpTitles() {
+    [...jumpList.children].forEach((item, slideIndex) => {
+      const title = language === 'ko'
+        ? slides[slideIndex].dataset.titleKo
+        : slides[slideIndex].dataset.title;
+      item.children[1].textContent = title || (language === 'ko' ? '슬라이드' : 'Slide');
+    });
+  }
+
+  function setLanguage(nextLanguage, persist = true) {
+    language = nextLanguage === 'ko' ? 'ko' : 'en';
+    document.documentElement.lang = language;
+    document.documentElement.dataset.lang = language;
+    translationTargets.forEach(target => {
+      target.element.innerHTML = language === 'ko' ? target.ko : target.en;
+    });
+    languageBtn.textContent = language === 'ko' ? 'EN' : '한국어';
+    languageBtn.setAttribute('aria-label', language === 'ko' ? 'Switch to English' : '한국어로 전환');
+    prevBtn.setAttribute('aria-label', language === 'ko' ? '이전 슬라이드' : 'Previous slide');
+    nextBtn.setAttribute('aria-label', language === 'ko' ? '다음 슬라이드' : 'Next slide');
+    pageButton.setAttribute('aria-label', language === 'ko' ? '슬라이드로 이동' : 'Jump to slide');
+    pageButton.setAttribute('title', language === 'ko' ? '클릭하여 슬라이드를 선택하세요' : 'Click to choose a slide');
+    mastheadNumbers.forEach(number => {
+      number.setAttribute('title', language === 'ko' ? '클릭하여 슬라이드를 선택하세요' : 'Click to choose a slide');
+    });
+    jumpHead.textContent = language === 'ko'
+      ? '슬라이드로 이동 · 바깥을 클릭하거나 Esc를 누르면 닫힙니다'
+      : 'Jump to slide · click outside or press Esc to close';
+    keysGuide.textContent = language === 'ko'
+      ? '← → 이동 · 페이지 번호 또는 G: 목차 · L: 언어 · T: 테마'
+      : '← → navigate · click page or G for overview · L language · T theme';
+    replayEmbeddingBtn?.setAttribute('aria-label', language === 'ko' ? '임베딩 비교 다시 보기' : 'Replay embedding comparison');
+    replayDualBtn?.setAttribute('aria-label', language === 'ko' ? '병렬 검색 애니메이션 다시 보기' : 'Replay parallel retrieval animation');
+    embeddingDemo?.querySelector('.vector-stage')?.setAttribute('aria-label', language === 'ko'
+      ? '파인튜닝 전후의 개념적 벡터 공간 비교'
+      : 'Conceptual vector-space comparison before and after fine-tuning');
+    setEmbeddingState(embeddingDemo?.dataset.state || 'base');
+    updateThemeButton();
+    updateJumpTitles();
+    if (typeof index === 'number' && slides[index]?.classList.contains('active')) runSlideEffects(slides[index]);
+    if (persist) {
+      try { localStorage.setItem('askSillokLanguage', language); } catch {}
+    }
+  }
+
+  function toggleTheme() {
+    const dark = document.documentElement.dataset.theme === 'dark';
+    document.documentElement.dataset.theme = dark ? 'light' : 'dark';
+    updateThemeButton();
+    try { localStorage.setItem('askSillokTheme', document.documentElement.dataset.theme); } catch {}
+  }
+
+  function toggleJump(force) {
+    const open = typeof force === 'boolean' ? force : !jump.classList.contains('open');
+    jump.classList.toggle('open', open);
+    if (open) {
+      const current = jumpList.children[index];
+      if (current) current.scrollIntoView({block:'nearest'});
+    }
+  }
+
+  slides.forEach((slide, i) => {
+    const item = document.createElement('div');
+    item.className = 'jump-item';
+    item.innerHTML = `<span>${String(i + 1).padStart(2,'0')}</span><span>${slide.dataset.title || 'Slide'}</span>`;
+    item.addEventListener('click', event => {
+      event.stopPropagation();
+      show(i);
+      toggleJump(false);
+    });
+    jumpList.appendChild(item);
+  });
+
+  prevBtn.addEventListener('click', event => { event.stopPropagation(); show(index - 1); });
+  nextBtn.addEventListener('click', event => { event.stopPropagation(); show(index + 1); });
+  languageBtn.addEventListener('click', event => {
+    event.stopPropagation();
+    setLanguage(language === 'ko' ? 'en' : 'ko');
+  });
+  themeBtn.addEventListener('click', event => { event.stopPropagation(); toggleTheme(); });
+  pageButton.addEventListener('click', event => { event.stopPropagation(); toggleJump(true); });
+  mastheadNumbers.forEach(number => {
+    number.setAttribute('title', 'Click to choose a slide');
+    number.addEventListener('click', event => {
+      event.stopPropagation();
+      toggleJump(true);
+    });
+  });
+  embeddingStateButtons.forEach(button => {
+    button.addEventListener('click', event => {
+      event.stopPropagation();
+      if (embeddingTimer) window.clearTimeout(embeddingTimer);
+      setEmbeddingState(button.dataset.embeddingState);
+    });
+  });
+  if (replayEmbeddingBtn) {
+    replayEmbeddingBtn.addEventListener('click', event => {
+      event.stopPropagation();
+      replayEmbedding();
+    });
+  }
+  if (replayDualBtn) {
+    replayDualBtn.addEventListener('click', event => {
+      event.stopPropagation();
+      replayDualFlow();
+    });
+  }
+  scoreBonusButtons.forEach(button => {
+    button.addEventListener('click', event => {
+      event.stopPropagation();
+      button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+      recalculateScore();
+    });
+  });
+  if (scoreDistance) {
+    scoreDistance.addEventListener('input', event => {
+      event.stopPropagation();
+      recalculateScore();
+    });
+  }
+  if (scoreReset) {
+    scoreReset.addEventListener('click', event => {
+      event.stopPropagation();
+      resetScore();
+    });
+  }
+
+  document.addEventListener('keydown', event => {
+    if (event.target.closest('button,input,a')) return;
+    if (['ArrowRight','ArrowDown','PageDown',' '].includes(event.key)) {
+      event.preventDefault(); show(index + 1);
+    } else if (['ArrowLeft','ArrowUp','PageUp'].includes(event.key)) {
+      event.preventDefault(); show(index - 1);
+    } else if (event.key === 'Home') {
+      show(0);
+    } else if (event.key === 'End') {
+      show(slides.length - 1);
+    } else if (event.key.toLowerCase() === 't') {
+      toggleTheme();
+    } else if (event.key.toLowerCase() === 'l') {
+      setLanguage(language === 'ko' ? 'en' : 'ko');
+    } else if (event.key.toLowerCase() === 'g') {
+      toggleJump();
+    } else if (event.key === 'Escape') {
+      toggleJump(false);
+    }
+  });
+
+  document.addEventListener('click', event => {
+    if (event.target.closest('button,input,a,.jump-box')) return;
+    if (jump.classList.contains('open')) { toggleJump(false); return; }
+    const ratio = event.clientX / window.innerWidth;
+    if (ratio > .68) show(index + 1);
+    else if (ratio < .32) show(index - 1);
+  });
+
+  jump.addEventListener('click', () => toggleJump(false));
+  window.addEventListener('resize', fit);
+
+  let savedLanguage = 'ko';
+  try {
+    const saved = localStorage.getItem('askSillokTheme');
+    if (saved === 'dark') {
+      document.documentElement.dataset.theme = 'dark';
+    }
+    if (localStorage.getItem('askSillokLanguage') === 'en') savedLanguage = 'en';
+  } catch {}
+
+  setLanguage(savedLanguage, false);
+  fit();
+  recalculateScore();
+  show(0);
+})();
+</script>
+</body>
+</html>
