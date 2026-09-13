@@ -12,6 +12,7 @@
 |---|---|---|---|
 | 강의 | **K-MOOC 디지털 인문학** | 『세종실록』 지리지로 배우는 텍스트마이닝 · 텍스트분석 · 통계분석 · HGIS · 네트워크 분석 | **[`2025_kmooc/`](2025_kmooc/)** |
 | 워크숍 | **서울대학교 AI 워크숍** (2026.08.31.) | 「AI가 읽어낸 조선왕조실록의 패턴들」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)** | **[`2026_SeoulUnivWorkshop/`](2026_SeoulUnivWorkshop/)** |
+| 발표 | **제24회 한연포럼 · 단국대학교 한문교육연구소** (2026.09.15.) | 「검색하는 사료에서 질문하는 사료로: 조선왕조실록 RAG 기반 연구 인터페이스 설계」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_HanyeonForum/)** | **[`2026_HanyeonForum/`](2026_HanyeonForum/)** |
 
 ---
 
