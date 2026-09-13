@@ -55,13 +55,17 @@ html[data-lang="ko"]{
 html[data-lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
 html[data-lang="ko"] .xml,html[data-lang="ko"] pre,html[data-lang="ko"] code{word-break:normal}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{width:100%;height:100%;overflow:hidden}
+html,body{width:100%;height:100%;overflow:hidden;max-width:100vw}
 body{
   display:flex;align-items:center;justify-content:center;
   background:var(--sunk);color:var(--ink);font-family:var(--serif);
   -webkit-font-smoothing:antialiased;
 }
-.frame{position:relative;flex:none;overflow:hidden;width:calc(var(--W) * var(--s,1));height:calc(var(--H) * var(--s,1))}
+.frame{
+  position:relative;flex:none;overflow:hidden;
+  width:min(100vw, calc(100vh * 16 / 9));height:min(100vh, calc(100vw * 9 / 16));
+}
+@supports (width:100dvw){.frame{width:min(100dvw, calc(100dvh * 16 / 9));height:min(100dvh, calc(100dvw * 9 / 16))}}
 .stage{position:absolute;left:0;top:0;width:var(--W);height:var(--H);transform-origin:top left;transform:scale(var(--s,1))}
 @supports (height:100dvh){html,body{height:100dvh}}
 @media (max-width:760px){.keys{display:none}.page{left:14px;bottom:10px}}
@@ -2209,7 +2213,10 @@ body:has(.slide.chapter.ch-jade.active) #pageButton{color:#0E1A18}
   function fit() {
     const vw = window.visualViewport?.width || document.documentElement.clientWidth || window.innerWidth;
     const vh = window.visualViewport?.height || window.innerHeight;
-    const scale = Math.min(vw / 1280, vh / 720);
+    const frame = document.getElementById('frame');
+    const fw = frame ? frame.clientWidth : vw;
+    const fh = frame ? frame.clientHeight : vh;
+    const scale = Math.min(fw / 1280, fh / 720, vw / 1280, vh / 720);
     document.documentElement.style.setProperty('--s', scale);
   }
   window.visualViewport?.addEventListener('resize', fit);
