@@ -64,6 +64,7 @@ body{
 .frame{position:relative;flex:none;overflow:hidden;width:calc(var(--W) * var(--s,1));height:calc(var(--H) * var(--s,1))}
 .stage{position:absolute;left:0;top:0;width:var(--W);height:var(--H);transform-origin:top left;transform:scale(var(--s,1))}
 @supports (height:100dvh){html,body{height:100dvh}}
+@media (max-width:760px){.keys{display:none}.page{left:14px;bottom:10px}}
 .slide{
   position:absolute;inset:0;width:var(--W);height:var(--H);
   display:none;overflow:hidden;background:var(--paper);
