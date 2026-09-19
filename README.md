@@ -13,6 +13,7 @@
 | 강의 | **K-MOOC 디지털 인문학** | 『세종실록』 지리지로 배우는 텍스트마이닝 · 텍스트분석 · 통계분석 · HGIS · 네트워크 분석 | **[`2025_kmooc/`](2025_kmooc/)** |
 | 워크숍 | **서울대학교 AI 워크숍** (2026.08.31.) | 「AI가 읽어낸 조선왕조실록의 패턴들」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)** | **[`2026_SeoulUnivWorkshop/`](2026_SeoulUnivWorkshop/)** |
 | 발표 | **제24회 한연포럼 · 단국대학교 한문교육연구소** (2026.09.15.) | 「검색하는 사료에서 질문하는 사료로: 조선왕조실록 RAG 기반 연구 인터페이스 설계」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_HanyeonForum/)** | **[`2026_HanyeonForum/`](2026_HanyeonForum/)** |
+| 발표 | **AI 시대의 역사 연구** | 1~4챕터 통합 발표자료 · AI 시대의 역사학, 황청직공도 데이터 만들기, 세종실록지리지 분석하기, Ask Sillok으로 보여주기 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
 
 ---
 
@@ -26,7 +27,9 @@
 
 각 폴더 안의 `README.md` 에 자세한 안내가 들어 있습니다.
 
-발표 슬라이드는 내려받지 않아도 **[웹에서 바로 볼 수 있습니다](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)**.
+발표 슬라이드는 내려받지 않아도 위 목록의 **바로 보기 ↗** 링크에서 열 수 있습니다.
+
+**AI 시대의 역사 연구**는 1~4챕터, 총 44장면을 하나로 묶은 웹 발표자료입니다. `2026_AI_History/index.html`을 내려받아 브라우저에서 열면 오프라인에서도 사용할 수 있습니다. 외부 서비스와 원문 링크 방문에는 인터넷 연결이 필요합니다.
 
 ---
 
