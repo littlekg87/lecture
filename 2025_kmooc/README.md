@@ -1,5 +1,206 @@
 # 디지털 인문학 실습 자료 (K-MOOC)
 
+<!-- english:start -->
+<details markdown="1">
+<summary markdown="span"><strong>🌐 English</strong> — click to open the English version</summary>
+
+## Digital Humanities Practice Materials (K-MOOC)
+
+Using the Geography Section of the *Sejong Sillok* and the Annals of the Joseon Dynasty, the course practises **five ways of handling historical sources as data**. The course itself is taught in Korean.
+
+> ### 📌 Use the materials on this page for the exercises
+>
+> The lecture videos and handouts reflect **the state at the time of recording**. Since then the programs have moved to new versions, and file names and how things are run have been tidied up.
+>
+> **If the video and this page differ, this page is right.** Every difference and its reason is noted under each item below.
+>
+> | In the videos and handouts | Now |
+> |---|---|
+> | Python installed and run on your computer | **Google Colab** — runs in the browser with nothing to install |
+> | Long file paths typed into the code | **No paths to type** — files are downloaded automatically |
+> | Korean file names such as `실습예제_○○○.csv` | **English file names** ([mapping table](#file-names-differ-from-the-lecture-videos)) |
+> | Gephi 0.10.1 / QGIS 3.x screens | **Latest versions** ([Gephi](guides/gephi.md) · [QGIS](guides/qgis.md) guides, in Korean) |
+> | Encoding set to `Korean` in QGIS | **Set it to `UTF-8`** — otherwise Korean text is garbled |
+
+> ### ⛔ Do not share the GIS map files
+>
+> The **boundary shapefile of the Eight Provinces of Joseon (`adm_do.*`)** in `data/gis/` was **provided specially for this course by Prof. 김현종 of the Academy of Korean Studies**.
+>
+> It may be used **only for the exercises of this course**. Passing it to others, redistributing it or using it outside the course **violates the terms under which it was provided**. Please delete it after the exercises rather than keeping it.
+>
+> Details → **[data/gis/README.md](data/gis/README.md)**
+
+### Exercises by session
+
+| Session | Exercise | Go to |
+|---|---|---|
+| **2-4** | Text mining | [① Extracting 口 (population)](notebooks/01_gu_extract.ipynb) · [② Converting numerals](notebooks/02_gu_convert.ipynb) |
+| **4-4** | Text analysis | [③ Word frequency](notebooks/03_word_frequency.ipynb) · [④ Word cloud](notebooks/04_wordcloud.ipynb) |
+| **3-2** | Statistical analysis | [Data and analysis notes](data/statistics/) (jamovi) |
+| **3-4** | HGIS | [QGIS guide](guides/qgis.md) |
+| **4-2** | Network analysis | [Gephi guide](guides/gephi.md) |
+
+### What the exercises cover
+
+| Field | What you do | Tool |
+|---|---|---|
+| Text mining | Extract population figures from the Classical Chinese text | Python (Google Colab) |
+| Text analysis | Word frequencies and a word cloud of a memorial to the throne | Python (Google Colab) |
+| Statistics | Correlation between household counts and soldier counts | jamovi |
+| HGIS | Map statistics by province | QGIS |
+| Network analysis | The personal network of officials of the Border Defense Council (Bibyeonsa) | Gephi |
+
+### 🚀 Quick start
+
+**Python exercises — nothing to install.** The buttons below open Google Colab. **Sign in with a Google account, then press the ▶ buttons on the left from top to bottom.**
+
+| Session | Exercise | Open |
+|---|---|---|
+| **2-4** | ① Extracting 口 data | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/01_gu_extract.ipynb) |
+| **2-4** | ② Classical Chinese numerals → Arabic numerals | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/02_gu_convert.ipynb) |
+| **4-4** | ③ Word frequency analysis | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/03_word_frequency.ipynb) |
+| **4-4** | ④ Word cloud | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/littlekg87/lecture/blob/main/2025_kmooc/notebooks/04_wordcloud.ipynb) |
+
+> The **step numbers in the notebooks match the handouts exactly**: if the video says “step 2-1”, look for “2-1단계” in the notebook.
+
+> 💡 **What is Colab?** Google’s free **Python inside a web browser**. Nothing is installed on your computer, and it runs **the same on Windows and Mac**. Mac users in particular skip the trouble of installing Python and Java.
+
+**Program exercises — read the installation guides first.**
+
+| Session | Exercise | Program | Guide |
+|---|---|---|---|
+| **3-2** | Statistics | jamovi | [Data notes](data/statistics/) · usage in the lecture video |
+| **3-4** | HGIS | QGIS | **[QGIS installation and usage guide](guides/qgis.md)** |
+| **4-2** | Network analysis | Gephi | **[Gephi installation and usage guide](guides/gephi.md)** |
+
+> ⚠️ **Please read both guides first.** New versions of Gephi and QGIS came out after the recording, so **the screens look different**. The guides say which version to download and what changed.
+
+### 📥 Downloading the materials
+
+**You do not need to know GitHub. Just follow these steps.**
+
+1. Press the green **`< > Code`** button near the top of this page.
+2. Press **`Download ZIP`** at the bottom (about **17 MB** because of the map files; it may take a moment).
+3. Unzip the file — **Windows:** right-click → **Extract All**; **macOS:** **double-click** it.
+4. In the unzipped folder, open the **`2025_kmooc`** folder.
+
+> 🔴 **Always unzip first.** If you open files inside the ZIP, QGIS and Gephi cannot find them.
+>
+> 🔴 **Put the folder somewhere whose path has no Korean characters or spaces.** For example, `C:\kmooc\` is safer than `C:\실습 자료\`.
+
+### 📁 Folder layout
+
+```
+2025_kmooc/
+├── notebooks/     the four Google Colab exercises (①–④)
+├── scripts/       Python code to run on your own computer (instead of Colab)
+├── guides/        Gephi and QGIS installation and usage guides
+└── data/          exercise data
+    ├── text-mining/     text of the Chungcheong section of the Sejong Sillok geography
+    ├── word-analysis/   Kim Sang-heon’s memorial to the throne
+    ├── statistics/      household and military statistics for 333 counties (with notes)
+    ├── gis/             map of the Eight Provinces (shapefile) + statistics by province  ⛔ restricted
+    └── network/         network of Bibyeonsa officials
+```
+
+#### File names differ from the lecture videos
+
+The files were **renamed in English**, because names with Korean characters or spaces cause errors on Mac and in some programs. Use this table to match **the name used in the video** to **the actual file**. **The content is the same.**
+
+| Name in the videos and handouts | Actual file |
+|---|---|
+| `Practice_1.txt` | `data/text-mining/practice_1.txt` |
+| `실습예제_김상헌상소문.txt` | `data/word-analysis/kim-sangheon-sangso.txt` |
+| `실습예제데이터_인구군사.xlsx` | `data/statistics/population-military.xlsx` |
+| `실습예제_GIS데이터.CSV` | `data/gis/provinces-data.csv` |
+| `실습예제_비변사 네트워크.csv` | `data/network/bibyeonsa-network.csv` |
+
+### 🖥️ Notes for Mac users
+
+**All exercises work on a Mac**, with a few differences.
+
+| | Windows | macOS |
+|---|---|---|
+| Python exercises | Colab (same) | **Colab (same)** |
+| QGIS | Installs normally | Installs normally (notarized by Apple) |
+| Gephi | Installs normally | **Check your chip type before downloading** ([guide](guides/gephi.md#macos--내-맥이-어떤-종류인지-먼저-확인하세요)) |
+| Korean font | Malgun Gothic | **No Malgun Gothic** → Colab handles it for Python; choose a font yourself in Gephi and QGIS |
+| Memorial text | `.txt` provided | `.txt` provided (the `.hwp` version, which does not open on a Mac, is not included) |
+
+1. **`malgun.ttf` error.** `font_path="malgun.ttf"` in the lecture code is a **Windows-only font** and fails on a Mac. → **The Colab notebooks avoid this.** To run on your own computer, use the code in `scripts/`, which finds a font automatically.
+2. **Gephi labels showing as `□□□`.** The video sets the font to **`HY중고딕`**, which **Macs do not have**. → Choose **`AppleGothic`** in Gephi’s font list; the result is the same. See the [Gephi guide](guides/gephi.md#3-이름-보이게-하기--맥-사용자-필독).
+3. **“Unidentified developer” warning.** **Control-click** the program icon and choose **Open**.
+4. **Installing Java (JDK).** The morphological analyzer (KoNLPy) needs Java, which is fiddly to install on a Mac. → **With Colab you do not need it.**
+
+### 📋 Copying a file path
+
+Sometimes Python code needs a **file location (path)** such as `"C:\Users\..."`. Typing it by hand almost always goes wrong, so **copy and paste it**.
+
+**Windows:** find the file in File Explorer, **Shift + right-click** it, choose **“Copy as path”** and paste it into the code (on Windows 11 a plain right-click also shows it). It pastes **with the quotation marks**:
+```
+"C:\Users\hong\Desktop\kmooc\data\text-mining\practice_1.txt"
+```
+
+**macOS:** find the file in Finder, right-click it and **hold the `option` key** while the menu is open — “Copy” turns into **“Copy … as Pathname”**. The shortcut is **`option` + `command` + `C`** with the file selected.
+```
+/Users/hong/Desktop/kmooc/data/text-mining/practice_1.txt
+```
+
+**After pasting,** put an **`r`** in front and **wrap the path in quotation marks**:
+
+```python
+# ✅ correct (Windows)
+file_path = r"C:\Users\hong\Desktop\kmooc\data\text-mining\practice_1.txt"
+
+# ✅ correct (macOS)
+file_path = r"/Users/hong/Desktop/kmooc/data/text-mining/practice_1.txt"
+
+# ❌ wrong — without r, \U, \t and so on are read as special characters and cause errors
+file_path = "C:\Users\hong\Desktop\kmooc\data\text-mining\practice_1.txt"
+```
+
+> 💡 **`r` means “read it as is” (raw).** It stops the backslashes in Windows paths from being misread. Mac paths have no backslashes, so it is optional there, but **adding it out of habit does no harm**.
+>
+> 💡 **With Colab this step does not exist** — the files are downloaded automatically.
+
+### 💻 Running the Python code on your own computer (optional)
+
+To run on your own computer instead of Colab, use the `scripts/` folder. It is set up so that **you do not have to edit any paths**.
+
+```bash
+pip install konlpy wordcloud matplotlib
+```
+
+```bash
+python scripts/01_gu_extract.py
+python scripts/02_gu_convert.py
+python scripts/03_word_frequency.py
+python scripts/04_wordcloud.py
+```
+
+> ⚠️ Scripts `03` and `04` **need Java (JDK) installed**. If that is a hassle, use Colab.
+
+### 📚 Data sources
+
+- **Text of the Geography Section of the *Sejong Sillok*** — Annals of the Joseon Dynasty database, National Institute of Korean History. The exercises use an excerpt of the Chungcheong section (`practice_1.txt`). The full XML and county-level data are in a separate repository → https://github.com/littlekg87/Sejong_Sillok_Jiriji
+- **Boundary map of the Eight Provinces** — ⛔ **provided by Prof. 김현종, Academy of Korean Studies**. Permitted only for the exercises of this course; sharing, redistribution or use outside the course violates the terms of provision. → [Usage restrictions](data/gis/README.md)
+- **Kim Sang-heon’s memorial** — *Injo Sillok*
+
+### 🙋 FAQ
+
+**Q. Do I have to pay to use Colab?** No. A Google account is enough; the free allowance is plenty for these exercises.
+
+**Q. Where are files made in Colab saved?** Temporarily on the Colab server; they disappear when you close the window. Run the **“내려받기” (download)** cell in each notebook to save them to your computer.
+
+**Q. Do I need to know Python?** No. Just press the ▶ buttons in order from the top. Each cell explains what it does.
+
+**Q. I got an error.** First check **“문제가 생겼을 때” (when something goes wrong)** at the end of each guide. If that does not solve it, post on the course board **with the full error message copied**.
+
+---
+
+</details>
+<!-- english:end -->
+
 『세종실록』 지리지와 조선왕조실록을 재료로, **역사 자료를 데이터로 다루는 다섯 가지 방법**을 실습합니다.
 
 > ## 📌 실습은 이 페이지의 자료로 하세요

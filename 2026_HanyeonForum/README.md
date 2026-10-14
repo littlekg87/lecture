@@ -1,5 +1,64 @@
 # 검색하는 사료에서 질문하는 사료로 (제24회 한연포럼, 2026.09.15.)
 
+<!-- english:start -->
+<details markdown="1">
+<summary markdown="span"><strong>🌐 English</strong> — click to open the English version</summary>
+
+## From Searchable Sources to Askable Sources (The 24th Hanyeon Forum, 2026.09.15.)
+
+**Designing a RAG-based research interface for the Annals of the Joseon Dynasty**
+
+Slides from the 24th Hanyeon Forum of the Institute of Hanmun Education, Dankook University. To turn the Annals of the Joseon Dynasty from “sources you search” into “sources you ask”, the talk explains how Ask Sillok was designed, in three layers: archive construction, the retrieval pipeline, and expert-grounded validation.
+
+> #### ▶ **[Open the slides](https://littlekg87.github.io/lecture/2026_HanyeonForum/)**
+> They open directly in the browser without downloading. The slides can be switched between Korean and English.
+
+- **Speaker** Kunha Kim (Research Professor, Institute for Maritime Humanities, Pukyong National University)
+- **Date · venue** Tuesday 15 September 2026, 4 p.m. · Room 403, College of Education, Dankook University & Zoom
+- **Hosts** Institute of Hanmun Education and Department of Hanmun Education, Dankook University
+- **Demonstrated system** [Ask Sillok (public beta)](https://beta.asksillok.com)
+
+### The claim of this talk
+
+> **An askable archive is not built by attaching an LLM.**
+
+The quality of RAG is decided across the whole pipeline, before generation. You have to build an archive-native database, design retrieval around historical questions, and keep the historian inside the validation loop.
+
+### Structure
+
+| Part | Content |
+|---|---|
+| **Problem** | The Annals are searchable but not yet askable · RAG quality is decided in the pipeline · the three layers of Ask Sillok |
+| **01 Archive construction** | Source structure before vectors · metadata and text · two languages in one article (Korean title / Classical Chinese body) · domain-adapted embeddings |
+| **02 Retrieval pipeline** | Four decisions from question to evidence · query reformulation · dual retrieval · historical weighting · provenance and a real answer example |
+| **03 Expert-grounded validation** | Similarity ≠ historical relevance · human in the loop |
+| **Closing** | Overall architecture · live infrastructure (NPU · AWS) · key message |
+
+### Controls
+
+| Action | How |
+|---|---|
+| Next / previous | `→` `←` or the arrows at the top right |
+| Contents | `G` or click the page number at the bottom left |
+| Language (Korean / English) | `L` or the button at the top right |
+| Light / dark | `T` or the button at the top right |
+
+Step cards, XML notes and citation marks `[1]` on the slides highlight the related element when clicked.
+
+### Files
+
+| File | Content |
+|---|---|
+| `HanyeonForum24_AskableArchives_presentation.html` | The slides (a single HTML file with no external files) |
+| `index.html` | Redirects to the slides |
+
+Because a patent application is pending and a related paper is under review, some implementation details and unpublished experimental results are not disclosed.
+
+---
+
+</details>
+<!-- english:end -->
+
 **조선왕조실록 RAG 기반 연구 인터페이스 설계**
 
 단국대학교 한문교육연구소 제24회 한연포럼 발표 슬라이드입니다. 조선왕조실록을 "검색하는 사료"에서 "질문하는 사료"로 바꾸기 위해 Ask Sillok을 어떻게 설계했는지, 아카이브 구축 · 검색 파이프라인 · 전문가 기반 검증의 세 계층으로 설명합니다.
