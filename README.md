@@ -13,7 +13,8 @@
 | 강의 | **K-MOOC 디지털 인문학** | 『세종실록』 지리지로 배우는 텍스트마이닝 · 텍스트분석 · 통계분석 · HGIS · 네트워크 분석 | **[`2025_kmooc/`](2025_kmooc/)** |
 | 워크숍 | **서울대학교 AI 워크숍** (2026.08.31.) | 「AI가 읽어낸 조선왕조실록의 패턴들」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)** | **[`2026_SeoulUnivWorkshop/`](2026_SeoulUnivWorkshop/)** |
 | 발표 | **제24회 한연포럼 · 단국대학교 한문교육연구소** (2026.09.15.) | 「검색하는 사료에서 질문하는 사료로: 조선왕조실록 RAG 기반 연구 인터페이스 설계」 발표 슬라이드 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_HanyeonForum/)** | **[`2026_HanyeonForum/`](2026_HanyeonForum/)** |
-| 발표 | **서강대학교 사학과 콜로키움** (2026.09.28.) | 「AI 시대의 역사 연구」 3챕터·41슬라이드 통합 발표자료 · 군역 동원 체계의 구조 연구와 Ask Sillok — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| 발표 | **AI 시대의 역사 연구** · 서강대학교 사학과 × 디지털역사연구소 콜로키움 (2026.09.28.) · 이화여자대학교 사학과 콜로키움 (2026.10.15.) · 부산대학교 디지털인문학센터 콜로키움 (2026.10.28.) | 4챕터·49슬라이드 통합 발표자료 · 『황청직공도』 온톨로지, 군역 동원 체계의 구조 연구, Ask Sillok — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| 발표 | **Ask Sillok 단독 발표** · 제21회 KOSSDA 데이터 페어 · 율곡국학진흥원 「AI 시대의 지역 데이터와 디지털 아카이브」 | Ask Sillok이 작동하는 방식을 설명하는 약 30분 발표자료(한국어·영어 전환) · 행사별 판 모음 — **[바로 보기 ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/)** | **[`Asksillok_presentation/`](Asksillok_presentation/)** |
 
 ---
 
@@ -29,7 +30,7 @@
 
 발표 슬라이드는 내려받지 않아도 위 목록의 **바로 보기 ↗** 링크에서 열 수 있습니다.
 
-**AI 시대의 역사 연구**는 3챕터, 총 41슬라이드을 하나로 묶은 웹 발표자료입니다. `2026_AI_History/index.html`을 내려받아 브라우저에서 열면 오프라인에서도 사용할 수 있습니다. 외부 서비스와 원문 링크 방문에는 인터넷 연결이 필요합니다.
+**AI 시대의 역사 연구**는 4챕터, 총 49슬라이드를 하나로 묶은 웹 발표자료입니다. `2026_AI_History/index.html`을 내려받아 브라우저에서 열면 오프라인에서도 사용할 수 있습니다. 외부 서비스와 원문 링크 방문에는 인터넷 연결이 필요합니다.
 
 ---
 
