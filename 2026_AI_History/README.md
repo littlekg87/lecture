@@ -1,20 +1,33 @@
 # AI 시대의 역사 연구
 
-**서강대학교 사학과 콜로키움 · 김근하 · 2026년 9월 28일**
+**김근하 · 4개 챕터, 총 49슬라이드의 인터랙티브 HTML 발표자료**
 
-역사연구자의 질문에서 출발해 디지털 분석으로 기존 연구를 다시 해석하고, 역사 자료에 근거해 질문에 답하는 서비스를 설계한 과정을 소개합니다. **3개 챕터, 총 41슬라이드**로 구성된 인터랙티브 HTML 발표자료입니다.
+역사연구자의 질문에서 출발해 사료를 데이터로 만들고, 디지털 분석으로 기존 연구를 다시 해석하고, 역사 자료에 근거해 질문에 답하는 서비스를 설계한 과정을 소개합니다.
 
 **[발표자료 바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** · [HTML 내려받기](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_AI_History/index.html)
 
+## 이 자료를 사용한 발표
+
+| 일자 | 행사 |
+|---|---|
+| 2026년 9월 28일 | 서강대학교 사학과 × 디지털역사연구소 콜로키움 |
+| 2026년 10월 15일 | 이화여자대학교 사학과 콜로키움 |
+| 2026년 10월 28일 | 부산대학교 디지털인문학센터 콜로키움 |
+
 ## 발표 구성
 
-전체 목차는 **01–41**, 화면 하단은 **1–41 / 41**의 연속 번호를 사용합니다.
+전체 목차는 **01–49**, 화면 하단은 **1–49 / 49**의 연속 번호를 사용합니다.
 
 | 챕터 | 슬라이드 | 주제 |
 |---|---|---|
 | [01 · AI 시대의 역사학](https://littlekg87.github.io/lecture/2026_AI_History/#/1/cover) | 01–09 | 역사 연구의 질문과 근거, 디지털역사학과 AI의 역할 |
-| [02 · 조선 전기 군역 동원 체계의 구조 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/2/cover) | 10–20 | 『세종실록지리지』의 데이터화와 전국 군현 분석으로 군역 개혁의 장기적 맥락을 재해석 |
-| [03 · Searchable to Askable: Ask Sillok 설계 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/3/cover) | 21–41 | 자료 설계부터 임베딩·파인튜닝·검색·평가·서비스 구현까지 이어지는 End-to-End RAG 시스템 설계 연구 사례 |
+| [02 · 황청직공도 세계 인식 구조의 디지털 온톨로지 구축 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/2/cover) | 10–16 | LLM과 그래프 DB를 활용해 사료를 데이터로 구축한 사례 |
+| [03 · 조선 전기 군역 동원 체계의 구조 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/3/cover) | 17–27 | 『세종실록지리지』의 데이터화와 전국 군현 분석으로 군역 개혁의 장기적 맥락을 재해석 |
+| [04 · Searchable to Askable: Ask Sillok 설계 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/4/cover) | 28–49 | 자료 설계부터 임베딩·파인튜닝·검색·평가·서비스 구현까지 이어지는 End-to-End RAG 시스템 설계 연구 사례 (46–49는 부록) |
+
+### 황청직공도 세계 인식 구조의 디지털 온톨로지
+
+『황청직공도』의 기록을 텍스트로 옮기고, 분류를 붙이고, 분류와 검토를 반복해 온톨로지로 구조화하는 과정을 다룹니다. 그래프 DB와 세계 지도 위에서 사료를 다시 읽으며, 사료를 데이터로 만들었을 때 무엇이 새로 보이는지를 살펴봅니다.
 
 ### 조선 전기 군역제의 장기적 변화
 
@@ -24,17 +37,20 @@
 
 ### Ask Sillok과 역사연구자의 평가
 
-한글 제목–한문 본문 대응을 활용한 임베딩 모델 학습, LoRA의 원리, 기본 모델과 파인튜닝 모델 비교, 벡터 검색과 메타데이터를 결합하는 Hybrid Retrieval을 소개합니다. 이후 역사연구자의 블라인드 평가와 연구 결과를 통해 벤치마크 성능 향상과 실제 연구에서의 유용성을 구분하고, Human-in-the-loop의 필요성을 논의합니다.
+한글 제목–한문 본문 대응을 활용한 임베딩 모델 학습, LoRA 어댑터의 원리, 실제로 저장된 벡터, 벡터 검색과 메타데이터를 결합하는 Hybrid Retrieval을 소개합니다. 부록에서는 기본 모델과 파인튜닝 모델의 비교, 역사연구자의 블라인드 평가와 연구 결과를 통해 벤치마크 성능 향상과 실제 연구에서의 유용성을 구분하고, Human-in-the-loop의 필요성을 논의합니다.
 
 | 주요 장면 | 바로 가기 |
 |---|---|
-| 데이터와 코드의 결합 | [16슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/2/order) |
-| 군현 간 호구 비율의 차이 | [17슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/2/inequality) |
-| 군현 간 병종 비율의 차이 | [18슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/2/service) |
-| LoRA의 학습 원리 | [29슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/lora-path) |
-| 전문가 블라인드 평가 | [32슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/expert-evaluation) |
-| 연구 결과와 Human-in-the-loop | [33슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/expert-results) |
-| 벡터 검색과 메타데이터 가점의 결합 | [36슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/query) |
+| 사료를 그래프 DB로 읽기 | [14슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/2/network) |
+| 데이터와 코드의 결합 | [23슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/order) |
+| 군현 간 호구 비율의 차이 | [24슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/inequality) |
+| 군현 간 병종 비율의 차이 | [25슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/service) |
+| LoRA 어댑터의 학습 원리 | [36슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/lora-path) |
+| 벡터 검색과 메타데이터 가점의 결합 | [40슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/query) |
+| 전문가 블라인드 평가 | [48슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
+| 연구 결과와 Human-in-the-loop | [49슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
+
+Ask Sillok만 다루는 약 30분 분량의 단독 발표는 [`Asksillok_presentation/`](../Asksillok_presentation/)에 있습니다.
 
 ## 이용 방법
 
@@ -54,18 +70,16 @@
 - **조작 모드:** ‘이동 모드’ 버튼을 눌러 전환하면 슬라이드 안의 지도·모델·평가 버튼 등을 조작할 수 있습니다.
 - **화면 맞춤:** 확대를 해제하고 전체 슬라이드로 돌아갑니다.
 
-데스크톱에서는 슬라이드에 원래 확보된 상단·하단 공간에 메뉴를 배치하므로, 1920×1080 표시 영역을 온전히 사용할 수 있습니다. 모바일에서는 메뉴 공간을 별도로 확보합니다. 목차와 이동 버튼은 기기에서 누르기 쉬운 크기를 유지합니다. ‘더보기’ 창은 기기 화면 크기에 맞춰 열리며, 닫으면 기존 슬라이드 배치로 돌아갑니다.
-
 ## 내려받아 오프라인으로 보기
 
 1. 위의 **HTML 내려받기** 링크에서 파일을 저장하거나, [`index.html`](index.html)의 **Download raw file**을 누릅니다.
 2. 내려받은 `index.html`을 브라우저에서 엽니다.
 
-이미지·폰트·스크립트·데이터가 HTML 하나에 포함되어 있어 별도 설치나 로컬 서버가 필요하지 않습니다. 파일 크기는 약 22MB입니다. Ask Sillok, 원문, GitHub 데이터셋 등 외부 링크 방문에는 인터넷 연결이 필요합니다.
+이미지·폰트·스크립트·데이터가 HTML 하나에 포함되어 있어 별도 설치나 로컬 서버가 필요하지 않습니다. 파일 크기는 약 23MB입니다. Ask Sillok, 원문, GitHub 데이터셋 등 외부 링크 방문에는 인터넷 연결이 필요합니다.
 
 ## 실제 연구 자료와 시연의 구분
 
-지도·데이터셋·저장된 임베딩 등 연구 자료와, 학습·검색·평가 절차를 설명하는 개념 도식이 함께 포함되어 있습니다. 가중치 변화, 검색 점수와 메타데이터 가점, 전문가 평가 화면의 클릭 점수 등은 각 화면에 표시된 설명용 예시입니다. 특히 전문가 평가 화면의 목록과 선택 점수는 실제 검색 결과나 전문가 평정값이 아닙니다.
+지도·데이터셋·저장된 임베딩 등 연구 자료와, 학습·검색·평가 절차를 설명하는 개념 도식이 함께 포함되어 있습니다. 가중치 변화, LoRA 어댑터의 행렬 크기와 수치, 검색 점수와 메타데이터 가점, 전문가 평가 화면의 클릭 점수 등은 각 화면에 표시된 설명용 예시입니다. 특히 전문가 평가 화면의 목록과 선택 점수는 실제 검색 결과나 전문가 평정값이 아닙니다.
 
 발표자료 자체가 실시간 AI 검색·답변을 수행하거나 평가 점수를 서버에 제출하지는 않습니다. 실제 서비스는 [Ask Sillok](https://beta.asksillok.com)에서 이용할 수 있습니다.
 
@@ -73,11 +87,11 @@
 
 | 파일 | 설명 |
 |---|---|
-| [`index.html`](index.html) | 3개 챕터·41슬라이드의 웹·오프라인 통합 발표자료 |
+| [`index.html`](index.html) | 4개 챕터·49슬라이드의 웹·오프라인 통합 발표자료 |
 | [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | 포함된 폰트의 라이선스 고지 |
 | [`README.md`](README.md) | 발표 내용과 이용 안내 |
 
-이 폴더의 기존 4챕터 발표자료를 현재 3챕터 수정본으로 교체했습니다. 발표 주소는 유지되며, 이전 버전은 Git 커밋 기록에서 확인할 수 있습니다.
+2026년 9월 28일 서강대학교 발표에서는 3챕터·41슬라이드 판을 사용했습니다. 2026년 10월 14일에 『황청직공도』 챕터를 더한 현재의 4챕터 판으로 교체했습니다. 발표 주소는 유지되며, 이전 판은 Git 커밋 기록에서 확인할 수 있습니다.
 
 ## 관련 자료
 
