@@ -1,5 +1,84 @@
 # Ask Sillok 단독 발표
 
+<!-- english:start -->
+<details markdown="1">
+<summary markdown="span"><strong>🌐 English</strong> — click to open the English version</summary>
+
+## Ask Sillok — standalone talk
+
+**Kunha Kim (Research Professor, Institute for Maritime Humanities, Pukyong National University) · an interactive HTML presentation of about 30 minutes**
+
+The talk explains how [Ask Sillok](https://beta.asksillok.com), which answers questions about the Annals of the Joseon Dynasty together with its evidence, actually works. Following a single article of the Annals, it shows how sources become data that can be asked (building the DB) and how a question becomes a grounded answer (retrieval).
+
+This folder collects editions of the same talk that differ only in title, one per event.
+
+### Talks
+
+| Date | Event | Title | Open |
+|---|---|---|---|
+| 23 October 2026 | The 21st KOSSDA Data Fair | Can Historical Data and AI Converge? — Designing an AI Chatbot for the Annals of the Joseon Dynasty | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_KOSSDA.html)** |
+| 30 October 2026 | Yulgok Institute of Korean Studies (율곡국학진흥원) · Regional Data and Digital Archives in the Age of AI | Searchable to Askable Archive: RAG-based Annals of the Joseon Dynasty AI chat-bot Architecture | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok.html)** |
+
+Listing page: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://littlekg87.github.io/lecture/Asksillok_presentation/)**
+
+### Structure
+
+18 main slides and 5 appendix slides.
+
+| Part | Content |
+|---|---|
+| **Introduction** | QR code for Ask Sillok · from sources you search to sources you ask · the two phases of RAG |
+| **1 · Building the DB** | An article of the Annals → XML → body and metadata archives · fine-tuning on Korean title–Classical Chinese body pairs · the LoRA adapter · the vectors as actually stored |
+| **2 · Retrieval** | Splitting the question into a vector and metadata conditions · comparing similarity and conditions · selecting candidates and adding a bonus · linking the answer to the actual article |
+| **Closing** | The technology that runs the service · the Ask Sillok research team · the historian’s role in the age of AI |
+| **Appendix** | Comparison of six models · blind evaluation by historians · findings · related work |
+
+### Korean / English
+
+Each file contains both languages. Press **ENG** at the top right to switch to English on the slide you are viewing, and press it again to return to Korean. Parts that are data in themselves, such as the Korean titles of Annals articles and the original XML, stay as they are on the English screens.
+
+### How to use
+
+- **Moving:** arrow keys, Page Up / Page Down, the previous/next buttons at the bottom, or scrolling. Some scenes continue in steps within one slide.
+- **Contents:** “Contents” at the top right, or the `M` key.
+- **Interaction:** press the training buttons, retrieval routes and citation numbers to see changes and explanations.
+- **More:** “More” at the bottom left opens notes on terms and the evaluation procedure.
+- **Screen:** slides use a fixed 1920×1080 canvas scaled to the device. “Full screen” and “Zoom ＋” are at the top.
+
+### Offline use
+
+Open a file from the list above and save it, or choose a file in this folder and press **Download raw file**, then open it in a browser. Images, fonts, scripts and data are all inside the one HTML file. Each file is about 10 MB. Visiting Ask Sillok and the original-text links needs an internet connection.
+
+### Research material and demonstration
+
+The deck contains actual material (stored embedding vectors, Annals articles) alongside conceptual diagrams of training, retrieval and evaluation. Weight changes, the matrix sizes and values of the LoRA adapter, retrieval scores and metadata bonuses, and the scores clicked on the expert-evaluation screen are illustrative examples, labelled as such on each screen. The deck does not itself run live AI retrieval or answering.
+
+### Files
+
+| File | Description |
+|---|---|
+| [`index.html`](index.html) | Listing page for this folder |
+| [`2026_KOSSDA.html`](2026_KOSSDA.html) | Deck for the 21st KOSSDA Data Fair (2026.10.23.) |
+| [`2026_Yulgok.html`](2026_Yulgok.html) | Deck for “Regional Data and Digital Archives in the Age of AI”, Yulgok Institute of Korean Studies (2026.10.30.) |
+| [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | License notice for the embedded font |
+| [`README.md`](README.md) | This guide |
+
+### Related
+
+- [Ask Sillok](https://beta.asksillok.com): a research interface for asking questions of the Annals of the Joseon Dynasty and exploring the evidence
+- [Historical Research in the Age of AI](../2026_AI_History/): the integrated 4-chapter deck that includes Ask Sillok as one chapter (in Korean)
+- [From Searchable Archives to Askable Archives](../2026_HanyeonForum/): slides from the 24th Hanyeon Forum
+- [Annals of the Joseon Dynasty, National Institute of Korean History](https://sillok.history.go.kr/): original texts and translations
+- [Speaker’s portfolio](https://kunslab.com)
+- [All teaching and presentation materials](../README.md)
+
+For related papers and patent applications, see the “Related work” slide in the appendix. When citing, please give the original source and the presentation details. Use of the embedded font follows `FONT-NOTICE.txt`.
+
+---
+
+</details>
+<!-- english:end -->
+
 **김근하 (국립부경대학교 해양인문학연구소 전임연구원) · 약 30분 분량의 인터랙티브 HTML 발표자료**
 
 조선왕조실록에 질문하면 근거와 함께 답하는 [Ask Sillok](https://beta.asksillok.com)이 어떻게 작동하는지를 설명합니다. 사료가 질문할 수 있는 데이터가 되는 과정(DB 구축)과, 질문이 근거 있는 답변이 되는 과정(검색)을 하나의 실록 기사를 따라가며 보여 줍니다.

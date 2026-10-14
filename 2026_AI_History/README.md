@@ -1,5 +1,98 @@
 # AI 시대의 역사 연구
 
+<!-- english:start -->
+<details markdown="1">
+<summary markdown="span"><strong>🌐 English</strong> — click to open the English version</summary>
+
+## Historical Research in the Age of AI
+
+**Kunha Kim · an interactive HTML presentation of 4 chapters and 49 slides** (the slides themselves are in Korean)
+
+Starting from a historian’s questions, the talk shows how sources are turned into data, how digital analysis leads to a new reading of existing scholarship, and how a service that answers questions from historical sources was designed.
+
+**[Open the presentation ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** · [Download the HTML](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_AI_History/index.html)
+
+### Talks given with this deck
+
+| Date | Event |
+|---|---|
+| 28 September 2026 | Sogang University, Department of History × Digital History Institute Colloquium |
+| 15 October 2026 | Ewha Womans University, Department of History Colloquium |
+| 28 October 2026 | Pusan National University, Digital Humanities Center Colloquium |
+
+### Structure
+
+The table of contents is numbered **01–49**, and the bottom of the screen shows a running **1–49 / 49**.
+
+| Chapter | Slides | Topic |
+|---|---|---|
+| [01 · History in the Age of AI](https://littlekg87.github.io/lecture/2026_AI_History/#/1/cover) | 01–09 | Questions and evidence in historical research; the roles of digital history and AI |
+| [02 · A Digital Ontology of the Worldview in the *Huangqing Zhigongtu*](https://littlekg87.github.io/lecture/2026_AI_History/#/2/cover) | 10–16 | A case of building source data with an LLM and a graph database |
+| [03 · The Structure of Military Service Mobilization in Early Joseon](https://littlekg87.github.io/lecture/2026_AI_History/#/3/cover) | 17–27 | Turning the Geography Section of the *Sejong Sillok* into data and analyzing every county to reinterpret the long-term context of military service reform |
+| [04 · Searchable to Askable: Designing Ask Sillok](https://littlekg87.github.io/lecture/2026_AI_History/#/4/cover) | 28–49 | An end-to-end RAG system design, from data design through embedding, fine-tuning, retrieval, evaluation and service (46–49 are the appendix) |
+
+**A digital ontology of the *Huangqing Zhigongtu*.** The records are transcribed, classified, and structured into an ontology through repeated classification and review. The sources are then read again in a graph database and on a world map, to see what becomes visible once a source is made into data.
+
+**Long-term change in the early Joseon military service system.** The standardization of mobilization units and service costs, treated in the speaker’s doctoral dissertation, is extended to the question of nationwide organization. Records for 334 counties are structured, and household, soldier, service-branch and geographic data are combined to examine differences between counties. You can operate the dataset construction, the code-based joins and the map comparisons yourself.
+
+**Ask Sillok and evaluation by historians.** The chapter covers embedding training on Korean title–Classical Chinese body pairs, the principle of the LoRA adapter, the vectors as actually stored, and hybrid retrieval that combines vector search with metadata. The appendix compares base and fine-tuned models and presents the blind evaluation by historians, distinguishing benchmark gains from usefulness in actual research and arguing for a human in the loop.
+
+| Key scene | Link |
+|---|---|
+| Reading sources in a graph database | [Slide 14](https://littlekg87.github.io/lecture/2026_AI_History/#/2/network) |
+| Joining data with code | [Slide 23](https://littlekg87.github.io/lecture/2026_AI_History/#/3/order) |
+| Differences in household ratios between counties | [Slide 24](https://littlekg87.github.io/lecture/2026_AI_History/#/3/inequality) |
+| Differences in service-branch ratios between counties | [Slide 25](https://littlekg87.github.io/lecture/2026_AI_History/#/3/service) |
+| How a LoRA adapter is trained | [Slide 36](https://littlekg87.github.io/lecture/2026_AI_History/#/4/lora-path) |
+| Combining vector search with a metadata bonus | [Slide 40](https://littlekg87.github.io/lecture/2026_AI_History/#/4/query) |
+| Blind expert evaluation | [Slide 48](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
+| Findings and human-in-the-loop | [Slide 49](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
+
+A standalone talk of about 30 minutes on Ask Sillok alone, available in English, is in [`Asksillok_presentation/`](../Asksillok_presentation/).
+
+### How to use
+
+- **Moving:** arrow keys, Page Up / Page Down, the previous/next buttons at the bottom, or scrolling. Some scenes continue in steps within one slide.
+- **Contents:** “전체 목차” at the top right, or the `M` key.
+- **Interaction:** select counties on the map, data items, and the model and evaluation buttons to see changes and explanations.
+- **More:** “더보기” at the bottom left opens background, evaluation procedure and glossary notes.
+- **Screen:** slides are rendered on a **fixed 1920×1080 canvas** and scaled to the device. “전체 화면” is full screen; “확대 ＋” zooms up to 4×; while zoomed, “이동 모드” pans and “조작 모드” lets you operate the slide; “화면 맞춤” returns to the fitted view.
+
+### Offline use
+
+Save the file from the **Download the HTML** link above, or press **Download raw file** on [`index.html`](index.html), then open it in a browser. Images, fonts, scripts and data are all inside the one HTML file, so nothing needs installing. The file is about 23 MB. External links (Ask Sillok, original texts, the GitHub dataset) need an internet connection.
+
+### Research material and demonstration
+
+The deck contains actual research material (maps, datasets, stored embeddings) alongside conceptual diagrams of training, retrieval and evaluation. Weight changes, the matrix sizes and values of the LoRA adapter, retrieval scores and metadata bonuses, and the scores clicked on the expert-evaluation screen are illustrative examples, labelled as such on each screen. The lists and scores on the expert-evaluation screen are not actual retrieval results or expert ratings.
+
+The deck does not itself run live AI retrieval or answering, and it does not submit scores to a server. The actual service is at [Ask Sillok](https://beta.asksillok.com).
+
+### Files
+
+| File | Description |
+|---|---|
+| [`index.html`](index.html) | The integrated web/offline presentation of 4 chapters and 49 slides |
+| [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | License notice for the embedded font |
+| [`README.md`](README.md) | This guide |
+
+The talk at Sogang University on 28 September 2026 used a 3-chapter, 41-slide edition. On 14 October 2026 it was replaced by the current 4-chapter edition, which adds the *Huangqing Zhigongtu* chapter. The address is unchanged, and the earlier edition is in the Git history.
+
+### Related
+
+- [*Sejong Sillok* Geography Section dataset](https://github.com/littlekg87/Sejong_Sillok_Jiriji): research data published on the speaker’s GitHub
+- [Ask Sillok](https://beta.asksillok.com): a research interface for asking questions of the Annals of the Joseon Dynasty and exploring the evidence
+- [Annals of the Joseon Dynasty, National Institute of Korean History](https://sillok.history.go.kr/): original texts and translations
+- [Speaker’s portfolio](https://kunslab.com)
+- [All teaching and presentation materials](../README.md)
+
+For detailed sources and related papers, see each chapter’s cover and “더보기”. When citing, please give the original source and the presentation details. Use of the embedded font follows `FONT-NOTICE.txt`.
+
+---
+
+</details>
+<!-- english:end -->
+
 **김근하 · 4개 챕터, 총 49슬라이드의 인터랙티브 HTML 발표자료**
 
 역사연구자의 질문에서 출발해 사료를 데이터로 만들고, 디지털 분석으로 기존 연구를 다시 해석하고, 역사 자료에 근거해 질문에 답하는 서비스를 설계한 과정을 소개합니다.

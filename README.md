@@ -1,5 +1,69 @@
 # lecture
 
+<!-- english:start -->
+<details markdown="1">
+<summary markdown="span"><strong>🌐 English</strong> — click to open the English version</summary>
+
+## lecture
+
+A repository of teaching and presentation materials. Each item has its own folder with data, code, guides and slides.
+
+> Student work (academic posters and the like) lives in a separate repository → [Lecture_Archive](https://github.com/littlekg87/Lecture_Archive)
+
+### List
+
+| Type | Title | Content | Folder |
+|---|---|---|---|
+| Course | **K-MOOC Digital Humanities** | Text mining, text analysis, statistics, HGIS and network analysis, taught with the Geography Section of the *Sejong Sillok* | **[`2025_kmooc/`](2025_kmooc/)** |
+| Workshop | **Seoul National University AI Workshop** (2026.08.31.) | Slides for “Patterns in the Annals of the Joseon Dynasty as Read by AI” — **[Open ↗](https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/)** | **[`2026_SeoulUnivWorkshop/`](2026_SeoulUnivWorkshop/)** |
+| Talk | **The 24th Hanyeon Forum · Institute of Hanmun Education, Dankook University** (2026.09.15.) | Slides for “From Searchable Sources to Askable Sources: Designing a RAG-Based Research Interface for the Annals of the Joseon Dynasty” — **[Open ↗](https://littlekg87.github.io/lecture/2026_HanyeonForum/)** | **[`2026_HanyeonForum/`](2026_HanyeonForum/)** |
+| Talk | **Sogang University, Department of History × Digital History Institute Colloquium** (2026.09.28.) | “Historical Research in the Age of AI”, integrated deck (3 chapters · 41 slides when presented; since replaced by the 4-chapter · 49-slide edition) · the structure of military service mobilization, and Ask Sillok — **[Open ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| Talk | **Ewha Womans University, Department of History Colloquium** (2026.10.15.) | “Historical Research in the Age of AI”, integrated deck of 4 chapters · 49 slides · the *Huangqing Zhigongtu* ontology, the structure of military service mobilization, and Ask Sillok — **[Open ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| Talk | **The 21st KOSSDA Data Fair** (2026.10.23.) | “Can Historical Data and AI Converge? — Designing an AI Chatbot for the Annals of the Joseon Dynasty”, a talk of about 30 minutes on how Ask Sillok works (Korean / English) — **[Open ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_KOSSDA.html)** | **[`Asksillok_presentation/`](Asksillok_presentation/)** |
+| Talk | **Pusan National University, Digital Humanities Center Colloquium** (2026.10.28.) | “Historical Research in the Age of AI”, integrated deck of 4 chapters · 49 slides · the *Huangqing Zhigongtu* ontology, the structure of military service mobilization, and Ask Sillok — **[Open ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| Talk | **Yulgok Institute of Korean Studies (율곡국학진흥원), “Regional Data and Digital Archives in the Age of AI”** (2026.10.30.) | “Searchable to Askable Archive: RAG-based Annals of the Joseon Dynasty AI chat-bot Architecture”, a talk of about 30 minutes on how Ask Sillok works (Korean / English) — **[Open ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok.html)** | **[`Asksillok_presentation/`](Asksillok_presentation/)** |
+
+### Downloading the materials
+
+You do not need to know how to use GitHub.
+
+1. Press the green **`< > Code`** button near the top of this page.
+2. Press **`Download ZIP`** at the bottom.
+3. Unzip it and open the folder for your course.
+
+Each folder has a `README.md` with detailed instructions.
+
+Presentation slides can be opened from the **Open ↗** links above without downloading anything.
+
+When the same deck is used at several events, each talk is listed separately above and the deck is kept in a folder by topic (`2026_AI_History/`, `Asksillok_presentation/`).
+
+**Historical Research in the Age of AI** is a web presentation that combines 4 chapters and 49 slides in one file. Download `2026_AI_History/index.html` and open it in a browser to use it offline. Visiting external services and original-text links needs an internet connection.
+
+### ⛔ Restricted materials
+
+**Some materials were provided as a courtesy and may be used only for the course concerned.**
+The material below **may not be shared, redistributed or used outside the course**; doing so violates the terms under which it was provided.
+
+| Material | Provided by | Scope of use |
+|---|---|---|
+| `2025_kmooc/data/gis/adm_do.*` (boundary map of the Eight Provinces of Joseon) | **Prof. 김현종, Academy of Korean Studies** | Course exercises only |
+
+The `README.md` in each folder gives the detailed terms.
+
+### Data sources
+
+Apart from the restricted material above, the historical data is based on databases published by the National Institute of Korean History.
+When using it for research or teaching, please cite the original source.
+
+- Database of the Annals of the Joseon Dynasty — National Institute of Korean History
+
+Related research dataset → [Sejong_Sillok_Jiriji](https://github.com/littlekg87/Sejong_Sillok_Jiriji)
+
+---
+
+</details>
+<!-- english:end -->
+
 강의·발표 자료 저장소입니다. 건별로 폴더를 나누어 데이터·코드·가이드·슬라이드를 모아 둡니다.
 
 > 학생 결과물(학술포스터 등)은 별도 저장소에 있습니다 → [Lecture_Archive](https://github.com/littlekg87/Lecture_Archive)
