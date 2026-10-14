@@ -27,7 +27,7 @@ Listing page: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://l
 
 | Part | Content |
 |---|---|
-| **Introduction** | QR code for Ask Sillok · from sources you search to sources you ask · the two phases of RAG |
+| **Introduction** | QR codes for these slides and for Ask Sillok, with their addresses · from sources you search to sources you ask · the two phases of RAG |
 | **1 · Building the DB** | An article of the Annals → XML → body and metadata archives · fine-tuning on Korean title–Classical Chinese body pairs · the LoRA adapter · the vectors as actually stored |
 | **2 · Retrieval** | Splitting the question into a vector and metadata conditions · comparing similarity and conditions · selecting candidates and adding a bonus · linking the answer to the actual article |
 | **Closing** | The technology that runs the service · the Ask Sillok research team · the historian’s role in the age of AI |
@@ -100,7 +100,7 @@ For related papers and patent applications, see the “Related work” slide in 
 
 | 부 | 내용 |
 |---|---|
-| **도입** | Ask Sillok 접속 QR · 검색하는 사료에서 질문하는 사료로 · RAG의 두 국면 |
+| **도입** | 발표자료 · Ask Sillok 접속 QR(주소 함께 표기) · 검색하는 사료에서 질문하는 사료로 · RAG의 두 국면 |
 | **1 · DB 구축** | 실록 기사 → XML → 본문·메타데이터 아카이브 · 한글 제목–한문 본문 대응을 이용한 파인튜닝 · LoRA 어댑터 · 실제로 저장된 벡터 |
 | **2 · 검색** | 질문을 벡터와 메타데이터 조건으로 분리 · 유사도와 조건 비교 · 후보 선정과 가점 · 답변의 근거를 실제 기사로 연결 |
 | **마무리** | 서비스를 작동시키는 기술 · Ask Sillok 연구팀 · AI 시대 역사학자의 역할 |
