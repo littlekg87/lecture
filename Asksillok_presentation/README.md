@@ -8,10 +8,10 @@
 
 ## 발표 목록
 
-| 행사 | 제목 | 바로 보기 |
-|---|---|---|
-| 제21회 KOSSDA 데이터 페어 | 역사데이터와 AI의 융합은 가능한가? — 조선왕조실록 AI챗봇 설계 사례 | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_KOSSDA.html)** |
-| 율곡국학진흥원 · AI 시대의 지역 데이터와 디지털 아카이브 | 검색하는 아카이브에서 질문하는 아카이브로: RAG기반 조선왕조실록 AI챗봇 설계 연구 사례 | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok.html)** |
+| 일자 | 행사 | 제목 | 바로 보기 |
+|---|---|---|---|
+| 2026년 10월 23일 | 제21회 KOSSDA 데이터 페어 | 역사데이터와 AI의 융합은 가능한가? — 조선왕조실록 AI챗봇 설계 사례 | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_KOSSDA.html)** |
+| 2026년 10월 30일 | 율곡국학진흥원 · AI 시대의 지역 데이터와 디지털 아카이브 | 검색하는 아카이브에서 질문하는 아카이브로: RAG기반 조선왕조실록 AI챗봇 설계 연구 사례 | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok.html)** |
 
 전체 목록 페이지: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://littlekg87.github.io/lecture/Asksillok_presentation/)**
 
@@ -54,8 +54,8 @@ Each file contains both Korean and English. Press **ENG** in the top-right corne
 | 파일 | 설명 |
 |---|---|
 | [`index.html`](index.html) | 이 폴더의 발표 목록 페이지 |
-| [`2026_KOSSDA.html`](2026_KOSSDA.html) | 제21회 KOSSDA 데이터 페어 발표자료 |
-| [`2026_Yulgok.html`](2026_Yulgok.html) | 율곡국학진흥원 「AI 시대의 지역 데이터와 디지털 아카이브」 발표자료 |
+| [`2026_KOSSDA.html`](2026_KOSSDA.html) | 제21회 KOSSDA 데이터 페어 발표자료 (2026.10.23.) |
+| [`2026_Yulgok.html`](2026_Yulgok.html) | 율곡국학진흥원 「AI 시대의 지역 데이터와 디지털 아카이브」 발표자료 (2026.10.30.) |
 | [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | 포함된 폰트의 라이선스 고지 |
 | [`README.md`](README.md) | 발표 내용과 이용 안내 |
 
