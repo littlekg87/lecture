@@ -1,5 +1,9 @@
 # Ask Sillok 단독 발표
 
+행사별 폴더: [KOSSDA](../2026_KOSSDA/) · [율곡국학진흥원](../2026_Yulgok/). 이 폴더는 기존 주소와 발표 목록을 유지하는 안내 페이지입니다.
+
+Event folders: [KOSSDA](../2026_KOSSDA/) · [Yulgok](../2026_Yulgok/). Legacy slide URLs redirect to the event folders.
+
 <!-- english:start -->
 <details markdown="1">
 <summary markdown="span"><strong>🌐 English</strong> — click to open the English version</summary>
@@ -16,8 +20,8 @@ This folder collects editions adapted for each event. The Yulgok edition include
 
 | Date | Event | Title | Open |
 |---|---|---|---|
-| 23 October 2026 | The 21st KOSSDA Data Fair | Can Historical Data and AI Converge? — Designing an AI Chatbot for the Annals of the Joseon Dynasty | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_KOSSDA.html)** |
-| 30 October 2026 | Yulgok Institute of Korean Studies (율곡국학진흥원) · Regional Data and Digital Archives in the Age of AI | Searchable to Askable Archive: RAG-based Annals of the Joseon Dynasty AI chat-bot Architecture | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok.html)** |
+| 23 October 2026 | The 21st KOSSDA Data Fair | Can Historical Data and AI Converge? — Designing an AI Chatbot for the Annals of the Joseon Dynasty | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/2026_KOSSDA/)** |
+| 30 October 2026 | Yulgok Institute of Korean Studies (율곡국학진흥원) · Regional Data and Digital Archives in the Age of AI | Searchable to Askable Archive: RAG-based Annals of the Joseon Dynasty AI chat-bot Architecture | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/2026_Yulgok/)** |
 
 Listing page: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://littlekg87.github.io/lecture/Asksillok_presentation/)**
 
@@ -25,7 +29,7 @@ Listing page: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://l
 
 KOSSDA: 18 main slides and 5 appendix slides. Yulgok: 19 main slides and 5 appendix slides.
 
-Printable Yulgok PDFs (27 pages each, with expanded diagrams and intermediate source-processing steps): [Korean](2026_Yulgok.pdf) · [English](2026_Yulgok_en.pdf).
+Printable Yulgok PDFs (27 pages each, with expanded diagrams and intermediate source-processing steps): [Korean](../2026_Yulgok/2026_Yulgok.pdf) · [English](../2026_Yulgok/2026_Yulgok_en.pdf).
 
 | Part | Content |
 |---|---|
@@ -91,8 +95,8 @@ For related papers and patent applications, see the “Related work” slide in 
 
 | 일자 | 행사 | 제목 | 바로 보기 |
 |---|---|---|---|
-| 2026년 10월 23일 | 제21회 KOSSDA 데이터 페어 | 역사데이터와 AI의 융합은 가능한가? — 조선왕조실록 AI챗봇 설계 사례 | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_KOSSDA.html)** |
-| 2026년 10월 30일 | 율곡국학진흥원 · AI 시대의 지역 데이터와 디지털 아카이브 | 검색하는 아카이브에서 질문하는 아카이브로: RAG기반 조선왕조실록 AI챗봇 설계 연구 사례 | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok.html)** |
+| 2026년 10월 23일 | 제21회 KOSSDA 데이터 페어 | 역사데이터와 AI의 융합은 가능한가? — 조선왕조실록 AI챗봇 설계 사례 | **[2026_KOSSDA.html ↗](https://littlekg87.github.io/lecture/2026_KOSSDA/)** |
+| 2026년 10월 30일 | 율곡국학진흥원 · AI 시대의 지역 데이터와 디지털 아카이브 | 검색하는 아카이브에서 질문하는 아카이브로: RAG기반 조선왕조실록 AI챗봇 설계 연구 사례 | **[2026_Yulgok.html ↗](https://littlekg87.github.io/lecture/2026_Yulgok/)** |
 
 전체 목록 페이지: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://littlekg87.github.io/lecture/Asksillok_presentation/)**
 
@@ -100,7 +104,7 @@ For related papers and patent applications, see the “Related work” slide in 
 
 KOSSDA판은 본편 18슬라이드와 부록 5슬라이드, Yulgok판은 본편 19슬라이드와 부록 5슬라이드입니다.
 
-Yulgok 인쇄용 PDF: [국문](2026_Yulgok.pdf) · [영문](2026_Yulgok_en.pdf). 펼친 도식과 사료 처리의 중간 단계를 포함해 각각 27페이지입니다.
+Yulgok 인쇄용 PDF: [국문](../2026_Yulgok/2026_Yulgok.pdf) · [영문](../2026_Yulgok/2026_Yulgok_en.pdf). 펼친 도식과 사료 처리의 중간 단계를 포함해 각각 27페이지입니다.
 
 | 부 | 내용 |
 |---|---|

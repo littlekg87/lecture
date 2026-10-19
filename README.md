@@ -122,3 +122,9 @@ Related research dataset → [Sejong_Sillok_Jiriji](https://github.com/littlekg8
 - 조선왕조실록 DB — 국사편찬위원회
 
 관련 연구 데이터셋 → [Sejong_Sillok_Jiriji](https://github.com/littlekg87/Sejong_Sillok_Jiriji)
+
+
+### Ask Sillok 행사별 자료
+
+- [2026 KOSSDA 데이터 페어](2026_KOSSDA/)
+- [2026 율곡국학진흥원](2026_Yulgok/) · [국문 PDF](2026_Yulgok/2026_Yulgok.pdf) · [English PDF](2026_Yulgok/2026_Yulgok_en.pdf)
