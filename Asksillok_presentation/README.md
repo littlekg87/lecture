@@ -10,7 +10,7 @@
 
 The talk explains how [Ask Sillok](https://beta.asksillok.com), which answers questions about the Annals of the Joseon Dynasty together with its evidence, actually works. Following a single article of the Annals, it shows how sources become data that can be asked (building the DB) and how a question becomes a grounded answer (retrieval).
 
-This folder collects editions of the same talk that differ only in title, one per event.
+This folder collects editions adapted for each event. The Yulgok edition includes everyday-language access to local archives and a closing message on their use with AI.
 
 ### Talks
 
@@ -23,7 +23,9 @@ Listing page: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://l
 
 ### Structure
 
-18 main slides and 5 appendix slides.
+KOSSDA: 18 main slides and 5 appendix slides. Yulgok: 19 main slides and 5 appendix slides.
+
+Printable Yulgok PDFs (27 pages each, with expanded diagrams and intermediate source-processing steps): [Korean](2026_Yulgok.pdf) · [English](2026_Yulgok_en.pdf).
 
 | Part | Content |
 |---|---|
@@ -83,7 +85,7 @@ For related papers and patent applications, see the “Related work” slide in 
 
 조선왕조실록에 질문하면 근거와 함께 답하는 [Ask Sillok](https://beta.asksillok.com)이 어떻게 작동하는지를 설명합니다. 사료가 질문할 수 있는 데이터가 되는 과정(DB 구축)과, 질문이 근거 있는 답변이 되는 과정(검색)을 하나의 실록 기사를 따라가며 보여 줍니다.
 
-같은 내용을 행사에 맞춰 제목만 달리한 판을 이 폴더에 모아 둡니다.
+행사에 맞춰 구성한 발표자료를 이 폴더에 모아 둡니다. Yulgok판에는 일상 언어로 접근하는 지역 아카이브 장면과 지역 아카이브의 AI 활용에 관한 마무리를 담았습니다.
 
 ## 발표 목록
 
@@ -96,7 +98,9 @@ For related papers and patent applications, see the “Related work” slide in 
 
 ## 구성
 
-본편 18슬라이드와 부록 5슬라이드입니다.
+KOSSDA판은 본편 18슬라이드와 부록 5슬라이드, Yulgok판은 본편 19슬라이드와 부록 5슬라이드입니다.
+
+Yulgok 인쇄용 PDF: [국문](2026_Yulgok.pdf) · [영문](2026_Yulgok_en.pdf). 펼친 도식과 사료 처리의 중간 단계를 포함해 각각 27페이지입니다.
 
 | 부 | 내용 |
 |---|---|
