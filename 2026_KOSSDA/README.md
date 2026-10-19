@@ -6,6 +6,8 @@
 
 - [슬라이드 보기](https://littlekg87.github.io/lecture/2026_KOSSDA/) · 한국어/영어 전환
 
+[국문 PDF 다운로드](2026_KOSSDA.pdf) · 단계별 화면을 포함한 26쪽
+
 본편 18장과 부록 5장입니다. 기존 발표 내용을 그대로 유지합니다.
 
 이 폴더의 index.html이 행사별 원본입니다. 이전 Asksillok_presentation/2026_KOSSDA.html 주소와 기존 QR은 이 폴더로 연결됩니다.
