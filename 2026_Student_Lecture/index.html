@@ -264,7 +264,30 @@ body.show-notes #notes:not(:empty){display:block}
  <div class="answer" data-on="2">
   <p class="t-m poster-font">오늘 끝날 때쯤,<br>이 질문에 대한 답이 <span class="hl">바뀌어</span> 있을 겁니다.</p>
  </div>
- <div class="notes">손을 들게 한다. 6장에서 이 질문을 다시 불러온다.</div>
+ <div class="notes">손을 들게 한다. 7장에서 이 질문을 다시 불러온다.</div>
+</section>
+
+<!-- ========== 1-2. 발표자료 QR ========== -->
+<style>
+#sqr .qr-box{position:absolute;left:var(--x);top:132px;width:700px;height:700px;background:#fff;border:8px solid var(--ink);box-shadow:24px 24px 0 var(--signal);padding:28px}
+#sqr .qr-box img{display:block;width:100%;height:100%}
+#sqr .info{position:absolute;left:940px;right:var(--x);top:150px}
+#sqr .info h2{font-size:84px;line-height:1.18}
+#sqr .url{margin-top:56px;border-top:6px solid var(--ink);padding-top:30px}
+#sqr .url small{display:block;font-size:30px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+#sqr .url p{font-family:Poster,sans-serif;font-weight:900;font-size:62px;line-height:1.3;letter-spacing:-.02em;word-break:break-all}
+#sqr .url p span{background:var(--signal);padding:0 10px;border:4px solid var(--ink)}
+#sqr .hint{position:absolute;left:var(--x);top:880px;font-size:28px;font-weight:700}
+</style>
+<section class="slide" id="sqr" data-title="발표자료 QR · 주소" data-section="들어가며 · 발표자료 함께 보기">
+ <div class="qr-box"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPHN2ZyB3aWR0aD0iMzdtbSIgaGVpZ2h0PSIzN21tIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzNyAzNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMiwySDNWM0gyek0zLDJINFYzSDN6TTQsMkg1VjNINHpNNSwySDZWM0g1ek02LDJIN1YzSDZ6TTcsMkg4VjNIN3pNOCwySDlWM0g4ek0xMywySDE0VjNIMTN6TTE1LDJIMTZWM0gxNXpNMTgsMkgxOVYzSDE4ek0yMSwySDIyVjNIMjF6TTIyLDJIMjNWM0gyMnpNMjMsMkgyNFYzSDIzek0yNSwySDI2VjNIMjV6TTI4LDJIMjlWM0gyOHpNMjksMkgzMFYzSDI5ek0zMCwySDMxVjNIMzB6TTMxLDJIMzJWM0gzMXpNMzIsMkgzM1YzSDMyek0zMywySDM0VjNIMzN6TTM0LDJIMzVWM0gzNHpNMiwzSDNWNEgyek04LDNIOVY0SDh6TTEyLDNIMTNWNEgxMnpNMTMsM0gxNFY0SDEzek0xNSwzSDE2VjRIMTV6TTE2LDNIMTdWNEgxNnpNMTcsM0gxOFY0SDE3ek0xOCwzSDE5VjRIMTh6TTE5LDNIMjBWNEgxOXpNMjAsM0gyMVY0SDIwek0yMiwzSDIzVjRIMjJ6TTIzLDNIMjRWNEgyM3pNMjQsM0gyNVY0SDI0ek0yNiwzSDI3VjRIMjZ6TTI4LDNIMjlWNEgyOHpNMzQsM0gzNVY0SDM0ek0yLDRIM1Y1SDJ6TTQsNEg1VjVINHpNNSw0SDZWNUg1ek02LDRIN1Y1SDZ6TTgsNEg5VjVIOHpNMTAsNEgxMVY1SDEwek0xMSw0SDEyVjVIMTF6TTEzLDRIMTRWNUgxM3pNMTQsNEgxNVY1SDE0ek0xNSw0SDE2VjVIMTV6TTE4LDRIMTlWNUgxOHpNMjMsNEgyNFY1SDIzek0yNCw0SDI1VjVIMjR6TTI4LDRIMjlWNUgyOHpNMzAsNEgzMVY1SDMwek0zMSw0SDMyVjVIMzF6TTMyLDRIMzNWNUgzMnpNMzQsNEgzNVY1SDM0ek0yLDVIM1Y2SDJ6TTQsNUg1VjZINHpNNSw1SDZWNkg1ek02LDVIN1Y2SDZ6TTgsNUg5VjZIOHpNMTAsNUgxMVY2SDEwek0xMSw1SDEyVjZIMTF6TTEzLDVIMTRWNkgxM3pNMTYsNUgxN1Y2SDE2ek0xOCw1SDE5VjZIMTh6TTE5LDVIMjBWNkgxOXpNMjEsNUgyMlY2SDIxek0yNCw1SDI1VjZIMjR6TTI1LDVIMjZWNkgyNXpNMjgsNUgyOVY2SDI4ek0zMCw1SDMxVjZIMzB6TTMxLDVIMzJWNkgzMXpNMzIsNUgzM1Y2SDMyek0zNCw1SDM1VjZIMzR6TTIsNkgzVjdIMnpNNCw2SDVWN0g0ek01LDZINlY3SDV6TTYsNkg3VjdINnpNOCw2SDlWN0g4ek0xMCw2SDExVjdIMTB6TTExLDZIMTJWN0gxMXpNMTUsNkgxNlY3SDE1ek0xNyw2SDE4VjdIMTd6TTIxLDZIMjJWN0gyMXpNMjIsNkgyM1Y3SDIyek0yMyw2SDI0VjdIMjN6TTI1LDZIMjZWN0gyNXpNMjgsNkgyOVY3SDI4ek0zMCw2SDMxVjdIMzB6TTMxLDZIMzJWN0gzMXpNMzIsNkgzM1Y3SDMyek0zNCw2SDM1VjdIMzR6TTIsN0gzVjhIMnpNOCw3SDlWOEg4ek0xMCw3SDExVjhIMTB6TTEyLDdIMTNWOEgxMnpNMTQsN0gxNVY4SDE0ek0xNiw3SDE3VjhIMTZ6TTE3LDdIMThWOEgxN3pNMTgsN0gxOVY4SDE4ek0yMiw3SDIzVjhIMjJ6TTIzLDdIMjRWOEgyM3pNMjQsN0gyNVY4SDI0ek0yNiw3SDI3VjhIMjZ6TTI4LDdIMjlWOEgyOHpNMzQsN0gzNVY4SDM0ek0yLDhIM1Y5SDJ6TTMsOEg0VjlIM3pNNCw4SDVWOUg0ek01LDhINlY5SDV6TTYsOEg3VjlINnpNNyw4SDhWOUg3ek04LDhIOVY5SDh6TTEwLDhIMTFWOUgxMHpNMTIsOEgxM1Y5SDEyek0xNCw4SDE1VjlIMTR6TTE2LDhIMTdWOUgxNnpNMTgsOEgxOVY5SDE4ek0yMCw4SDIxVjlIMjB6TTIyLDhIMjNWOUgyMnpNMjQsOEgyNVY5SDI0ek0yNiw4SDI3VjlIMjZ6TTI4LDhIMjlWOUgyOHpNMjksOEgzMFY5SDI5ek0zMCw4SDMxVjlIMzB6TTMxLDhIMzJWOUgzMXpNMzIsOEgzM1Y5SDMyek0zMyw4SDM0VjlIMzN6TTM0LDhIMzVWOUgzNHpNMTAsOUgxMVYxMEgxMHpNMTEsOUgxMlYxMEgxMXpNMTIsOUgxM1YxMEgxMnpNMTcsOUgxOFYxMEgxN3pNMjAsOUgyMVYxMEgyMHpNMjIsOUgyM1YxMEgyMnpNMjMsOUgyNFYxMEgyM3pNMjQsOUgyNVYxMEgyNHpNMiwxMEgzVjExSDJ6TTQsMTBINVYxMUg0ek01LDEwSDZWMTFINXpNNiwxMEg3VjExSDZ6TTcsMTBIOFYxMUg3ek04LDEwSDlWMTFIOHpNMTEsMTBIMTJWMTFIMTF6TTEzLDEwSDE0VjExSDEzek0xNCwxMEgxNVYxMUgxNHpNMTUsMTBIMTZWMTFIMTV6TTE2LDEwSDE3VjExSDE2ek0xNywxMEgxOFYxMUgxN3pNMTksMTBIMjBWMTFIMTl6TTI0LDEwSDI1VjExSDI0ek0yNiwxMEgyN1YxMUgyNnpNMjgsMTBIMjlWMTFIMjh6TTI5LDEwSDMwVjExSDI5ek0zMCwxMEgzMVYxMUgzMHpNMzEsMTBIMzJWMTFIMzF6TTMyLDEwSDMzVjExSDMyek0zLDExSDRWMTJIM3pNNCwxMUg1VjEySDR6TTYsMTFIN1YxMkg2ek03LDExSDhWMTJIN3pNOSwxMUgxMFYxMkg5ek0xMCwxMUgxMVYxMkgxMHpNMTIsMTFIMTNWMTJIMTJ6TTEzLDExSDE0VjEySDEzek0xNCwxMUgxNVYxMkgxNHpNMjAsMTFIMjFWMTJIMjB6TTIxLDExSDIyVjEySDIxek0yMiwxMUgyM1YxMkgyMnpNMjMsMTFIMjRWMTJIMjN6TTI1LDExSDI2VjEySDI1ek0yOCwxMUgyOVYxMkgyOHpNMjksMTFIMzBWMTJIMjl6TTMxLDExSDMyVjEySDMxek0zMiwxMUgzM1YxMkgzMnpNMzMsMTFIMzRWMTJIMzN6TTM0LDExSDM1VjEySDM0ek04LDEySDlWMTNIOHpNOSwxMkgxMFYxM0g5ek0xMSwxMkgxMlYxM0gxMXpNMTQsMTJIMTVWMTNIMTR6TTE3LDEySDE4VjEzSDE3ek0xOCwxMkgxOVYxM0gxOHpNMjIsMTJIMjNWMTNIMjJ6TTIzLDEySDI0VjEzSDIzek0yNCwxMkgyNVYxM0gyNHpNMjYsMTJIMjdWMTNIMjZ6TTMwLDEySDMxVjEzSDMwek0zMiwxMkgzM1YxM0gzMnpNMzMsMTJIMzRWMTNIMzN6TTMsMTNINFYxNEgzek00LDEzSDVWMTRINHpNMTYsMTNIMTdWMTRIMTZ6TTE4LDEzSDE5VjE0SDE4ek0yMCwxM0gyMVYxNEgyMHpNMjEsMTNIMjJWMTRIMjF6TTIyLDEzSDIzVjE0SDIyek0yMywxM0gyNFYxNEgyM3pNMzAsMTNIMzFWMTRIMzB6TTMxLDEzSDMyVjE0SDMxek0zMiwxM0gzM1YxNEgzMnpNMywxNEg0VjE1SDN6TTQsMTRINVYxNUg0ek03LDE0SDhWMTVIN3pNOCwxNEg5VjE1SDh6TTE5LDE0SDIwVjE1SDE5ek0yNCwxNEgyNVYxNUgyNHpNMzAsMTRIMzFWMTVIMzB6TTMxLDE0SDMyVjE1SDMxek0zMywxNEgzNFYxNUgzM3pNMywxNUg0VjE2SDN6TTUsMTVINlYxNkg1ek05LDE1SDEwVjE2SDl6TTEyLDE1SDEzVjE2SDEyek0xMywxNUgxNFYxNkgxM3pNMTUsMTVIMTZWMTZIMTV6TTE2LDE1SDE3VjE2SDE2ek0xNywxNUgxOFYxNkgxN3pNMTgsMTVIMTlWMTZIMTh6TTE5LDE1SDIwVjE2SDE5ek0yMSwxNUgyMlYxNkgyMXpNMjIsMTVIMjNWMTZIMjJ6TTI1LDE1SDI2VjE2SDI1ek0yNywxNUgyOFYxNkgyN3pNMjgsMTVIMjlWMTZIMjh6TTI5LDE1SDMwVjE2SDI5ek0zMSwxNUgzMlYxNkgzMXpNMzIsMTVIMzNWMTZIMzJ6TTMzLDE1SDM0VjE2SDMzek0zNCwxNUgzNVYxNkgzNHpNMiwxNkgzVjE3SDJ6TTMsMTZINFYxN0gzek00LDE2SDVWMTdINHpNNSwxNkg2VjE3SDV6TTcsMTZIOFYxN0g3ek04LDE2SDlWMTdIOHpNOSwxNkgxMFYxN0g5ek0xMCwxNkgxMVYxN0gxMHpNMTEsMTZIMTJWMTdIMTF6TTEyLDE2SDEzVjE3SDEyek0xMywxNkgxNFYxN0gxM3pNMjAsMTZIMjFWMTdIMjB6TTI3LDE2SDI4VjE3SDI3ek0yOCwxNkgyOVYxN0gyOHpNMjksMTZIMzBWMTdIMjl6TTMwLDE2SDMxVjE3SDMwek0zMSwxNkgzMlYxN0gzMXpNMzIsMTZIMzNWMTdIMzJ6TTMzLDE2SDM0VjE3SDMzek01LDE3SDZWMThINXpNNiwxN0g3VjE4SDZ6TTcsMTdIOFYxOEg3ek0xMCwxN0gxMVYxOEgxMHpNMTEsMTdIMTJWMThIMTF6TTEyLDE3SDEzVjE4SDEyek0xMywxN0gxNFYxOEgxM3pNMTQsMTdIMTVWMThIMTR6TTE1LDE3SDE2VjE4SDE1ek0xOCwxN0gxOVYxOEgxOHpNMjAsMTdIMjFWMThIMjB6TTIyLDE3SDIzVjE4SDIyek0yMywxN0gyNFYxOEgyM3pNMjQsMTdIMjVWMThIMjR6TTI1LDE3SDI2VjE4SDI1ek0yNiwxN0gyN1YxOEgyNnpNMjcsMTdIMjhWMThIMjd6TTI4LDE3SDI5VjE4SDI4ek0yOSwxN0gzMFYxOEgyOXpNMzEsMTdIMzJWMThIMzF6TTMyLDE3SDMzVjE4SDMyek0yLDE4SDNWMTlIMnpNNCwxOEg1VjE5SDR6TTcsMThIOFYxOUg3ek04LDE4SDlWMTlIOHpNOSwxOEgxMFYxOUg5ek0xMSwxOEgxMlYxOUgxMXpNMTIsMThIMTNWMTlIMTJ6TTE0LDE4SDE1VjE5SDE0ek0xNSwxOEgxNlYxOUgxNXpNMTYsMThIMTdWMTlIMTZ6TTE5LDE4SDIwVjE5SDE5ek0yMSwxOEgyMlYxOUgyMXpNMjQsMThIMjVWMTlIMjR6TTI3LDE4SDI4VjE5SDI3ek0yOSwxOEgzMFYxOUgyOXpNMzAsMThIMzFWMTlIMzB6TTMxLDE4SDMyVjE5SDMxek0zNCwxOEgzNVYxOUgzNHpNMywxOUg0VjIwSDN6TTUsMTlINlYyMEg1ek02LDE5SDdWMjBINnpNMTAsMTlIMTFWMjBIMTB6TTEyLDE5SDEzVjIwSDEyek0xMywxOUgxNFYyMEgxM3pNMTUsMTlIMTZWMjBIMTV6TTE4LDE5SDE5VjIwSDE4ek0yMSwxOUgyMlYyMEgyMXpNMjIsMTlIMjNWMjBIMjJ6TTIzLDE5SDI0VjIwSDIzek0yNSwxOUgyNlYyMEgyNXpNMjgsMTlIMjlWMjBIMjh6TTI5LDE5SDMwVjIwSDI5ek0zMSwxOUgzMlYyMEgzMXpNMzIsMTlIMzNWMjBIMzJ6TTMzLDE5SDM0VjIwSDMzek0zNCwxOUgzNVYyMEgzNHpNMiwyMEgzVjIxSDJ6TTQsMjBINVYyMUg0ek02LDIwSDdWMjFINnpNOCwyMEg5VjIxSDh6TTksMjBIMTBWMjFIOXpNMTEsMjBIMTJWMjFIMTF6TTEyLDIwSDEzVjIxSDEyek0xMywyMEgxNFYyMUgxM3pNMTQsMjBIMTVWMjFIMTR6TTE1LDIwSDE2VjIxSDE1ek0xNywyMEgxOFYyMUgxN3pNMTgsMjBIMTlWMjFIMTh6TTIzLDIwSDI0VjIxSDIzek0yNCwyMEgyNVYyMUgyNHpNMjYsMjBIMjdWMjFIMjZ6TTI5LDIwSDMwVjIxSDI5ek0zMCwyMEgzMVYyMUgzMHpNMzIsMjBIMzNWMjFIMzJ6TTMzLDIwSDM0VjIxSDMzek02LDIxSDdWMjJINnpNNywyMUg4VjIySDd6TTksMjFIMTBWMjJIOXpNMTEsMjFIMTJWMjJIMTF6TTEyLDIxSDEzVjIySDEyek0xMywyMUgxNFYyMkgxM3pNMTQsMjFIMTVWMjJIMTR6TTE1LDIxSDE2VjIySDE1ek0xNywyMUgxOFYyMkgxN3pNMjEsMjFIMjJWMjJIMjF6TTIyLDIxSDIzVjIySDIyek0yMywyMUgyNFYyMkgyM3pNMjQsMjFIMjVWMjJIMjR6TTI4LDIxSDI5VjIySDI4ek0yOSwyMUgzMFYyMkgyOXpNMzAsMjFIMzFWMjJIMzB6TTMxLDIxSDMyVjIySDMxek0zMiwyMUgzM1YyMkgzMnpNMzMsMjFIMzRWMjJIMzN6TTM0LDIxSDM1VjIySDM0ek0zLDIySDRWMjNIM3pNNCwyMkg1VjIzSDR6TTcsMjJIOFYyM0g3ek04LDIySDlWMjNIOHpNMTAsMjJIMTFWMjNIMTB6TTExLDIySDEyVjIzSDExek0xMiwyMkgxM1YyM0gxMnpNMTMsMjJIMTRWMjNIMTN6TTE0LDIySDE1VjIzSDE0ek0xNSwyMkgxNlYyM0gxNXpNMTksMjJIMjBWMjNIMTl6TTIxLDIySDIyVjIzSDIxek0yNCwyMkgyNVYyM0gyNHpNMzAsMjJIMzFWMjNIMzB6TTMxLDIySDMyVjIzSDMxek0yLDIzSDNWMjRIMnpNNSwyM0g2VjI0SDV6TTksMjNIMTBWMjRIOXpNMTIsMjNIMTNWMjRIMTJ6TTE1LDIzSDE2VjI0SDE1ek0xNiwyM0gxN1YyNEgxNnpNMTcsMjNIMThWMjRIMTd6TTIyLDIzSDIzVjI0SDIyek0yMywyM0gyNFYyNEgyM3pNMjcsMjNIMjhWMjRIMjd6TTI4LDIzSDI5VjI0SDI4ek0yOSwyM0gzMFYyNEgyOXpNMzIsMjNIMzNWMjRIMzJ6TTM0LDIzSDM1VjI0SDM0ek0yLDI0SDNWMjVIMnpNNCwyNEg1VjI1SDR6TTYsMjRIN1YyNUg2ek04LDI0SDlWMjVIOHpNOSwyNEgxMFYyNUg5ek0xNSwyNEgxNlYyNUgxNXpNMTcsMjRIMThWMjVIMTd6TTE4LDI0SDE5VjI1SDE4ek0yMiwyNEgyM1YyNUgyMnpNMjQsMjRIMjVWMjVIMjR6TTI3LDI0SDI4VjI1SDI3ek0yOCwyNEgyOVYyNUgyOHpNMzAsMjRIMzFWMjVIMzB6TTMzLDI0SDM0VjI1SDMzek0yLDI1SDNWMjZIMnpNNiwyNUg3VjI2SDZ6TTcsMjVIOFYyNkg3ek05LDI1SDEwVjI2SDl6TTEyLDI1SDEzVjI2SDEyek0xMywyNUgxNFYyNkgxM3pNMTQsMjVIMTVWMjZIMTR6TTE2LDI1SDE3VjI2SDE2ek0xOCwyNUgxOVYyNkgxOHpNMjEsMjVIMjJWMjZIMjF6TTIyLDI1SDIzVjI2SDIyek0yMywyNUgyNFYyNkgyM3pNMjQsMjVIMjVWMjZIMjR6TTI1LDI1SDI2VjI2SDI1ek0zMCwyNUgzMVYyNkgzMHpNMzEsMjVIMzJWMjZIMzF6TTMyLDI1SDMzVjI2SDMyek0zNCwyNUgzNVYyNkgzNHpNMiwyNkgzVjI3SDJ6TTUsMjZINlYyN0g1ek02LDI2SDdWMjdINnpNNywyNkg4VjI3SDd6TTgsMjZIOVYyN0g4ek0xMCwyNkgxMVYyN0gxMHpNMTMsMjZIMTRWMjdIMTN6TTE1LDI2SDE2VjI3SDE1ek0xOSwyNkgyMFYyN0gxOXpNMjEsMjZIMjJWMjdIMjF6TTI1LDI2SDI2VjI3SDI1ek0yNiwyNkgyN1YyN0gyNnpNMjcsMjZIMjhWMjdIMjd6TTI4LDI2SDI5VjI3SDI4ek0yOSwyNkgzMFYyN0gyOXpNMzAsMjZIMzFWMjdIMzB6TTM0LDI2SDM1VjI3SDM0ek0xMCwyN0gxMVYyOEgxMHpNMTEsMjdIMTJWMjhIMTF6TTE1LDI3SDE2VjI4SDE1ek0xOCwyN0gxOVYyOEgxOHpNMjAsMjdIMjFWMjhIMjB6TTIxLDI3SDIyVjI4SDIxek0yNCwyN0gyNVYyOEgyNHpNMjUsMjdIMjZWMjhIMjV6TTI2LDI3SDI3VjI4SDI2ek0zMCwyN0gzMVYyOEgzMHpNMzIsMjdIMzNWMjhIMzJ6TTM0LDI3SDM1VjI4SDM0ek0yLDI4SDNWMjlIMnpNMywyOEg0VjI5SDN6TTQsMjhINVYyOUg0ek01LDI4SDZWMjlINXpNNiwyOEg3VjI5SDZ6TTcsMjhIOFYyOUg3ek04LDI4SDlWMjlIOHpNMTMsMjhIMTRWMjlIMTN6TTE3LDI4SDE4VjI5SDE3ek0xOSwyOEgyMFYyOUgxOXpNMjAsMjhIMjFWMjlIMjB6TTIyLDI4SDIzVjI5SDIyek0yNCwyOEgyNVYyOUgyNHpNMjUsMjhIMjZWMjlIMjV6TTI2LDI4SDI3VjI5SDI2ek0yOCwyOEgyOVYyOUgyOHpNMzAsMjhIMzFWMjlIMzB6TTMyLDI4SDMzVjI5SDMyek0zMywyOEgzNFYyOUgzM3pNMiwyOUgzVjMwSDJ6TTgsMjlIOVYzMEg4ek0xMCwyOUgxMVYzMEgxMHpNMTMsMjlIMTRWMzBIMTN6TTE0LDI5SDE1VjMwSDE0ek0xNiwyOUgxN1YzMEgxNnpNMTgsMjlIMTlWMzBIMTh6TTIwLDI5SDIxVjMwSDIwek0yMSwyOUgyMlYzMEgyMXpNMjIsMjlIMjNWMzBIMjJ6TTIzLDI5SDI0VjMwSDIzek0yNSwyOUgyNlYzMEgyNXpNMjYsMjlIMjdWMzBIMjZ6TTMwLDI5SDMxVjMwSDMwek0zMSwyOUgzMlYzMEgzMXpNMzIsMjlIMzNWMzBIMzJ6TTMzLDI5SDM0VjMwSDMzek0yLDMwSDNWMzFIMnpNNCwzMEg1VjMxSDR6TTUsMzBINlYzMUg1ek02LDMwSDdWMzFINnpNOCwzMEg5VjMxSDh6TTEwLDMwSDExVjMxSDEwek0xMSwzMEgxMlYzMUgxMXpNMTIsMzBIMTNWMzFIMTJ6TTEzLDMwSDE0VjMxSDEzek0xNCwzMEgxNVYzMUgxNHpNMTksMzBIMjBWMzFIMTl6TTIyLDMwSDIzVjMxSDIyek0yNCwzMEgyNVYzMUgyNHpNMjYsMzBIMjdWMzFIMjZ6TTI3LDMwSDI4VjMxSDI3ek0yOCwzMEgyOVYzMUgyOHpNMjksMzBIMzBWMzFIMjl6TTMwLDMwSDMxVjMxSDMwek0zMSwzMEgzMlYzMUgzMXpNMzMsMzBIMzRWMzFIMzN6TTIsMzFIM1YzMkgyek00LDMxSDVWMzJINHpNNSwzMUg2VjMySDV6TTYsMzFIN1YzMkg2ek04LDMxSDlWMzJIOHpNMTAsMzFIMTFWMzJIMTB6TTExLDMxSDEyVjMySDExek0xNCwzMUgxNVYzMkgxNHpNMTYsMzFIMTdWMzJIMTZ6TTIwLDMxSDIxVjMySDIwek0yMiwzMUgyM1YzMkgyMnpNMjQsMzFIMjVWMzJIMjR6TTI1LDMxSDI2VjMySDI1ek0yNiwzMUgyN1YzMkgyNnpNMjcsMzFIMjhWMzJIMjd6TTMwLDMxSDMxVjMySDMwek0zMSwzMUgzMlYzMkgzMXpNMzIsMzFIMzNWMzJIMzJ6TTMzLDMxSDM0VjMySDMzek0zNCwzMUgzNVYzMkgzNHpNMiwzMkgzVjMzSDJ6TTQsMzJINVYzM0g0ek01LDMySDZWMzNINXpNNiwzMkg3VjMzSDZ6TTgsMzJIOVYzM0g4ek0xMCwzMkgxMVYzM0gxMHpNMTEsMzJIMTJWMzNIMTF6TTEzLDMySDE0VjMzSDEzek0xNSwzMkgxNlYzM0gxNXpNMTYsMzJIMTdWMzNIMTZ6TTE3LDMySDE4VjMzSDE3ek0xOCwzMkgxOVYzM0gxOHpNMTksMzJIMjBWMzNIMTl6TTIwLDMySDIxVjMzSDIwek0yMywzMkgyNFYzM0gyM3pNMjgsMzJIMjlWMzNIMjh6TTI5LDMySDMwVjMzSDI5ek0zMSwzMkgzMlYzM0gzMXpNMzIsMzJIMzNWMzNIMzJ6TTIsMzNIM1YzNEgyek04LDMzSDlWMzRIOHpNMTIsMzNIMTNWMzRIMTJ6TTEzLDMzSDE0VjM0SDEzek0xNiwzM0gxN1YzNEgxNnpNMTcsMzNIMThWMzRIMTd6TTE4LDMzSDE5VjM0SDE4ek0yMCwzM0gyMVYzNEgyMHpNMjIsMzNIMjNWMzRIMjJ6TTIzLDMzSDI0VjM0SDIzek0yNSwzM0gyNlYzNEgyNXpNMjYsMzNIMjdWMzRIMjZ6TTI3LDMzSDI4VjM0SDI3ek0zMCwzM0gzMVYzNEgzMHpNMzIsMzNIMzNWMzRIMzJ6TTIsMzRIM1YzNUgyek0zLDM0SDRWMzVIM3pNNCwzNEg1VjM1SDR6TTUsMzRINlYzNUg1ek02LDM0SDdWMzVINnpNNywzNEg4VjM1SDd6TTgsMzRIOVYzNUg4ek0xMCwzNEgxMVYzNUgxMHpNMTEsMzRIMTJWMzVIMTF6TTEyLDM0SDEzVjM1SDEyek0xMywzNEgxNFYzNUgxM3pNMTQsMzRIMTVWMzVIMTR6TTE1LDM0SDE2VjM1SDE1ek0xNywzNEgxOFYzNUgxN3pNMTksMzRIMjBWMzVIMTl6TTIwLDM0SDIxVjM1SDIwek0yMiwzNEgyM1YzNUgyMnpNMjUsMzRIMjZWMzVIMjV6TTI2LDM0SDI3VjM1SDI2ek0yOCwzNEgyOVYzNUgyOHpNMjksMzRIMzBWMzVIMjl6TTMzLDM0SDM0VjM1SDMzeiIgaWQ9InFyLXBhdGgiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiLz48L3N2Zz4=" alt="이 발표자료 주소의 QR 코드"></div>
+ <div class="info">
+  <p class="eyebrow">발표자료 함께 보기</p>
+  <h2>휴대폰으로 찍고<br><span class="hl">함께</span> 넘겨 보세요.</h2>
+  <div class="url"><small>https://</small><p>littlekg87.github.io/<br>lecture/<br><span>2026_Student_Lecture</span></p></div>
+ </div>
+ <p class="hint">포스터는 눌러서 원본을 크게 볼 수 있어요.</p>
+ <div class="notes">학생들이 QR을 찍는 동안 잠시 기다린다.</div>
 </section>
 
 <!-- ========== 2. 먹에서 전자신호로 ========== -->
@@ -338,7 +361,7 @@ body.show-notes #notes:not(:empty){display:block}
   </div>
   <p class="always" data-on="1">질문하는 것은 <span class="hl">언제나 사람</span>이다.</p>
  </div>
- <div class="notes">연구자는 사료를 근거로 답을 구하고, 그 해석을 다시 사료에 비추어 검토한다. 마지막 줄은 7장(지팡이를 쥔 손)과 21장(환각)의 복선.</div>
+ <div class="notes">연구자는 사료를 근거로 답을 구하고, 그 해석을 다시 사료에 비추어 검토한다. 마지막 줄은 8장(지팡이를 쥔 손)과 22장(환각)의 복선.</div>
 </section>
 
 <!-- ========== 5. 읽고, 분석하고, 발표한다 ========== -->
@@ -549,7 +572,7 @@ body.show-notes #notes:not(:empty){display:block}
   <i class="box" data-box="6.7 49.3 54.8 27.4" data-on="2"></i>
  </figure>
  <div class="band" data-on="3">학부생이 라틴어 원문 두 판본을 <strong>단어 단위로</strong> 대조한다.</div>
- <div class="notes">마인츠 판본은 샤를을 왕국 질서의 손상으로, 바이에른 판본은 왕권 재편 과정과 연결해 서술. '무능한 황제'는 판본의 서술 전략이 만든 표상. 17장 예시 대화가 이 작품으로 돌아온다.</div>
+ <div class="notes">마인츠 판본은 샤를을 왕국 질서의 손상으로, 바이에른 판본은 왕권 재편 과정과 연결해 서술. '무능한 황제'는 판본의 서술 전략이 만든 표상. 18장 예시 대화가 이 작품으로 돌아온다.</div>
 </section>
 
 <!-- ========== 11. ● 형태 — 김준한 (켄트) ========== -->
@@ -729,7 +752,7 @@ body.show-notes #notes:not(:empty){display:block}
  <div class="ch-shape tri"><span class="ch-num">03</span></div>
  <div class="ch-step"><p class="myth"><span class="strike">“AI가 다 써 주니 생각을 안 한다”</span></p><span data-on="1"></span></div>
  <div class="actrow"><span><i class="sh circle"></i>읽는다</span><span><i class="sh square"></i>분석한다</span><span class="lit"><i class="sh tri"></i>발표한다</span></div>
- <div class="notes">6장의 오해 하나를 다시 불러와 줄을 긋는다.</div>
+ <div class="notes">7장의 오해 하나를 다시 불러와 줄을 긋는다.</div>
 </section>
 
 <!-- ========== 19. ▲ 대화 ========== -->
@@ -755,9 +778,9 @@ body.show-notes #notes:not(:empty){display:block}
   <div class="msg me" data-on="2"><span class="who">학생</span>그럼 질문을 바꿀게. <mark>샤를은 왜 무능하게 ‘기록되었나’?</mark> 두 판본을 비교하려면 어떻게 해야 해?</div>
  </div>
  <div class="shift" data-on="3"><p>질문의 변화</p><p class="from"><span class="strike struck">무능했다</span></p><p class="to">→ 무능하게 <span class="hl">기록되었다</span></p></div>
- <figure class="pf" data-on="3" style="width:300px" data-src="https://littlekg87.github.io/Lecture_Archive/courses/2026-1-ai-history/works/kim-junhan.png" data-caption="김준한, 「공기어 분석을 통한 비만왕 샤를의 상이한 표상」 — 10장의 그 포스터"></figure>
+ <figure class="pf" data-on="3" style="width:300px" data-src="https://littlekg87.github.io/Lecture_Archive/courses/2026-1-ai-history/works/kim-junhan.png" data-caption="김준한, 「공기어 분석을 통한 비만왕 샤를의 상이한 표상」 — 11장의 그 포스터"></figure>
  <div class="band" data-on="4">AI에게 받은 것은 답이 아니라 <strong>더 좋은 질문</strong>이었다.</div>
- <div class="notes">"AI에게 답을 받은 게 아니라, 더 좋은 질문을 받았습니다." — 이 질문이 10장 김준한의 포스터가 된다.</div>
+ <div class="notes">"AI에게 답을 받은 게 아니라, 더 좋은 질문을 받았습니다." — 이 질문이 11장 김준한의 포스터가 된다.</div>
 </section>
 
 <!-- ========== 20. ▲ 근거 — 정지원 ========== -->
@@ -881,7 +904,7 @@ body.show-notes #notes:not(:empty){display:block}
   <i class="box" data-box="5.7 73.8 88.7 10" data-on="1"></i>
  </figure>
  <div class="band" data-on="3">숫자를 끝까지 의심하는 눈 — 그게 <strong>사학과의 훈련</strong>.</div>
- <div class="notes">CCTV·신화망 보도 210건. 정량(평가어·키워드 네트워크) 결과를 특집기사 11건 전수 정성분석으로 교정. 6장으로 돌아가 — "사고가 제한되는 게 아니라, 이렇게 쓰면 사고가 더 정교해집니다."</div>
+ <div class="notes">CCTV·신화망 보도 210건. 정량(평가어·키워드 네트워크) 결과를 특집기사 11건 전수 정성분석으로 교정. 7장으로 돌아가 — "사고가 제한되는 게 아니라, 이렇게 쓰면 사고가 더 정교해집니다."</div>
 </section>
 
 <!-- ========== 23. ▲ 환각 ========== -->
@@ -939,7 +962,7 @@ body.show-notes #notes:not(:empty){display:block}
  </div>
  <svg class="loop" viewBox="0 0 1920 1080" aria-hidden="true"><defs><marker id="loop-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#111" stroke-width="1.4"/></marker></defs><path d="M1700 684 C 1700 860, 240 860, 240 690" pathLength="1" marker-end="url(#loop-arrow)"/></svg>
  <div class="band" data-on="3">환각을 알아보는 방법은 하나뿐 — <strong>전공을 더 정확하게 아는 것.</strong></div>
- <div class="notes">1단계에서는 아무 표시 없이 잠깐 기다린다 — 틀린 걸 알아챌 수 있는지. "AI는 사람이 만든 지식을 먹고 자랍니다. 그 지식을 정확히 아는 사람만 AI의 틀린 말을 골라낼 수 있습니다. AI 시대에 전공 공부가 덜 중요해지는 게 아니라, 더 중요해집니다." 4장 '질문하는 것은 언제나 사람'을 되받는다.</div>
+ <div class="notes">1단계에서는 아무 표시 없이 잠깐 기다린다 — 틀린 걸 알아챌 수 있는지. "AI는 사람이 만든 지식을 먹고 자랍니다. 그 지식을 정확히 아는 사람만 AI의 틀린 말을 골라낼 수 있습니다. AI 시대에 전공 공부가 덜 중요해지는 게 아니라, 더 중요해집니다." 5장 '질문하는 것은 언제나 사람'을 되받는다.</div>
 </section>
 
 
