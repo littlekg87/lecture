@@ -6,7 +6,7 @@
 
 ## Building an H-GIS of Relief Goods Distribution at Busan Port in the Cold War Era
 
-**Kunha Kim (Institute of Marine Humanities, Pukyong National University) · an interactive HTML presentation of 62 slides with two hands-on sessions** (the slides themselves are in Korean)
+**Kunha Kim (Institute of Marine Humanities, Pukyong National University) · an interactive HTML presentation of 63 slides with two hands-on sessions** (the slides themselves are in Korean)
 
 To draw a good map you first need a good table. The lecture starts from the basics of data and normalization (first, second and third normal forms), moves on to the rules for writing location data (points, lines and polygons, coordinates, georeferencing basis) and ends with layers — why overlaying separate tables shows what no single table can. Each part is followed by a hands-on session done together with the lecturer.
 
@@ -22,12 +22,12 @@ To draw a good map you first need a good table. The lecture starts from the basi
 
 | Part | Slides | Topic |
 |---|---|---|
-| Introduction | 01–02 | Cover · today's order |
-| Ⅰ Data basics | 03–26 | Anatomy of a table · schema · rules for a good table · first, second and third normal forms · how 2NF and 3NF differ · joining split tables by ID |
-| Practice 1 | 27 | Normalizing data |
-| Ⅱ H-GIS | 28–60 | Historical GIS cases · vector and raster · maps are tables · writing location as numbers · point, line and polygon schemas · rules for GIS data · layers, with the four-layer map of the Fushun carbon energy regime |
-| Practice 2 | 61 | Cleaning, normalizing, adding coordinates, mapping points, lines and polygons, and overlaying layers in kepler.gl |
-| Q & A | 62 | |
+| Introduction | 01–03 | Cover · QR code and address for these materials · today's order |
+| Ⅰ Data basics | 04–27 | Anatomy of a table · schema · rules for a good table · first, second and third normal forms · how 2NF and 3NF differ · joining split tables by ID |
+| Practice 1 | 28 | Normalizing data |
+| Ⅱ H-GIS | 29–61 | Historical GIS cases · vector and raster · maps are tables · writing location as numbers · point, line and polygon schemas · rules for GIS data · layers, with the four-layer map of the Fushun carbon energy regime |
+| Practice 2 | 62 | Cleaning, normalizing, adding coordinates, mapping points, lines and polygons, and overlaying layers in kepler.gl |
+| Q & A | 63 | |
 
 ### Practice data
 
@@ -47,13 +47,13 @@ The CSV files are UTF-8 (with BOM). Tools: Google Sheets and [kepler.gl](https:/
 - **Jumping:** click the page number (or press `G`) to open the slide list.
 - Many slides respond to clicks (tables, layer toggles, buttons).
 
-The deck is one HTML file of about 1 MB. Fonts and the link to the live map on slide 57 need an internet connection; everything else works offline.
+The deck is one HTML file of about 1 MB. Fonts and the link to the live map on slide 58 need an internet connection; everything else works offline.
 
 ### Files
 
 | File | Description |
 |---|---|
-| [`index.html`](index.html) | The web/offline presentation of 62 slides |
+| [`index.html`](index.html) | The web/offline presentation of 63 slides |
 | [`data/`](data/) | Three practice CSV files |
 | [`README.md`](README.md) | This guide |
 
@@ -62,7 +62,7 @@ The deck is one HTML file of about 1 MB. Fonts and the link to the live map on s
 </details>
 <!-- english:end -->
 
-**국립부경대학교 해양인문학연구소 김근하 · 이론 두 파트와 실습 두 번으로 된 62장 웹 발표자료**
+**국립부경대학교 해양인문학연구소 김근하 · 이론 두 파트와 실습 두 번으로 된 63장 웹 발표자료**
 
 지도를 잘 그리려면 표를 먼저 잘 만들어야 합니다. 데이터의 기초와 정규화(제1·2·3정규형)에서 시작해, 위치를 적는 규칙(점·선·면, 좌표, 위치기준)을 거쳐, 따로 만든 표를 겹쳐야 보이는 것 — 레이어 — 까지 갑니다. 파트마다 강사와 함께 한 단계씩 따라 하는 실습이 이어집니다.
 
@@ -78,12 +78,12 @@ The deck is one HTML file of about 1 MB. Fonts and the link to the live map on s
 
 | 부분 | 장면 | 내용 |
 |---|---|---|
-| 들어가며 | 01–02 | 표지 · 오늘의 순서 |
-| Ⅰ 데이터의 기초 | 03–26 | 데이터베이스 구축 핵심 · 스키마 · 좋은 표를 만드는 규칙 · 제1·2·3정규형 · 2정규형과 3정규형의 차이 · 쪼갠 표는 아이디로 잇는다 |
-| 실습 1 | 27 | 데이터 정규화 실습 |
-| Ⅱ H-GIS | 28–60 | 역사 GIS 뜯어보기 · 벡터와 래스터 · 지도도 표다 · 위치를 숫자로 · 점·선·면 스키마 · GIS 데이터를 다루는 규칙 · 레이어(무순 탄소 에너지 레짐 4레이어 지도) |
-| 실습 2 | 61 | 정제 → 정규화 → 위도·경도 → 점·선·면 → 레이어 겹치기 (kepler.gl) |
-| 질문과 토론 | 62 | |
+| 들어가며 | 01–03 | 표지 · 자료 받기(QR과 주소) · 오늘의 순서 |
+| Ⅰ 데이터의 기초 | 04–27 | 데이터베이스 구축 핵심 · 스키마 · 좋은 표를 만드는 규칙 · 제1·2·3정규형 · 2정규형과 3정규형의 차이 · 쪼갠 표는 아이디로 잇는다 |
+| 실습 1 | 28 | 데이터 정규화 실습 |
+| Ⅱ H-GIS | 29–61 | 역사 GIS 뜯어보기 · 벡터와 래스터 · 지도도 표다 · 위치를 숫자로 · 점·선·면 스키마 · GIS 데이터를 다루는 규칙 · 레이어(무순 탄소 에너지 레짐 4레이어 지도) |
+| 실습 2 | 62 | 정제 → 정규화 → 위도·경도 → 점·선·면 → 레이어 겹치기 (kepler.gl) |
+| 질문과 토론 | 63 | |
 
 ## 실습 자료
 
@@ -105,12 +105,12 @@ CSV는 UTF-8(BOM 포함)입니다. 도구는 구글 시트와 [kepler.gl](https:
 - **장면 바로 가기:** 페이지 번호를 누르거나 `G` 키를 누르면 장면 목록이 열립니다.
 - 표, 레이어 켜고 끄기, 단추 등 눌러서 움직이는 장면이 많습니다.
 
-HTML 파일 하나(약 1MB)입니다. 글꼴과 57장 무순 지도의 실제 화면 링크는 인터넷 연결이 필요하고, 나머지는 오프라인에서도 열립니다.
+HTML 파일 하나(약 1MB)입니다. 글꼴과 58장 무순 지도의 실제 화면 링크는 인터넷 연결이 필요하고, 나머지는 오프라인에서도 열립니다.
 
 ## 파일
 
 | 파일 | 설명 |
 |---|---|
-| [`index.html`](index.html) | 62장면 웹/오프라인 발표자료 |
+| [`index.html`](index.html) | 63장면 웹/오프라인 발표자료 |
 | [`data/`](data/) | 실습용 CSV 세 개 |
 | [`README.md`](README.md) | 이 안내 |
