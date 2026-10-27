@@ -22,14 +22,14 @@ Starting from a historian’s questions, the talk shows how sources are turned i
 
 ### Structure
 
-The table of contents is numbered **01–49**, and the bottom of the screen shows a running **1–49 / 49**.
+The table of contents is numbered **01–50**, and the bottom of the screen shows a running **1–50 / 50**.
 
 | Chapter | Slides | Topic |
 |---|---|---|
 | [01 · History in the Age of AI](https://littlekg87.github.io/lecture/2026_AI_History/#/1/cover) | 01–09 | Questions and evidence in historical research; the roles of digital history and AI |
 | [02 · A Digital Ontology of the Worldview in the *Huangqing Zhigongtu*](https://littlekg87.github.io/lecture/2026_AI_History/#/2/cover) | 10–16 | A case of building source data with an LLM and a graph database |
 | [03 · The Structure of Military Service Mobilization in Early Joseon](https://littlekg87.github.io/lecture/2026_AI_History/#/3/cover) | 17–27 | Turning the Geography Section of the *Sejong Sillok* into data and analyzing every county to reinterpret the long-term context of military service reform |
-| [04 · Searchable to Askable: Designing Ask Sillok](https://littlekg87.github.io/lecture/2026_AI_History/#/4/cover) | 28–49 | An end-to-end RAG system design, from data design through embedding, fine-tuning, retrieval, evaluation and service (46–49 are the appendix) |
+| [04 · Searchable to Askable: Designing Ask Sillok](https://littlekg87.github.io/lecture/2026_AI_History/#/4/cover) | 28–50 | An end-to-end RAG system design, from data design through embedding, fine-tuning, retrieval, evaluation and service (47–50 are the appendix) |
 
 **A digital ontology of the *Huangqing Zhigongtu*.** The records are transcribed, classified, and structured into an ontology through repeated classification and review. The sources are then read again in a graph database and on a world map, to see what becomes visible once a source is made into data.
 
@@ -45,8 +45,8 @@ The table of contents is numbered **01–49**, and the bottom of the screen show
 | Differences in service-branch ratios between counties | [Slide 25](https://littlekg87.github.io/lecture/2026_AI_History/#/3/service) |
 | How a LoRA adapter is trained | [Slide 36](https://littlekg87.github.io/lecture/2026_AI_History/#/4/lora-path) |
 | Combining vector search with a metadata bonus | [Slide 40](https://littlekg87.github.io/lecture/2026_AI_History/#/4/query) |
-| Blind expert evaluation | [Slide 48](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
-| Findings and human-in-the-loop | [Slide 49](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
+| Blind expert evaluation | [Slide 49](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
+| Findings and human-in-the-loop | [Slide 50](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
 
 A standalone talk of about 30 minutes on Ask Sillok alone, available in English, is in [`Asksillok_presentation/`](../Asksillok_presentation/).
 
@@ -109,14 +109,14 @@ For detailed sources and related papers, see each chapter’s cover and “더�
 
 ## 발표 구성
 
-전체 목차는 **01–49**, 화면 하단은 **1–49 / 49**의 연속 번호를 사용합니다.
+전체 목차는 **01–50**, 화면 하단은 **1–50 / 50**의 연속 번호를 사용합니다.
 
 | 챕터 | 슬라이드 | 주제 |
 |---|---|---|
 | [01 · AI 시대의 역사학](https://littlekg87.github.io/lecture/2026_AI_History/#/1/cover) | 01–09 | 역사 연구의 질문과 근거, 디지털역사학과 AI의 역할 |
 | [02 · 황청직공도 세계 인식 구조의 디지털 온톨로지 구축 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/2/cover) | 10–16 | LLM과 그래프 DB를 활용해 사료를 데이터로 구축한 사례 |
 | [03 · 조선 전기 군역 동원 체계의 구조 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/3/cover) | 17–27 | 『세종실록지리지』의 데이터화와 전국 군현 분석으로 군역 개혁의 장기적 맥락을 재해석 |
-| [04 · Searchable to Askable: Ask Sillok 설계 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/4/cover) | 28–49 | 자료 설계부터 임베딩·파인튜닝·검색·평가·서비스 구현까지 이어지는 End-to-End RAG 시스템 설계 연구 사례 (46–49는 부록) |
+| [04 · Searchable to Askable: Ask Sillok 설계 연구](https://littlekg87.github.io/lecture/2026_AI_History/#/4/cover) | 28–50 | 자료 설계부터 임베딩·파인튜닝·검색·평가·서비스 구현까지 이어지는 End-to-End RAG 시스템 설계 연구 사례 (47–50는 부록) |
 
 ### 황청직공도 세계 인식 구조의 디지털 온톨로지
 
@@ -140,7 +140,7 @@ For detailed sources and related papers, see each chapter’s cover and “더�
 | 군현 간 병종 비율의 차이 | [25슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/3/service) |
 | LoRA 어댑터의 학습 원리 | [36슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/lora-path) |
 | 벡터 검색과 메타데이터 가점의 결합 | [40슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/query) |
-| 전문가 블라인드 평가 | [48슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
+| 전문가 블라인드 평가 | [49슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
 | 연구 결과와 Human-in-the-loop | [50슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
 
 Ask Sillok만 다루는 약 30분 분량의 단독 발표는 [`Asksillok_presentation/`](../Asksillok_presentation/)에 있습니다.
