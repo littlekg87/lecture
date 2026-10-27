@@ -21,7 +21,10 @@ jobs:
           source: ./
           destination: ./_site
       - name: Generate legacy URLs and PDF copies
-        run: python3 .github/pages/legacy_urls.py _site
+        run: |
+          # Jekyll runs in a container and leaves its output owned by root.
+          sudo chown -R "$(id -u):$(id -g)" _site
+          python3 .github/pages/legacy_urls.py _site
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
