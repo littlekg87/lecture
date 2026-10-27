@@ -16,3 +16,5 @@
 
 
 통합 관리 위치: `Asksillok_presentation/2026_KOSSDA/`. 상위의 [Ask Sillok 발표 목록](../README.md)에서 다른 행사판을 볼 수 있습니다. 기존 발표 주소와 QR은 새 위치로 연결됩니다.
+
+2026-10-27: HTML의 발표자료 URL·QR을 통합 폴더 주소로 갱신했습니다. PDF는 QR 안내와 감사 페이지의 주소·QR만 갱신했고, 나머지 페이지와 쪽수는 기존 판을 유지했습니다. 이전 주소용 파일은 `.github/pages/legacy-urls.json`에 따라 배포 시 자동 생성됩니다.

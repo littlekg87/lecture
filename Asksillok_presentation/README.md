@@ -9,7 +9,9 @@ Asksillok_presentation/
   2026_Yulgok/
 ```
 
-각 행사 폴더가 원본입니다. 최상위의 이전 행사 폴더와 이 폴더의 기존 `.html` 주소는 호환용 연결이며, 이전 PDF는 호환용 사본입니다. PDF를 갱신할 때는 원본과 이전 경로의 사본을 함께 갱신합니다. 기존 QR은 계속 사용할 수 있습니다.
+각 행사 폴더가 유일한 원본입니다. 저장소 최상위에는 이전 행사 폴더를 두지 않습니다. GitHub Actions가 배포할 때만 이전 HTML 주소의 연결 페이지와 PDF 사본을 자동 생성합니다. 원본 PDF를 갱신하면 이전 PDF 주소도 함께 갱신됩니다. 이미 공유된 링크와 QR은 계속 작동하며, 현재 발표자료의 QR과 URL은 통합 폴더를 직접 가리킵니다.
+
+배포 설정: [워크플로](../.github/workflows/pages.yml) · [기존 주소 매핑](../.github/pages/legacy-urls.json).
 
 <!-- english:start -->
 <details markdown="1">
@@ -37,7 +39,7 @@ Listing page: **[littlekg87.github.io/lecture/Asksillok_presentation/](https://l
 
 Each event keeps its own edition. The HTML and PDF may differ in revision; consult the event folder’s README.
 
-Printable Yulgok PDFs (27 pages each, with expanded diagrams and intermediate source-processing steps): [Korean](2026_Yulgok/2026_Yulgok.pdf) · [English](2026_Yulgok/2026_Yulgok_en.pdf).
+Printable Yulgok PDFs (27 pages each; QR/URL pages updated on 27 October 2026, other pages retain the existing edition): [Korean](2026_Yulgok/2026_Yulgok.pdf) · [English](2026_Yulgok/2026_Yulgok_en.pdf).
 
 | Part | Content |
 |---|---|

@@ -1,0 +1,19 @@
+{
+  "redirects": {
+    "2026_HanyeonForum/index.html": "Asksillok_presentation/2026_HanyeonForum/",
+    "2026_HanyeonForum/HanyeonForum24_AskableArchives_presentation.html": "Asksillok_presentation/2026_HanyeonForum/HanyeonForum24_AskableArchives_presentation.html",
+    "2026_KOSSDA/index.html": "Asksillok_presentation/2026_KOSSDA/",
+    "Asksillok_presentation/2026_KOSSDA.html": "Asksillok_presentation/2026_KOSSDA/",
+    "2026_Yulgok/index.html": "Asksillok_presentation/2026_Yulgok/",
+    "Asksillok_presentation/2026_Yulgok.html": "Asksillok_presentation/2026_Yulgok/"
+  },
+  "copies": {
+    "2026_KOSSDA/FONT-NOTICE.txt": "Asksillok_presentation/2026_KOSSDA/FONT-NOTICE.txt",
+    "2026_KOSSDA/2026_KOSSDA.pdf": "Asksillok_presentation/2026_KOSSDA/2026_KOSSDA.pdf",
+    "2026_Yulgok/FONT-NOTICE.txt": "Asksillok_presentation/2026_Yulgok/FONT-NOTICE.txt",
+    "2026_Yulgok/2026_Yulgok.pdf": "Asksillok_presentation/2026_Yulgok/2026_Yulgok.pdf",
+    "Asksillok_presentation/2026_Yulgok.pdf": "Asksillok_presentation/2026_Yulgok/2026_Yulgok.pdf",
+    "2026_Yulgok/2026_Yulgok_en.pdf": "Asksillok_presentation/2026_Yulgok/2026_Yulgok_en.pdf",
+    "Asksillok_presentation/2026_Yulgok_en.pdf": "Asksillok_presentation/2026_Yulgok/2026_Yulgok_en.pdf"
+  }
+}
