@@ -12,6 +12,8 @@ Starting from a historian’s questions, the talk shows how sources are turned i
 
 **[Open the presentation ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** · [Download the HTML](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_AI_History/index.html)
 
+**[Download the printable PDF](2026_AI_History.pdf)** · 61 pages, about 16 MB. Includes expanded workflow diagrams, four source-processing stages, nine question-journey stages, and chapter bookmarks. Print in landscape orientation with “Fit to page”.
+
 ### Talks given with this deck
 
 | Date | Event |
@@ -198,3 +200,10 @@ Ask Sillok만 다루는 약 30분 분량의 단독 발표는 [`Asksillok_present
 
 
 2026-10-27: 4챕터의 DB 구축·검색 과정 개요를 KOSSDA·율곡판과 같은 펼치기 방식으로 갱신하고, 기존 기술 소개 앞에 「질문 데이터의 여정」을 추가했습니다. 전체 50장면이며 1~3챕터와 나머지 장면은 유지했습니다. 기존 `#/4/source` 및 `#/4/technology` 주소도 유지합니다.
+
+
+## 인쇄용 PDF
+
+**[2026_AI_History.pdf 내려받기](2026_AI_History.pdf)** · 61쪽 · 약 16MB · 2026-10-27 수정본 기준.
+
+50개 슬라이드에 사료 변환의 중간 단계 3쪽과 질문 데이터의 여정 추가 단계 8쪽을 포함했습니다. DB 구축·검색 과정은 펼친 상태로 수록했으며 챕터별 책갈피를 제공합니다. 인쇄할 때는 **가로 방향 · 용지에 맞춤**을 선택하세요.
