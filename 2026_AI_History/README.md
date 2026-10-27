@@ -6,7 +6,7 @@
 
 ## Historical Research in the Age of AI
 
-**Kunha Kim · an interactive HTML presentation of 4 chapters and 49 slides** (the slides themselves are in Korean)
+**Kunha Kim · an interactive HTML presentation of 4 chapters and 50 slides** (the slides themselves are in Korean)
 
 Starting from a historian’s questions, the talk shows how sources are turned into data, how digital analysis leads to a new reading of existing scholarship, and how a service that answers questions from historical sources was designed.
 
@@ -72,7 +72,7 @@ The deck does not itself run live AI retrieval or answering, and it does not sub
 
 | File | Description |
 |---|---|
-| [`index.html`](index.html) | The integrated web/offline presentation of 4 chapters and 49 slides |
+| [`index.html`](index.html) | The integrated web/offline presentation of 4 chapters and 50 slides |
 | [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | License notice for the embedded font |
 | [`README.md`](README.md) | This guide |
 
@@ -93,7 +93,7 @@ For detailed sources and related papers, see each chapter’s cover and “더�
 </details>
 <!-- english:end -->
 
-**김근하 · 4개 챕터, 총 49슬라이드의 인터랙티브 HTML 발표자료**
+**김근하 · 4개 챕터, 총 50슬라이드의 인터랙티브 HTML 발표자료**
 
 역사연구자의 질문에서 출발해 사료를 데이터로 만들고, 디지털 분석으로 기존 연구를 다시 해석하고, 역사 자료에 근거해 질문에 답하는 서비스를 설계한 과정을 소개합니다.
 
@@ -141,7 +141,7 @@ For detailed sources and related papers, see each chapter’s cover and “더�
 | LoRA 어댑터의 학습 원리 | [36슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/lora-path) |
 | 벡터 검색과 메타데이터 가점의 결합 | [40슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/query) |
 | 전문가 블라인드 평가 | [48슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-evaluation) |
-| 연구 결과와 Human-in-the-loop | [49슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
+| 연구 결과와 Human-in-the-loop | [50슬라이드](https://littlekg87.github.io/lecture/2026_AI_History/#/4/expert-results) |
 
 Ask Sillok만 다루는 약 30분 분량의 단독 발표는 [`Asksillok_presentation/`](../Asksillok_presentation/)에 있습니다.
 
@@ -180,7 +180,7 @@ Ask Sillok만 다루는 약 30분 분량의 단독 발표는 [`Asksillok_present
 
 | 파일 | 설명 |
 |---|---|
-| [`index.html`](index.html) | 4개 챕터·49슬라이드의 웹·오프라인 통합 발표자료 |
+| [`index.html`](index.html) | 4개 챕터·50슬라이드의 웹·오프라인 통합 발표자료 |
 | [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | 포함된 폰트의 라이선스 고지 |
 | [`README.md`](README.md) | 발표 내용과 이용 안내 |
 
@@ -195,3 +195,6 @@ Ask Sillok만 다루는 약 30분 분량의 단독 발표는 [`Asksillok_present
 - [강의·발표 자료 전체 목록](../README.md)
 
 상세 출처와 관련 논문은 각 챕터의 표지 및 ‘더보기’를 참고해 주세요. 자료를 인용할 때에는 원 출처와 발표 정보를 함께 밝혀 주세요. 포함된 폰트의 이용 조건은 `FONT-NOTICE.txt`를 따릅니다.
+
+
+2026-10-27: 4챕터의 DB 구축·검색 과정 개요를 KOSSDA·율곡판과 같은 펼치기 방식으로 갱신하고, 기존 기술 소개 앞에 「질문 데이터의 여정」을 추가했습니다. 전체 50장면이며 1~3챕터와 나머지 장면은 유지했습니다. 기존 `#/4/source` 및 `#/4/technology` 주소도 유지합니다.
