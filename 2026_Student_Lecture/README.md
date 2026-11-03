@@ -18,7 +18,6 @@ Does using AI limit our thinking? Only when it is used badly. AI is a magic wand
 |---|---|
 | 21 October 2026 | Seoul National University, undergraduate course “New Interpretations of Korean History” (한국사의 새로운 해석) — guest lecture |
 | 22 October 2026 | Pukyong National University, HUSS undergraduate course — guest lecture |
-| 9 November 2026 | Korea University, K-MOOC special lecture |
 
 ### Structure
 
@@ -68,7 +67,6 @@ AI를 쓰면 사고가 제한될까요? 그건 AI를 제대로 활용하지 못�
 |---|---|
 | 2026.10.21. | 서울대학교 「한국사의 새로운 해석」 학부 강의 특강 |
 | 2026.10.22. | 국립부경대학교 HUSS 학부 강의 특강 |
-| 2026.11.09. | 고려대학교 K-MOOC 특강 |
 
 ## 구성
 

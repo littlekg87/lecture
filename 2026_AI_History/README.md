@@ -14,13 +14,14 @@ Starting from a historian’s questions, the talk shows how sources are turned i
 
 **[Download the printable PDF](2026_AI_History.pdf)** · 61 pages, about 16 MB. Includes expanded workflow diagrams, four source-processing stages, nine question-journey stages, and chapter bookmarks. Print in landscape orientation with “Fit to page”.
 
-### Talks given with this deck
+### Talks using this deck
 
 | Date | Event |
 |---|---|
 | 28 September 2026 | Sogang University, Department of History × Digital History Institute Colloquium |
 | 15 October 2026 | Ewha Womans University, Department of History Colloquium |
 | 28 October 2026 | Pusan National University, Digital Humanities Center Colloquium |
+| 9 November 2026 | Korea University, K-MOOC special lecture |
 
 ### Structure
 
@@ -101,13 +102,14 @@ For detailed sources and related papers, see each chapter’s cover and “더�
 
 **[발표자료 바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** · [HTML 내려받기](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_AI_History/index.html)
 
-## 이 자료를 사용한 발표
+## 이 자료를 사용하는 발표·강의
 
 | 일자 | 행사 |
 |---|---|
 | 2026년 9월 28일 | 서강대학교 사학과 × 디지털역사연구소 콜로키움 |
 | 2026년 10월 15일 | 이화여자대학교 사학과 콜로키움 |
 | 2026년 10월 28일 | 부산대학교 디지털인문학센터 콜로키움 |
+| 2026년 11월 9일 | 고려대학교 K-MOOC 특강 |
 
 ## 발표 구성
 
