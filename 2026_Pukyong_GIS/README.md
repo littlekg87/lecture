@@ -12,6 +12,8 @@ To draw a good map you first need a good table. The lecture starts from the basi
 
 **[Open the presentation ↗](https://littlekg87.github.io/lecture/2026_Pukyong_GIS/)** · [Download the HTML](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_Pukyong_GIS/index.html)
 
+**[Download the PDF](2026_Pukyong_GIS.pdf)** · 81 landscape pages, including alternate table and map views.
+
 ### Talk given with this deck
 
 | Date | Event |
@@ -54,6 +56,7 @@ The deck is one HTML file of about 1 MB. Fonts and the link to the live map on s
 | File | Description |
 |---|---|
 | [`index.html`](index.html) | The web/offline presentation of 63 slides |
+| [`2026_Pukyong_GIS.pdf`](2026_Pukyong_GIS.pdf) | Printable PDF with alternate views (81 pages) |
 | [`data/`](data/) | Three practice CSV files |
 | [`README.md`](README.md) | This guide |
 
@@ -67,6 +70,8 @@ The deck is one HTML file of about 1 MB. Fonts and the link to the live map on s
 지도를 잘 그리려면 표를 먼저 잘 만들어야 합니다. 데이터의 기초와 정규화(제1·2·3정규형)에서 시작해, 위치를 적는 규칙(점·선·면, 좌표, 위치기준)을 거쳐, 따로 만든 표를 겹쳐야 보이는 것 — 레이어 — 까지 갑니다. 파트마다 강사와 함께 한 단계씩 따라 하는 실습이 이어집니다.
 
 **[발표자료 바로 보기 ↗](https://littlekg87.github.io/lecture/2026_Pukyong_GIS/)** · [HTML 내려받기](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_Pukyong_GIS/index.html)
+
+**[PDF 내려받기](2026_Pukyong_GIS.pdf)** · 표·지도 전환 화면을 포함한 가로형 81쪽.
 
 ## 이 자료로 진행한 강연
 
@@ -112,5 +117,6 @@ HTML 파일 하나(약 1MB)입니다. 글꼴과 58장 무순 지도의 실제 �
 | 파일 | 설명 |
 |---|---|
 | [`index.html`](index.html) | 63장면 웹/오프라인 발표자료 |
+| [`2026_Pukyong_GIS.pdf`](2026_Pukyong_GIS.pdf) | 전환 화면을 포함한 인쇄용 PDF (81쪽) |
 | [`data/`](data/) | 실습용 CSV 세 개 |
 | [`README.md`](README.md) | 이 안내 |
