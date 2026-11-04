@@ -12,6 +12,8 @@ Does using AI limit our thinking? Only when it is used badly. AI is a magic wand
 
 **[Open the presentation ↗](https://littlekg87.github.io/lecture/2026_Student_Lecture/)** · [Download the HTML](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_Student_Lecture/index.html)
 
+**[Download the PDF](2026_Student_Lecture.pdf)** · 41 landscape pages, including intermediate views that change during the presentation. Student poster images are embedded in this PDF; their copyright remains with their creators, for viewing only.
+
 ### Talks using this deck
 
 | Date | Event |
@@ -47,6 +49,7 @@ The dialogue on slide 18 and the answer on slide 22 are reconstructed examples; 
 | File | Description |
 |---|---|
 | [`index.html`](index.html) | The web/offline presentation of 27 slides |
+| [`2026_Student_Lecture.pdf`](2026_Student_Lecture.pdf) | Printable PDF with intermediate views (41 pages) |
 | [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | License notice for the embedded font |
 | [`README.md`](README.md) | This guide |
 
@@ -60,6 +63,8 @@ The dialogue on slide 18 and the answer on slide 22 are reconstructed examples; 
 AI를 쓰면 사고가 제한될까요? 그건 AI를 제대로 활용하지 못했을 때의 이야기입니다. AI는 할 수 없었던 일을 할 수 있게 해 주는 마법지팡이이고, 필요한 것은 그 지팡이로 무엇을 만들지 상상하는 힘입니다. 역사학자가 하는 세 가지 일 — 읽고, 분석하고, 발표한다 — 이 AI로 어떻게 넓어지는지를 학부생들이 직접 만든 학술포스터로 보여 줍니다.
 
 **[발표자료 바로 보기 ↗](https://littlekg87.github.io/lecture/2026_Student_Lecture/)** · [HTML 내려받기](https://raw.githubusercontent.com/littlekg87/lecture/main/2026_Student_Lecture/index.html)
+
+**[PDF 내려받기](2026_Student_Lecture.pdf)** · 발표 중 내용이 바뀌는 중간 화면을 포함한 가로형 41쪽. PDF에는 학생 포스터 이미지가 포함되어 있으며, 열람·감상용으로 각 작품의 저작권은 제작 학생에게 있습니다.
 
 ## 이 자료로 진행하는 강의
 
@@ -117,5 +122,6 @@ AI를 쓰면 사고가 제한될까요? 그건 AI를 제대로 활용하지 못�
 | 파일 | 설명 |
 |---|---|
 | [`index.html`](index.html) | 27장면 웹/오프라인 발표자료 |
+| [`2026_Student_Lecture.pdf`](2026_Student_Lecture.pdf) | 중간 전환 화면을 포함한 인쇄용 PDF (41쪽) |
 | [`FONT-NOTICE.txt`](FONT-NOTICE.txt) | 내장 글꼴 라이선스 고지 |
 | [`README.md`](README.md) | 이 안내 |
