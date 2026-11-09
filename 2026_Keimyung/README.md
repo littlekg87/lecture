@@ -33,6 +33,6 @@
 
 ## 영어 면접 발표
 
-[Can Historical Data and AI Converge? — Ask Sillok 발표 열기](https://littlekg87.github.io/lecture/2026_Keimyung/ask-sillok/)
+[Can Historical Data and AI Converge? — Ask Sillok 발표 열기](https://littlekg87.github.io/lecture/2026_Keimyung/English_Presentation.html)
 
 2장은 영어 발표자료 접속용 QR, 3장은 Ask Sillok 서비스 접속용 QR입니다.
