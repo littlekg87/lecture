@@ -4,6 +4,8 @@
 
 **[발표 열기](https://littlekg87.github.io/lecture/2026_Keimyung/)** · [같은 발표를 영어로 열기](https://littlekg87.github.io/lecture/2026_Keimyung/?lang=en)
 
+[국문 PDF](https://littlekg87.github.io/lecture/2026_Keimyung/Digital_History_KO.pdf) · [영문 PDF](https://littlekg87.github.io/lecture/2026_Keimyung/Digital_History_EN.pdf)
+
 ## 발표 조작
 
 - 방향키 또는 하단 화살표로 진행합니다. 5장에서는 다음 키를 한 번 더 누르면 시대순 설명에 이어 동시대 연구의 특징이 나타납니다.
@@ -27,4 +29,4 @@
 
 로컬 작업본은 `디지털역사학의 현황과 확장 가능성.html`입니다. 이 파일을 브라우저에서 직접 열어 발표할 수 있습니다. 수정 후에는 국문·영문 화면을 확인하고 같은 HTML을 GitHub 저장소의 `2026_Keimyung/index.html`로 반영합니다. 이 경로를 유지하면 2장의 QR 코드를 계속 사용할 수 있습니다.
 
-발표의 기본 문헌은 김근하의 「한국 디지털역사학 연구 지형의 재검토 — 디지털 연구환경 구축형과 역사문제 탐구형의 구분을 중심으로」(『역사논총』 53, 2026)이며, 원문은 로컬 `sources/`에 있습니다. 제출용 PDF는 HTML 최종 확정 후 생성합니다.
+발표의 기본 문헌은 김근하의 「한국 디지털역사학 연구 지형의 재검토 — 디지털 연구환경 구축형과 역사문제 탐구형의 구분을 중심으로」(『역사논총』 53, 2026)이며, 원문은 로컬 `sources/`에 있습니다. 두 PDF는 최종 HTML을 언어별로 출력한 12쪽 제출본입니다.
