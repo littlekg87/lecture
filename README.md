@@ -25,6 +25,7 @@ A repository of teaching and presentation materials. Each item has its own folde
 | Talk | **Pusan National University, Digital Humanities Center Colloquium** (2026.10.28.) | “Historical Research in the Age of AI”, integrated deck of 4 chapters · 49 slides · the *Huangqing Zhigongtu* ontology, the structure of military service mobilization, and Ask Sillok — **[Open ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
 | Talk | **Yulgok Institute of Korean Studies (율곡국학진흥원), “Regional Data and Digital Archives in the Age of AI”** (2026.10.30.) | “Searchable to Askable Archive: RAG-based Annals of the Joseon Dynasty AI chat-bot Architecture”, a talk of about 30 minutes on how Ask Sillok works (Korean / English) — **[Open ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok/)** | **[`Asksillok_presentation/`](Asksillok_presentation/)** |
 | Guest lecture | **Korea University, K-MOOC special lecture** (2026.11.09.) | “Historical Research in the Age of AI”, integrated deck of 4 chapters · 50 slides · the *Huangqing Zhigongtu* ontology, the structure of military service mobilization, and Ask Sillok — **[Open ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| Talk | **KADH 2026** | Fine-Tuned Embeddings in Historical RAG. Benchmark and historian evaluations of retrieval from the Veritable Records of the Chosŏn Dynasty. [Open slides](https://littlekg87.github.io/lecture/KADH2026/) · [PDF](https://littlekg87.github.io/lecture/KADH2026/KADH2026.pdf) | **[`KADH2026/`](KADH2026/)** |
 
 ### Downloading the materials
 
@@ -88,6 +89,7 @@ Related research dataset → [Sejong_Sillok_Jiriji](https://github.com/littlekg8
 | 발표 | **부산대학교 디지털인문학센터 콜로키움** (2026.10.28.) | 「AI 시대의 역사 연구」 4챕터·49슬라이드 통합 발표자료 · 『황청직공도』 온톨로지, 군역 동원 체계의 구조 연구, Ask Sillok — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
 | 발표 | **율곡국학진흥원 「AI 시대의 지역 데이터와 디지털 아카이브」** (2026.10.30.) | 「검색하는 아카이브에서 질문하는 아카이브로: RAG기반 조선왕조실록 AI챗봇 설계 연구 사례」 Ask Sillok의 작동 방식을 설명하는 약 30분 발표자료 (한국어·영어 전환) — **[바로 보기 ↗](https://littlekg87.github.io/lecture/Asksillok_presentation/2026_Yulgok/)** | **[`Asksillok_presentation/`](Asksillok_presentation/)** |
 | 특강 | **고려대학교 K-MOOC 특강** (2026.11.09.) | 「AI 시대의 역사 연구」 4챕터·50슬라이드 통합 발표자료 · 『황청직공도』 온톨로지, 군역 동원 체계의 구조 연구, Ask Sillok — **[바로 보기 ↗](https://littlekg87.github.io/lecture/2026_AI_History/)** | **[`2026_AI_History/`](2026_AI_History/)** |
+| 발표 | **KADH 2026** | 「역사학 RAG에서의 파인튜닝 임베딩 문제」. 조선왕조실록 검색 성능을 벤치마크와 역사연구자의 사료 관련성 평정으로 비교한 발표자료. [발표 보기](https://littlekg87.github.io/lecture/KADH2026/) · [PDF](https://littlekg87.github.io/lecture/KADH2026/KADH2026.pdf) | **[`KADH2026/`](KADH2026/)** |
 
 ---
 
