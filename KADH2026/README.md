@@ -13,7 +13,7 @@
 ## 발표 자료
 
 - [웹 슬라이드 열기](https://littlekg87.github.io/lecture/KADH2026/) — 26쪽. 방향키로 넘기거나 오른쪽 위 쪽 번호를 눌러 원하는 장으로 이동할 수 있다.
-- [발표용 PDF 열기·다운로드](https://littlekg87.github.io/lecture/KADH2026/KADH2026.pdf) — 웹 슬라이드와 같은 26쪽이며 결과 표와 차트를 포함한다.
+- [공개용 PDF 열기·다운로드](https://littlekg87.github.io/lecture/KADH2026/KADH2026.pdf) — 웹 슬라이드와 같은 26쪽으로, 실험 결과는 변화 방향으로 표시한다.
 - [Ask Sillok 열기](https://beta.asksillok.com/) — 조선왕조실록 질의 서비스.
 
 슬라이드 2쪽의 QR 코드는 웹 발표자료와 Ask Sillok으로 연결된다.
