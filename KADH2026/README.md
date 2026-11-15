@@ -8,6 +8,8 @@
 
 실록의 현대어 제목과 한문 본문을 짝지어 임베딩 모델을 학습하고, 검색 성능을 두 방식으로 평가했다. 벤치마크에서는 세 규모의 기본·파인튜닝 모델 6종을 비교했고, 전문가 평가에서는 그중 4종이 찾아낸 사료의 관련성을 역사연구자가 평정했다.
 
+[Open the slides in English](https://littlekg87.github.io/lecture/KADH2026/?lang=en). Use the language button in the upper right to switch languages on the current slide.
+
 ## 발표 자료
 
 - [웹 슬라이드 열기](https://littlekg87.github.io/lecture/KADH2026/) — 26쪽. 방향키로 넘기거나 오른쪽 위 쪽 번호를 눌러 원하는 장으로 이동할 수 있다.
